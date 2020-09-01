@@ -1,0 +1,756 @@
+Area,Renamed Polygon,Sitecode,Tidestation,Latitude.DMS,Longitude.DMS,Latitude.DD,Longitude.DD,Description,Tidetype,Polygon ID,Atlas ID#,Region,Stock,BuoySite
+2,,1,,,,,,unknown haulout location 1.00,,100,,,NA,0
+Tip of South Jetty,Columbia River/South Jetty,1.02,Astoria,46 14.03,124  3.94,46.2342,-124.0761,Year round on concrete slabs and rock rubble. Abandoned during high ocean swell.,LOW,102,2,Columbia River,Coastal,0
+Chinook/Baker Bay,Baker Bay,1.03,Astoria,46 15.90,123 57.89,46.275,-123.9747,Chinook Channel area. Intermittent use at low tides.,LOW,103,3,Columbia River,Coastal,0
+Chinook/Baker Bay,Baker Bay,1.03,Astoria,46 15.74,123 57.63,46.2706,-123.9675,On shoals northwest of entrance channel. Intermittent use at low tides.,LOW,103,4,Columbia River,Coastal,0
+Desdemona Sands,Desdemona Sands,1.04,Astoria,46 12.80,123 55.90,46.2222,-123.9417,Shoal to the west of Astoria/Megler bridge. Alternate site used intermitently.,LOW,104,5,Columbia River,Coastal,0
+Desdemona Sands,Desdemona Sands,1.04,Astoria,46 13.19,123 53.61,46.2219,-123.9003,Shoals west of Astoria/Megler bridge. Alternate site used intermittently on extreme low tides.,LOW,104,6,Columbia River,Coastal,0
+Desdemona Sands,Desdemona Sands,1.04,Astoria,46 12.73,123 53.33,46.2203,-123.8925,Shoals west of Astoria/Megler bridge. Main lower river haulout.,LOW,104,7,Columbia River,Coastal,0
+Taylor Sands,Taylor Sands/Tongue Point,1.05,Astoria,46 14.20,123 48.40,46.2389,-123.8111,Shoals north of Taylor Sands channel. Used extensively in 1980's.,LOW,105,8,Columbia River,Coastal,0
+Tongue Pt. Sands,Taylor Sands/Tongue Point,1.14,Astoria,46 13.88,123 45.86,46.2411,-123.7739,Along northwest side of shoal during winter and spring.,LOW,105,26,Columbia River,Coastal,0
+Tongue Pt. Sands,Taylor Sands/Tongue Point,1.14,Astoria,46 14.08,123 45.16,46.2356,-123.7544,Shoals upriver from main shoal area.,LOW,105,27,Columbia River,Coastal,0
+Grays Bay,Grays Bay,1.06,Astoria,46 16.14,123 42.42,46.2706,-123.7117,Intermittent use of shoal area.,LOW,106,9,Columbia River,Coastal,0
+Grays Bay,Grays Bay,1.06,Astoria,46 16.71,123 43.54,46.2864,-123.7317,Year round on intertidal sand bars.,LOW,106,10,Columbia River,Coastal,0
+Grays Bay,Grays Bay,1.06,Astoria,46 16.50,123 43.54,46.2806,-123.7317,Year round on intertidal sand bars.,LOW,106,11,Columbia River,Coastal,0
+Cathlamet Bay,Cathlamet Bay,1.07,Astoria,46 12.31,123 39.56,46.2086,-123.6656,Exposed channels along Sanborn Slough.,LOW,107,12,Columbia River,Coastal,0
+Cathlamet Bay,Cathlamet Bay,1.07,Astoria,46 12.99,123 41.74,46.2275,-123.7039,Along shoals west of Green Island. Intermittent during pupping season.,LOW,107,13,Columbia River,Coastal,0
+Cathlamet Bay,Cathlamet Bay,1.07,Astoria,46 12.86,123 40.50,46.2239,-123.6806,Exposed channels north of Green Island during pupping season. Nursery area.,LOW,107,14,Columbia River,Coastal,0
+Lower Woody/Snag Is.,Lower Woody/Snag Is.,1.08,Astoria,46 13.40,123 37.55,46.2278,-123.6319,Shoals southwest of Snag Island.,LOW,108,15,Columbia River,Coastal,0
+Lower Woody/Snag Is.,Lower Woody/Snag Is.,1.08,Astoria,46 13.95,123 37.10,46.2431,-123.6194,Along northeast side of Snag Island (near line of pilings).,LOW,108,16,Columbia River,Coastal,0
+Lower Woody/Snag Is.,Lower Woody/Snag Is.,1.08,Astoria,46 13.92,123 36.59,46.2422,-123.6164,Shoals in lower Woody Island channel.,LOW,108,17,Columbia River,Coastal,0
+South of Miller Sands,Lower Woody/Snag Is.,1.09,Astoria,46 13.87,123 38.84,46.2408,-123.6567,Along shoals on south side during winter and early spring.,LOW,108,18,Columbia River,Coastal,0
+Three Tree Point Area,Three Tree Point Area,1.1,Astoria,46 15.77,123 30.85,46.2714,-123.5236,On shoal just downriver from line of range markers during winter and spring.,LOW,110,19,Columbia River,Coastal,0
+Three Tree Point Area,Three Tree Point Area,1.1,Astoria,46 15.28,123 30.79,46.2578,-123.5219,Along north side of Grassy Island during winter and spring.,LOW,110,20,Columbia River,Coastal,0
+NE of Welch Island,NE of Welch Island,1.11,Astoria,46 14.99,123 27.03,46.2608,-123.4508,On shoal along northeast side of island during winter and spring.,LOW,111,21,Columbia River,Coastal,0
+Wallace Is./Eureka Bar,Wallace Is./Eureka Bar,1.12,Astoria,46  8.74,123 16.04,46.1539,-123.2678,Along edge of unnamed island south of Waterford during spring and winter.,LOW,112,22,Columbia River,Coastal,0
+Wallace Is./Eureka Bar,Wallace Is./Eureka Bar,1.12,Astoria,46  8.91,123 15.26,46.1586,-123.2572,Shoals south of Cooper Point along lower Eureka Channel during spring and winter.,LOW,112,23,Columbia River,Coastal,0
+Cowlitz R./Carroll Slough,Cowlitz R./Carroll Slough,1.13,Astoria,46  5.98,122 54.34,46.1106,-122.9094,Shoals near confluence with Columbia River during winter and spring.,LOW,113,24,Columbia River,Coastal,0
+Cowlitz R./Carroll Slough,Cowlitz R./Carroll Slough,1.13,Astoria,46  5.53,122 53.66,46.0981,-122.9017,Log booms anchored along Carroll Channel used intermittently during winter and spring.,LOW,113,25,Columbia River,Coastal,0
+E Puget Island,Shoal E of Puget Island,1.15,Astoria,46  8.95,123 18.76,46.1597,-123.3211,Upriver end of Puget Island during winter and spring.,LOW,115,28,Columbia River,Coastal,0
+Astoria/E Mooring Basin,Astoria/East Mooring Basin,1.16,Astoria,46 11.80,123 47.95,46.2056,-123.8097,On marina floats and upriver jetty near processing plant from late fall through spring.,ALL,116,29,Columbia River,Coastal,0
+Phoca Rock (Columbia River),Phoca Rock,1.17,Astoria,45 34.16,122 10.28,45.5711,-122.1744,Phoca Rock,ALL,117,,Columbia River,Coastal,0
+Bonneville Dam Area,Bonneville Dam Area,1.18,Astoria,45 38.83,121 56.77,45.6564,-121.9547,Bonneville Dam Area,ALL,118,,Columbia River,Coastal,0
+In Tow,In Tow,1.89,Astoria,,,,,animals in tow,ALL,189,,Columbia River,Coastal,0
+Unspecified-H2O,Unspecified-H2O,1.99,Astoria,46 26.45,124 04.16,46.4458,-124.0711,Animals in open water,ALL,199,,,NA,0
+Hauled Out Unknown,Hauled Out Unknown,2,,,,,,unknown haulout 2.00,,200,,Willapa Bay,Coastal,0
+W Shoalwater Bay,Shoalwater Bay,2.01,Aberdeen,46 24.45,124  0.05,46.4125,-124.0014,Areas along channels on west side of Shoalwater Bay.,LOW,201,30,Willapa Bay,Coastal,0
+W Shoalwater Bay,Shoalwater Bay,2.01,Aberdeen,46 24.54,124  0.18,46.415,-124.005,Areas along channels in west Shoalwater Bay during pupping season.,LOW,201,31,Willapa Bay,Coastal,0
+Shoalwater Bay Middle,Shoalwater Bay,2.02,Aberdeen,46 24.34,123 59.32,46.4094,-123.9922,Areas along channels in middle Shoalwater Bay during pupping season.,LOW,201,32,Willapa Bay,Coastal,0
+SW of Long Island,Shoalwater Bay,2.03,Aberdeen,46 25.64,123 58.87,46.4344,-123.9908,Areas along channels southwest of Long Island during pupping season.,LOW,201,33,Willapa Bay,Coastal,0
+NE of Long Island South,NE of Long Island/E of Stanley Channel,2.04,Aberdeen,46 29.24,123 56.83,46.49,-123.9564,Areas along south channel. Nursery area.,LOW,204,34,Willapa Bay,Coastal,0
+NE of Long Island Middle,NE of Long Island/E of Stanley Channel,2.05,Aberdeen,46 29.76,123 57.38,46.5044,-123.9606,Areas along the middle channel.,LOW,204,35,Willapa Bay,Coastal,0
+NE of Long Island North,NE of Long Island/E of Stanley Channel,2.06,Aberdeen,46 30.79,123 57.11,46.5219,-123.9531,Areas along the north channels during pupping season.,LOW,204,36,Willapa Bay,Coastal,0
+NE of Long Island North,NE of Long Island/E of Stanley Channel,2.06,Aberdeen,46 31.32,123 56.89,46.5256,-123.9581,Along the northern most channel with house on pilings during pupping season.,LOW,204,37,Willapa Bay,Coastal,0
+Riddle Spit Area/Oysterv,Riddle Spit Area,2.07,Aberdeen,46 34.94,124  0.60,46.5928,-124.0167,Intertidal areas along edge of shoal.,LOW,207,38,Willapa Bay,Coastal,0
+S of Grassy Is.,S of Grassy Island,2.08,Aberdeen,46 37.06,124  1.38,46.6183,-124.0272,On shoals south of Grassy Island during pupping season.,LOW,208,39,Willapa Bay,Coastal,0
+Ellen Sands,West Ellen Sands,2.09,Aberdeen,46 38.72,123 58.10,46.6533,-123.9694,Intertidal sand flats along Ellen Sands. Nursery area.,LOW,209,40,Willapa Bay,Coastal,0
+Ellen Sands,West Ellen Sands,2.09,Aberdeen,46 39.11,123 59.23,46.6531,-123.9897,Intertidal sand flats along Ellen Sands. Nursery area.,LOW,209,41,Willapa Bay,Coastal,0
+Ellen Sands,West Ellen Sands,2.09,Aberdeen,46 39.74,123 59.27,46.6706,-123.9908,Intertidal sand flats along Ellen Sands. Nursery area.,LOW,209,42,Willapa Bay,Coastal,0
+Ellen Sands,West Ellen Sands,2.09,Aberdeen,46 40.58,123 59.05,46.6828,-123.9847,Intertidal sand flats along Ellen Sands. Nursery area.,LOW,209,43,Willapa Bay,Coastal,0
+Pine Island Channel,Pine Island Channel,2.1,Aberdeen,46 40.98,123 57.64,46.6939,-123.9678,Shoals along Pine Island channel.,LOW,210,44,Willapa Bay,Coastal,0
+Pine Island Channel,Pine Island Channel,2.1,Aberdeen,46 40.74,123 57.67,46.6872,-123.9686,Shoals along Pine Island channel.,LOW,210,45,Willapa Bay,Coastal,0
+Pine Island Channel,Pine Island Channel,2.1,Aberdeen,46 40.15,123 56.95,46.6708,-123.9597,Shoals along Pine Island channel during pupping season. Nursery area.,LOW,210,46,Willapa Bay,Coastal,0
+E of Toke Point,E of Toke Point,2.11,Aberdeen,46 42.63,123 55.90,46.7175,-123.9417,Shoals along channels east of Toke Point.,LOW,211,47,Willapa Bay,Coastal,0
+Entrance Shoals,Entrance Shoals,2.12,Aberdeen,46 42.71,124  3.04,46.7197,-124.0511,Along north side of main shoal in entrance to Willapa Bay.,LOW,212,48,Willapa Bay,Coastal,0
+Entrance Shoals,Entrance Shoals,2.12,Aberdeen,46 41.71,124  2.00,46.7031,-124.0333,Along south side of main shoal in entrance to Willapa Bay.,LOW,212,49,Willapa Bay,Coastal,0
+Entrance Shoals,Entrance Shoals,2.12,Aberdeen,46 40.42,124  0.74,46.6783,-124.0206,On southeast shoal in entrance to Willapa Bay.,LOW,212,50,Willapa Bay,Coastal,0
+Entrance Shoals,Entrance Shoals,2.12,Aberdeen,46 41.63,124  5.73,46.7008,-124.1036,On southwest shoals in entrance to Willapa Bay during pupping season.,LOW,212,51,Willapa Bay,Coastal,0
+Entrance Shoals,Entrance Shoals,2.12,Aberdeen,46 40.65,124  6.03,46.6847,-124.1008,On south shoals in entrance to Willapa Bay during the pupping season.,LOW,212,52,Willapa Bay,Coastal,0
+Enterance Shoals,Shoal between Ellen Sands/Entrance,2.12,,,,,,Shoal between Ellen Sands & Entrance,LOW,212,,Willapa Bay,Coastal,0
+Ledbetter Shoals,Ledbetter Shoals,2.13,Aberdeen,46 39.93,124  3.22,46.6758,-124.0561,Along shoals north of Leadbetter Point during pupping season.,LOW,213,53,Willapa Bay,Coastal,0
+Ledbetter Shoals,Ledbetter Shoals,2.13,Aberdeen,46 38.36,124  0.89,46.6433,-124.0247,Shoals southeast of Leadbetter Point.,LOW,213,54,Willapa Bay,Coastal,0
+Ledbetter Shoals,Ledbetter Shoals,2.13,Aberdeen,46 39.83,124  2.47,46.6731,-124.0464,Shoals northeast of Leadbetter Point during pupping season.,LOW,213,55,Willapa Bay,Coastal,0
+Ledbetter Shoals,Ledbetter Shoals,2.13,Aberdeen,46 39.42,124  2.21,46.6617,-124.0392,On shoals east of Leadbetter Point.,LOW,213,56,Willapa Bay,Coastal,0
+In Tow,In Tow,2.89,,,,,,animals in tow,ALL,289,,Willapa Bay,Coastal,0
+Unspecified-H2O,Unspecified-H2O,2.99,Aberdeen,?,?,,,Animals in open water,ALL,299,,,NA,0
+Hauled Out Unknown,Hauled Out Unknown,3,,,,,,unknown haulout 3.00,,300,,Grays Harbor,Coastal,0
+South Bay,South Bay,3.01,Aberdeen,46 52.83,124  4.08,46.8897,-124.0689,Along intertidal channels on east side of bay.,LOW,301,57,Grays Harbor,Coastal,0
+Whitcomb Flats N,Whitcomb Flats,3.02,Aberdeen,46 54.98,124  4.64,46.9272,-124.0844,Along north side of Whitcomb Flats.,LOW,303,58,Grays Harbor,Coastal,0
+E of Whitcomb Flats,Whitcomb Flats,3.03,Aberdeen,46 55.04,124  2.27,46.9178,-124.0408,Along south side of shoal east of Whitcomb Flats during pupping season.,LOW,303,59,Grays Harbor,Coastal,0
+E of Whitcomb Flats,Whitcomb Flats,3.03,Aberdeen,46 54.81,124  3.02,46.9225,-124.0506,Along south side of shoal east of Whitcomb Flats during pupping season.,LOW,303,60,Grays Harbor,Coastal,0
+E of Whitcomb Flats,Whitcomb Flats,3.03,Aberdeen,46 54.43,124  2.88,46.9119,-124.0578,On shoal southeast of Whitcomb Flats.,LOW,303,61,Grays Harbor,Coastal,0
+Midharbor Flats,Midharbor Flats,3.04,Aberdeen,46 56.93,123 58.42,46.9592,-123.9783,On shoals on north side of midharbor flats during pupping season.,LOW,304,62,Grays Harbor,Coastal,0
+Midharbor Flats,Midharbor Flats,3.04,Aberdeen,46 56.32,123 59.94,46.9422,-124.0094,On shoals on northwest side of midharbor flats during pupping season. Nursery area.,LOW,304,63,Grays Harbor,Coastal,0
+Midharbor Flats,Midharbor Flats,3.04,Aberdeen,46 56.11,123 56.89,46.9364,-123.9581,Shoals along south side of  midharbor flats during pupping season.,LOW,304,64,Grays Harbor,Coastal,0
+Sand Island Shoals,Shoal W of Mini Moon Island (Airport),3.05,Aberdeen,46 57.35,123 59.81,46.9597,-124.0058,On east side of shoal near rangefinders during pupping season. Nursery area.,LOW,305,65,Grays Harbor,Coastal,0
+Sand Island Shoals Area,Shoal W of Mini Moon Island (Airport),3.05,Aberdeen,46 57.50,123 59.92,46.9639,-124.0089,On north side of shoal near rangefinders during pupping season.,LOW,305,66,Grays Harbor,Coastal,0
+Sand Island Shoals Area,Sand Island Shoals,3.06,Aberdeen,46 56.88,124  1.13,46.9578,-124.0203,On south side of south shoal during pupping season.,LOW,306,67,Grays Harbor,Coastal,0
+Sand Island Shoals Area,Sand Island Shoals,3.06,Aberdeen,46 56.91,124  1.61,46.9586,-124.0336,On north side of south shoal.,LOW,306,68,Grays Harbor,Coastal,0
+Sand Island Shoals Area,Sand Island Shoals,3.07,Aberdeen,46 57.11,124  2.05,46.9531,-124.0347,On north side of middle shoal during pupping season.,LOW,306,69,Grays Harbor,Coastal,0
+Sand Island Shoals Area,Sand Island Shoals,3.07,Aberdeen,46 57.19,124  1.42,46.9553,-124.0283,Along southeast side of middle shoal during pupping season.,LOW,306,70,Grays Harbor,Coastal,0
+Sand Island Shoals Area,Sand Island Shoals,3.07,Aberdeen,46 56.71,124  2.15,46.9531,-124.0375,Along south side of middle shoal.,LOW,306,71,Grays Harbor,Coastal,0
+Sand Island Shoals Area,Sand Island Shoals,3.07,Aberdeen,46 56.45,124  2.81,46.9458,-124.0558,Along southwest side of middle shoal during pupping season.,LOW,306,72,Grays Harbor,Coastal,0
+Sand Island Shoals Area,Sand Island Shoals,3.08,Aberdeen,46 57.03,124  2.42,46.9508,-124.045,On south side of the north shoal during pupping season.,LOW,306,73,Grays Harbor,Coastal,0
+S Side of Sand Is.,S Side of Sand Island,3.09,Aberdeen,46 57.38,124  2.90,46.9606,-124.0583,Shoals across channel on south side of island.  Nursery area.,LOW,309,74,Grays Harbor,Coastal,0
+S of Sand Is.,S Side of Sand Island,3.09,Aberdeen,46 57.58,124  3.07,46.9661,-124.0519,Along channel on south side of island. Nursery area.,LOW,309,75,Grays Harbor,Coastal,0
+S Side of Sand Is.,S Side of Sand Island,3.09,Aberdeen,46 57.26,124  3.31,46.9572,-124.0586,Along channel on south side of island. Nursery area.,LOW,309,76,Grays Harbor,Coastal,0
+S Side of Sand Is.,S Side of Sand Island,3.09,Aberdeen,46 58.03,124  2.09,46.9675,-124.0358,Along channel on south side of island. Nursery area.,LOW,309,77,Grays Harbor,Coastal,0
+S Side of Sand Is.,S Side of Sand Island,3.09,Aberdeen,46 57.61,124  3.40,46.9669,-124.0611,Along channel on south side of island. Nursery area.,LOW,309,78,Grays Harbor,Coastal,0
+N Side of Sand Is.,N Side of Sand Island,3.1,Aberdeen,46 57.82,124  3.37,46.9728,-124.0603,Along channel on north side of island. Nursery area.,LOW,310,79,Grays Harbor,Coastal,0
+NW of Sand Is.,N Side of Sand Island,3.11,Aberdeen,46 58.01,124  3.83,46.9669,-124.0731,On northwest tip of Sand Island.,LOW,310,80,Grays Harbor,Coastal,0
+NW of Sand Is.,N Side of Sand Island,3.11,Aberdeen,46 57.68,124  3.99,46.9689,-124.0775,Shoals west of Sand Island during pupping season.,LOW,310,81,Grays Harbor,Coastal,0
+S Side of Goose Is.,Goose Island Shoals,3.12,Aberdeen,46 58.56,124  3.85,46.9822,-124.0736,Along channel on the south side of Goose Island. Nursery area.,LOW,312,82,Grays Harbor,Coastal,0
+NW End of Goose Is.,Goose Island Shoals,3.13,Aberdeen,46 58.91,124  4.27,46.9919,-124.0742,Northwest tip of Goose Island during pupping season.,LOW,312,83,Grays Harbor,Coastal,0
+East Bay/Chenoise Crk.,East Bay,3.14,Aberdeen,46 59.93,124  2.78,47.0092,-124.055,Along Chenois Creek channel during pupping season.,LOW,314,84,Grays Harbor,Coastal,0
+East Bay/Chenoise Crk.,East Bay,3.14,Aberdeen,47  1.47,124  2.73,47.0297,-124.0536,Along Chenois Creek channel during pupping season.,LOW,314,85,Grays Harbor,Coastal,0
+East Bay/Chenoise Crk.,East Bay,3.14,Aberdeen,47  1.39,124  2.09,47.0275,-124.0358,Along Chenois Creek channel during pupping season.,LOW,314,86,Grays Harbor,Coastal,0
+East Bay/Chenoise Crk.,East Bay,3.14,Aberdeen,47  0.79,124  2.06,47.0219,-124.035,Along Chenois Creek channel during pupping season.,LOW,314,87,Grays Harbor,Coastal,0
+East Bay/Chenoise Crk.,East Bay,3.14,Aberdeen,47  0.45,124  2.32,47.0125,-124.0422,Along Chenois Creek channel during pupping season.,LOW,314,88,Grays Harbor,Coastal,0
+East Bay/Small Channel,East Bay,3.15,Aberdeen,47  0.27,124  2.92,47.0075,-124.0589,Along small deadend channel in East Bay. Nursery area.,LOW,314,89,Grays Harbor,Coastal,0
+East Bay/Main Channel,East Bay,3.16,Aberdeen,47  0.78,124  3.05,47.0217,-124.0514,Along main channel in East Bay during pupping season.,LOW,314,90,Grays Harbor,Coastal,0
+Shoals NW of Goose Is.,Channel NW of Goose Island Shoals,3.17,Aberdeen,46 59.23,124  4.66,46.9897,-124.085,Along channel in shoals northwest of Goose Island during pupping season.,LOW,317,91,Grays Harbor,Coastal,0
+Shoals NW of Goose Is.,Channel NW of Goose Island Shoals,3.17,Aberdeen,46 59.65,124  5.98,47.0014,-124.1106,Along channel in shoal northwest of Goose Island.,LOW,317,92,Grays Harbor,Coastal,0
+Shoals E of Ocean Shores,Channel E of Duck Lake,3.18,Aberdeen,46 58.09,124  7.59,46.9692,-124.1331,Shoals along channel east of Oyehut/Ocean Shores. Nursery area.,LOW,318,93,Grays Harbor,Coastal,0
+N of Campbell Slough,North Bay W Channel,3.19,Aberdeen,47  0.45,124  5.91,47.0125,-124.1086,Mud flats along Cambell Slough during pupping season.,LOW,319,94,Grays Harbor,Coastal,0
+North Bay/West Channel,North Bay W Channel,3.2,Aberdeen,47  1.15,124  6.59,47.0208,-124.1164,Mud flats along the west channel into North Bay. Nursery area.,LOW,319,95,Grays Harbor,Coastal,0
+North Bay/West Channel,North Bay W Channel,3.2,Aberdeen,47  1.54,124  7.01,47.0317,-124.1169,Mud flats along the west channel into North Bay. Nursery area.,LOW,319,96,Grays Harbor,Coastal,0
+North Bay/West Channel,North Bay W Channel,3.2,Aberdeen,47  0.82,124  5.89,47.0228,-124.1081,Mud flats along the west channel into North Bay. Nursery area.,LOW,319,97,Grays Harbor,Coastal,0
+North Bay/East Channel,North Bay E Channel,3.21,Aberdeen,47  1.92,124  5.54,47.0422,-124.0983,Mud flats along the east channel into North Bay. Nursery area.,LOW,321,98,Grays Harbor,Coastal,0
+North Bay/East Channel,North Bay E Channel,3.21,Aberdeen,47  1.55,124  5.72,47.0319,-124.1033,Mud flats along the east channel into North Bay.,LOW,321,99,Grays Harbor,Coastal,0
+North Bay/East Channel,North Bay E Channel,3.21,Aberdeen,47  1.21,124  5.45,47.0225,-124.0958,Mud flats along the east channel into North Bay. Nursery area.,LOW,321,100,Grays Harbor,Coastal,0
+North Bay/NW Channel,North Bay NW Channel,3.22,Aberdeen,47  1.36,124  8.17,47.0267,-124.1381,Mud flats along the northwest most channel into North Bay during pupping season.,LOW,322,101,Grays Harbor,Coastal,0
+Dock/ Westport Marina,Docks/Westport Marina,3.23,Aberdeen,46 54.38,124  6.33,46.9106,-124.1092,Docks/Westport Marina,ALL,323,,Grays Harbor,Coastal,0
+In Tow,In Tow,3.89,Aberdeen,,,,,animals in tow,ALL,389,,Grays Harbor,Coastal,0
+Unspecified-H2O,Unspecified-H2O,3.99,Aberdeen,?,?,,,Animals in open water,ALL,399,,,NA,0
+Hauled Out Unknown,Hauled Out Unknown,4,Aberdeen,,,,,unknown haulout 4.00,,400,,Olympic Coast S,Coastal,0
+Cape Elizabeth,Cape Elizabeth,4.01,Aberdeen,47 21.32,124 19.19,47.3589,-124.3219,Intertidal reef areas off Cape Elizabeth.,LOW,401,102,Olympic Coast S,Coastal,0
+S of Split Rk (Rk 535),Rock 535/Split Rock/Willoughby Rock,4.02,Aberdeen,47 23.99,124 21.58,47.4108,-124.3661,Unnamed rock (USFWS ID 535) south of Spit Rock.,ALL,402,103,Olympic Coast S,Coastal,0
+Split Rock Area,Rock 535/Split Rock/Willoughby Rock,4.03,Aberdeen,47 24.39,124 21.76,47.4108,-124.3711,Along the west and south sides of Split Rock.,ALL,402,104,Olympic Coast S,Coastal,0
+Split Rock Area (Rk 533/532),Rock 535/Split Rock/Willoughby Rock,4.03,Aberdeen,47 24.44,124 21.50,47.4122,-124.3639,Small intertidal rock (USFWS ID 533) to east of Split Rock.,ALL,402,105,Olympic Coast S,Coastal,0
+Split Rock Area,Rock 535/Split Rock/Willoughby Rock,4.03,Aberdeen,47 24.32,124 21.47,47.4089,-124.3631,Small intertidal rock (USFWS ID 534) to east of Split Rock.,ALL,402,106,Olympic Coast S,Coastal,0
+Willoughby Rock,Rock 535/Split Rock/Willoughby Rock,4.23,Aberdeen,47 24.64,124 21.20,47.4178,-124.3556,South side of Willoughby Rock on intertidal rocks and reefs.,LOW,402,126,Olympic Coast S,Coastal,0
+Sea Lion Rock (South Coast),Rock Sea lion rock (South Coast),4.04,Aberdeen,47  27,124 24.20,47.0333,-124.4056,Sea Lion Rock (USFWS ID 502) about 3 miles northwest of Split Rock.,LOW,404,107,Olympic Coast S,Coastal,0
+Destruction Is./W End,Destruction Island,4.05,Aberdeen,47 40.35,124 29.30,47.6764,-124.4917,Along intertidal channel and reef areas on west end of island.,LOW,405,108,Olympic Coast S,Coastal,0
+Destruction Is./NE End,Destruction Island,4.06,Aberdeen,47 40.73,124 28.76,47.6869,-124.4878,On intertidal reefs and main beach area on the northeast end of island. MA's in winter and spring.,LOW,405,109,Olympic Coast S,Coastal,0
+Islet N of Hoh River,Diamond Rock Reef (Reef N of Hoh River Mouth),4.07,Aberdeen,47 45.23,124 27.24,47.7564,-124.4567,On intertidal reefs just north of the Hoh River 'Diamond Rock'.,LOW,407,110,Olympic Coast S,Coastal,0
+Alexander Is,Alexander Island,4.08,Aberdeen,47 47.90,124 30.23,47.8083,-124.5064,Intertidal areas along the east side of Alexander Island.,LOW,408,111,Olympic Coast S,Coastal,0
+Goodman Creek Area,Mouth of Goodman Creek,4.09,Aberdeen,47 49.24,124 30.66,47.8233,-124.5183,Intertidal rocks on south side of Goodman Creek.,LOW,409,112,Olympic Coast S,Coastal,0
+S of Toleak Point,Reef S of Toleak Point,4.1,Aberdeen,47 49.64,124 32.15,47.8344,-124.5375,Intertidal reef area south of Toleak Point.,LOW,410,113,Olympic Coast S,Coastal,0
+Toleak Point,Toleak Point,4.11,Aberdeen,47 49.96,124 32.60,47.8433,-124.55,Intertidal reef areas at Toleak Point.,LOW,411,114,Olympic Coast S,Coastal,0
+N of Toleak Point,Toleak Point,4.12,Aberdeen,47 50.24,124 32.65,47.84,-124.5514,Intertidal reefs and rocks in bay north of Toleak Point. Nursery area.,LOW,411,115,Olympic Coast S,Coastal,0
+Strawberry Point,Strawberry Point,4.13,Aberdeen,47 50.70,124 33.30,47.8528,-124.5583,Intertidal areas at Strawberry Point.,LOW,413,116,Olympic Coast S,Coastal,0
+Giants Graveyard,Giant's Graveyard,4.14,Aberdeen,47 51.18,124 34.00,47.855,-124.5667,Intertidal areas at Giants Graveyard. Nursery area.,LOW,414,117,Olympic Coast S,Coastal,0
+Giants Graveyard,Giant's Graveyard,4.14,Aberdeen,47 51.01,124 33.76,47.8503,-124.5711,Intertidal areas at Giants Graveyard. Nursery area.,LOW,414,118,Olympic Coast S,Coastal,0
+NE of Giants Graveyard,NE of Giants Graveyard/W of Scotts Bluff,4.15,Aberdeen,47 51.61,124 33.74,47.8669,-124.5706,Intertidal areas northeast of Giants Graveyard during pupping season.,LOW,415,119,Olympic Coast S,Coastal,0
+S Side Teawhit Head,S Side Teawhit Head,4.16,Aberdeen,47 52.26,124 36.37,47.8739,-124.6103,Intertidal reef areas along the south side of Teawhit Head.,LOW,416,120,Olympic Coast S,Coastal,0
+Quillayute Needles,Quillayute Needles,4.17,Aberdeen,47 53.02,124 38.08,47.8839,-124.6356,Intertidal areas on west side of Quilleyute Needles.,LOW,417,121,Olympic Coast S,Coastal,0
+Pt Grenville,Point Grenville,4.18,Aberdeen,47 18.09,124 16.55,47.3025,-124.2819,Intertidal areas at Point Grenville. Intermitent use.,LOW,418,122,Olympic Coast S,Coastal,0
+Kalaloch Rocks,Kalaloch Rocks,4.2,Aberdeen,47 36.11,124 22.71,47.6031,-124.3864,Intertidal reef area at Kalaloch Rocks. Intermittent use.,LOW,420,123,Olympic Coast S,Coastal,0
+Perkins Reef Area (Rk 443),Perkins Reef/Rock 443,4.21,Aberdeen,47 46.79,124 29.63,47.7886,-124.5008,Reef areas inshore from Perkins Reef. Intermittent use.,LOW,421,124,Olympic Coast S,Coastal,0
+Flat Rock (Rk 539),Flat Rock (RK539),4.22,Aberdeen,47 22.68,124 20.72,47.3856,-124.3533,Flat Rock (USFWS ID 539). Intermittent use.,LOW,422,125,Olympic Coast S,Coastal,0
+In Tow,In Tow,4.89,Aberdeen,,,,,animals in tow,ALL,489,,Olympic Coast S,Coastal,0
+Unspecified-H2O,Unspecified-H2O,4.99,Aberdeen,?,?,,,Animals in open water,ALL,499,,,NA,0
+Hauled Out Unknown,Hauled Out Unknown,5,Aberdeen,,,,,unknown haul out location 5.00,,500,,Olympic Coast N,Coastal,0
+S of Cape Johnson,Point S of Chilean Memorial,5.01,Aberdeen,47 57.16,124 40.25,47.9544,-124.6736,Intertidal rocks and reefs south of Cape Johnson.,LOW,501,127,Olympic Coast N,Coastal,0
+S of Cape Johnson,Point S of Chilean Memorial,5.01,Aberdeen,47 57.40,124 40.30,47.9611,-124.675,Intertidal reefs around point south of Cape Johnson.,LOW,501,128,Olympic Coast N,Coastal,0
+S of Cape Johnson,Point S of Chilean Memorial,5.01,Aberdeen,47 57.65,124 39.95,47.9681,-124.6764,Intertidal reefs in bay south of Cape Johnson (Chilean Memorial).,LOW,501,129,Olympic Coast N,Coastal,0
+N of Cape Johnson,N of Cape Johnson/Bluff Point Reef,5.02,Aberdeen,47 58.51,124 41.03,47.9808,-124.6842,"Intertidal reef complex off Cape Johnson, 'Bluff Point Reef'.",LOW,502,130,Olympic Coast N,Coastal,0
+Sandy Is.,Sandy Island,5.03,Aberdeen,47 59.21,124 41.24,47.9892,-124.69,Intertidal reef complex around Sandy Island (USFWS ID 275).,LOW,503,131,Olympic Coast N,Coastal,0
+Reef NE of Sandy Is.,Reef NE of Sandy Island,5.04,Aberdeen,47 59.48,124 40.82,47.9967,-124.6894,Intertidal area off point northeast of Sandy Island.,LOW,504,132,Olympic Coast N,Coastal,0
+Sea Lion Rock,Sea Lion Rock (North coast),5.05,Aberdeen,47 59.59,124 43.45,47.9997,-124.7292,On inshore ledges of Sea Lion Rock (USFWS ID 271 and 272) area.,LOW,505,133,Olympic Coast N,Coastal,0
+Carroll Island,Carroll Island,5.06,Aberdeen,48  0.34,124 43.33,48.0094,-124.7258,On ledges and tunnel areas around entire island.,ALL,506,134,Olympic Coast N,Coastal,0
+E of Jagged Is.,E of Jagged Island,5.07,Aberdeen,47 59.78,124 41.48,48.005,-124.6967,On intertidal reef areas east of Bald Island (Jagged Islet).,LOW,507,135,Olympic Coast N,Coastal,0
+S Cedar Creek Area,Cedar Creek Area,5.08,Aberdeen,48  1.22,124 41.11,48.0228,-124.6864,Reef areas south of Cedar Creek.,LOW,508,136,Olympic Coast N,Coastal,0
+N Cedar Creek Area,Cedar Creek Area,5.08,Aberdeen,48  1.78,124 41.19,48.0383,-124.6886,Reef areas off stack just north of Cedar Creek.,LOW,508,137,Olympic Coast N,Coastal,0
+Norwegian Memorial Area,Cedar Creek Area,5.08,Aberdeen,48  1.52,124 41.04,48.0311,-124.6844,Reef areas north of Cedar Creek off Norwegian Memorial.,LOW,508,138,Olympic Coast N,Coastal,0
+S Yellow Banks,Reef S of Yellow Banks,5.09,Aberdeen,48  5.14,124 41.83,48.0872,-124.7064,Reef areas just south of Yellow Banks.,LOW,509,139,Olympic Coast N,Coastal,0
+Sand Point Area,Sand Point Area,5.1,Aberdeen,48  7.54,124 43.81,48.1317,-124.7392,Reef complex offshore from Sand Point.,LOW,510,140,Olympic Coast N,Coastal,0
+Sand Point Area,Sand Point Area,5.1,Aberdeen,48  7.55,124 42.79,48.1319,-124.7219,Reef complex around Sand Point.,LOW,510,141,Olympic Coast N,Coastal,0
+E of White Rock,Reefs Inshore of White Rock,5.11,Aberdeen,48  8.39,124 43.16,48.1442,-124.7211,Reef complex inshore from White Rock.,LOW,511,142,Olympic Coast N,Coastal,0
+E of White Rock,Reefs Inshore of White Rock,5.11,Aberdeen,48  8.22,124 43.07,48.1394,-124.7186,Reef complex inshore from White Rock.,LOW,511,143,Olympic Coast N,Coastal,0
+Cape Alava Area,Cape Alava/Cannonball Area,5.12,Aberdeen,48  9.86,124 44.19,48.1739,-124.7386,Reef complex around Cape Alava.,LOW,512,144,Olympic Coast N,Coastal,0
+Cape Alava Area,Cape Alava/Cannonball Area,5.12,Aberdeen,48  9.52,124 44.74,48.1644,-124.7539,Reef complex inshore from Ozette Island.,LOW,512,145,Olympic Coast N,Coastal,0
+Bodelteh Is. Area,Bodelteh Island Area,5.13,Aberdeen,48 10.55,124 45.20,48.1819,-124.7556,Reef areas on northeast side of island.,LOW,513,146,Olympic Coast N,Coastal,0
+Bodelteh Is. Area,Bodelteh Island Area,5.13,Aberdeen,48 10.52,124 45.49,48.1811,-124.7636,Reef areas on south side of island.,LOW,513,147,Olympic Coast N,Coastal,0
+W Bodelteh Is. Area,Bodelteh Island Area,5.13,Aberdeen,48 10.67,124 45.89,48.1853,-124.7747,Rocks and reef areas off west end of island.,ALL,513,148,Olympic Coast N,Coastal,0
+Ozette Is. Area,S Ozette Island,5.14,Aberdeen,48  9.32,124 43.85,48.1589,-124.7403,Reef areas southeast of Ozette Island.,LOW,514,149,Olympic Coast N,Coastal,0
+Ozette Is. Area,S Ozette Island,5.14,Aberdeen,48  9.24,124 44.71,48.1567,-124.7531,Intertidal areas on south side of island.,LOW,514,150,Olympic Coast N,Coastal,0
+Umatilla Reef,Umatilla Reef,5.15,Aberdeen,48 11.10,124 47.02,48.1861,-124.7839,Intertidal reef areas at Umatilla Reef.,LOW,515,151,Olympic Coast N,Coastal,0
+N of Cape Alava,"N of Cape Alava/""Guano Rock""",5.16,Aberdeen,48 10.91,124 44.43,48.1919,-124.7453,Unnamed rock 'Guano Rock'  (USFWS ID 158) northwest from Cape Alava.,ALL,516,152,Olympic Coast N,Coastal,0
+S of Point of Arches,S of Point of Arches,5.17,Aberdeen,48 14.17,124 42.17,48.2381,-124.7047,Reef areas south of Point of Arches.,LOW,517,153,Olympic Coast N,Coastal,0
+S of Point of Arches,S of Point of Arches,5.17,Aberdeen,48 14.54,124 42.39,48.2483,-124.7108,Reef areas south of Point of Arches.,LOW,517,154,Olympic Coast N,Coastal,0
+S of Point of Arches,S of Point of Arches,5.17,Aberdeen,48 14.42,124 42.35,48.245,-124.7097,Reef areas south of Point of Arches.,LOW,517,155,Olympic Coast N,Coastal,0
+S of Point of Arches,S of Point of Arches,5.17,Aberdeen,48 14.04,124 42.28,48.2344,-124.7078,Inshore ledges on 'Cook Rock' (USFWS ID 119).,LOW,517,156,Olympic Coast N,Coastal,0
+Point of Arches,Point of Arches,5.18,Aberdeen,48 14.92,124 42.11,48.2589,-124.7031,Intertidal reef areas on south side of Point of Arches.,LOW,518,157,Olympic Coast N,Coastal,0
+Portage Head Area,Portage Head Area,5.19,Aberdeen,48 16.76,124 40.97,48.2878,-124.6936,Reef areas off 'shipwreck' beach.,LOW,519,158,Olympic Coast N,Coastal,0
+Waatch Point,Waatch Point,5.2,Aberdeen,48 20.39,124 41.56,48.3442,-124.6989,Rocks and reef areas off Waatch Point.,LOW,520,159,Olympic Coast N,Coastal,0
+S of Fuca Pillar/Skagway,S of Fuca Pillar/Skagway,5.21,Aberdeen,48 22.22,124 43.68,48.3728,-124.7356,Rocks and reef areas around Skagway Rocks and Fuca Pillar.,LOW,521,160,Olympic Coast N,Coastal,0
+Tatoosh Is. Area,Tatoosh Island Area,5.22,Aberdeen,48 23.53,124 44.34,48.3981,-124.7428,Intertidal rocks off west side of island.,LOW,522,161,Olympic Coast N,Coastal,0
+Tatoosh Is. Area,Tatoosh Island Area,5.22,Aberdeen,48 23.57,124 44.57,48.3992,-124.7492,Intertidal rocks and reef areas off west side of island.,ALL,522,162,Olympic Coast N,Coastal,0
+E Tatoosh Is. Area,Tatoosh Island Area,5.22,Aberdeen,48 23.51,124 43.83,48.3975,-124.7397,Intertidal rocks on east side of island.,ALL,522,163,Olympic Coast N,Coastal,0
+Allen's Bay/Midway Area,Midway Beach/W of Allens Bay/Lk Ozette,5.23,Aberdeen,48  3.69,124 41.69,48.0692,-124.7025,Reef areas along midway beach (off Allen's Bay in Lake Ozette).,LOW,523,164,Olympic Coast N,Coastal,0
+Allen's Bay/Midway Area,Midway Beach/W of Allens Bay/Lk Ozette,5.23,Aberdeen,48  3.25,124 41.51,48.0569,-124.6975,Reef areas off south end of Lake Ozette.,LOW,523,165,Olympic Coast N,Coastal,0
+N Yellow Banks,Reef N of Yellow Banks,5.24,Aberdeen,48  6.16,124 41.63,48.1044,-124.7008,Reef area at point north of Yellow Banks.,LOW,524,166,Olympic Coast N,Coastal,0
+Duk Point Area,Duk Point Area,5.25,Aberdeen,48 12.23,124 42.08,48.2064,-124.7022,On scattered rocks and reef areas off Duk Point.,LOW,525,167,Olympic Coast N,Coastal,0
+Father and Son Area,Father and Son Area,5.26,Aberdeen,48 13.57,124 42.70,48.2325,-124.7194,Intertidal ledges on inshore side of Father and Son Rocks.,LOW,526,168,Olympic Coast N,Coastal,0
+Inshore of Father and Son,Inshore of Father and Son,5.27,Aberdeen,48 13.64,124 41.92,48.2344,-124.7089,Reef areas inshore from Father and Son Rocks.,LOW,527,169,Olympic Coast N,Coastal,0
+Strawberry Rocks/ Anderson Point,Strawberry Rocks,5.28,Aberdeen,48 19.00,124 41.99,48.3167,-124.7108,North Portage Head,Low low,528,,Olympic Coast N,Coastal,0
+In Tow,In Tow,5.89,Aberdeen,,,,,animals in tow,,589,,Olympic Coast N,Coastal,0
+Unspecified-H2O,Unspecified-H2O,5.99,Aberdeen,?,?,,,Animals in open water,ALL,599,,,NA,0
+Hauled Out Unknown,Hauled Out Unknown,6,Aberdeen,,,,,unknown haul out location 6.00,,600,,Strait of Juan de Fuca,Northern Inland,0
+Waadah Is.,Waadah Island Area,6.01,Aberdeen,48 22.93,124 35.50,48.3925,-124.5972,Reef area on east side of Waadah Island.,LOW,601,170,Strait of Juan de Fuca,Northern Inland,0
+N Waadah Is.,Waadah Island Area,6.01,Aberdeen,48 23.15,124 35.98,48.3875,-124.6106,On north tip of island.,ALL,601,171,Strait of Juan de Fuca,Northern Inland,0
+Seal and Sail Rock Area,Seal & Sail Rock Area,6.02,Aberdeen,48 21.71,124 32.74,48.3697,-124.5539,Intertidal areas on Seal Rock.,LOW,602,172,Strait of Juan de Fuca,Northern Inland,0
+Seal and Sail Rock Area,Seal & Sail Rock Area,6.02,Aberdeen,48 21.55,124 32.63,48.3653,-124.5508,Intertidal areas on Sail Rock.,LOW,602,173,Strait of Juan de Fuca,Northern Inland,0
+Seal and Sail Rock Area,Seal & Sail Rock Area,6.02,Aberdeen,48 21.16,124 31.90,48.3544,-124.5417,Intertidal reef areas east of Sail Rock.,LOW,602,174,Strait of Juan de Fuca,Northern Inland,0
+W of Seiku River Mouth,WEST OF SEIKU RIVER,6.03,Aberdeen,48 18.07,124 24.76,48.3019,-124.4211,Intertidal reef areas west of Sekiu River.,LOW,603,175,Strait of Juan de Fuca,Northern Inland,0
+W of Seiku River Mouth,WEST OF SEIKU RIVER,6.03,Aberdeen,48 18.30,124 25.18,48.3083,-124.4217,Intertidal reef areas west of Sekiu River.,LOW,603,176,Strait of Juan de Fuca,Northern Inland,0
+Eagle Point Area,KYDAKA POINT TO SEIKU POINT,6.04,Aberdeen,48 16.48,124 19.48,48.28,-124.33,Intertidal ledges east of Eagle Point.,LOW,604,179,Strait of Juan de Fuca,Northern Inland,0
+Eagle Point Area,KYDAKA POINT TO SEIKU POINT,6.04,Aberdeen,48 16.75,124 20.44,48.2875,-124.3456,Intertidal ledges east of Eagle Point.,LOW,604,177,Strait of Juan de Fuca,Northern Inland,0
+Eagle Point Area,KYDAKA POINT TO SEIKU POINT,6.04,Aberdeen,48 16.58,124 19.97,48.2828,-124.3436,Intertidal ledges east of Eagle Point.,LOW,604,178,Strait of Juan de Fuca,Northern Inland,0
+Slip Point Area,SLIP POINT AREA,6.05,Aberdeen,48 15.73,124 14.03,48.2703,-124.2342,Intertidal ledges east of Slip Point.,LOW,605,180,Strait of Juan de Fuca,Northern Inland,0
+Slip Point Area,SLIP POINT AREA,6.05,Aberdeen,48 15.44,124 13.43,48.2622,-124.2286,Intertidal ledges east of Slip Point.,LOW,605,181,Strait of Juan de Fuca,Northern Inland,0
+Slip Point Area,SLIP POINT AREA,6.05,Aberdeen,48 15.03,124 12.37,48.2508,-124.2103,Intertidal ledges east of Slip Point.,LOW,605,182,Strait of Juan de Fuca,Northern Inland,0
+W of Pillar Point Area,PILLAR POINT AREA,6.06,Aberdeen,48 13.30,124  7.06,48.225,-124.1183,Intertidal ledges west of Pillar Point.,LOW,606,183,Strait of Juan de Fuca,Northern Inland,0
+W of Pillar Point Area,PILLAR POINT AREA,6.06,Aberdeen,48 13.07,124  6.05,48.2186,-124.1014,Intertidal ledges west of Pillar Point.,LOW,606,184,Strait of Juan de Fuca,Northern Inland,0
+W of Pillar Point Area,PILLAR POINT AREA,6.06,Aberdeen,48 13.64,124  8.26,48.2344,-124.1406,Intertidal ledges west of Pillar Point.,LOW,606,185,Strait of Juan de Fuca,Northern Inland,0
+Deep Creek Area,Pyst River to Twin Rivers,6.07,Aberdeen,48 10.70,124  2.57,48.1861,-124.0492,Reef areas off Deep Creek.,LOW,607,186,Strait of Juan de Fuca,Northern Inland,0
+Deep Creek Area,Pyst River to Twin Rivers,6.07,Aberdeen,48 10.56,124  1.48,48.1822,-124.03,Reef areas off Deep Creek.,LOW,607,187,Strait of Juan de Fuca,Northern Inland,0
+Deep Creek Area,Pyst River to Twin Rivers,6.07,Aberdeen,48 10.39,124  0.24,48.1775,-124.0067,Reef areas off Deep Creek.,LOW,607,188,Strait of Juan de Fuca,Northern Inland,0
+Low Point/Lyre R. Area,Twin River to Lyre River,6.08,Port Townsend,48  9.62,123 49.88,48.1672,-123.8411,Scattered rocks and reef areas east of Lyre River.,LOW,608,189,Strait of Juan de Fuca,Northern Inland,0
+Crescent Bay/Tongue Pt.,Tongue Point to Observatory Point,6.09,Port Townsend,48 10.07,123 42.50,48.1686,-123.7139,Intertidal areas off Tongue Point.,LOW,609,190,Strait of Juan de Fuca,Northern Inland,0
+Striped Peak Area,Tongue Point to Observatory Point,6.1,Port Townsend,48  9.85,123 40.80,48.1736,-123.6889,Intertidal ledges north of Striped Peak.,LOW,610,191,Strait of Juan de Fuca,Northern Inland,0
+Striped Peak Area,Tongue Point to Observatory Point,6.1,Port Townsend,48  9.85,123 41.33,48.1736,-123.6925,Intertidal ledges north of Striped Peak.,LOW,610,192,Strait of Juan de Fuca,Northern Inland,0
+Striped Peak Area,Tongue Point to Observatory Point,6.1,Port Townsend,48  9.73,123 40.03,48.1703,-123.6675,Intertidal ledges north of Striped Peak.,LOW,610,193,Strait of Juan de Fuca,Northern Inland,0
+Striped Peak Area,Tongue Point to Observatory Point,6.1,Port Townsend,48  9.60,123 39.65,48.1667,-123.6681,Intertidal ledges north of Striped Peak.,LOW,610,194,Strait of Juan de Fuca,Northern Inland,0
+Port Angeles Area,Port Angeles Hospital and Old Mill,6.11,Port Townsend,48  7.07,123 24.67,48.1186,-123.4186,Log booms off the ITT-Rayonier mill site (closed in 1997).,LOW,611,195,Strait of Juan de Fuca,Northern Inland,0
+Port Angeles Area,Ediz Hook paper mill & Log Booms,6.12,Port Townsend,48  8.21,123 27.46,48.1392,-123.4628,Log booms on inside of Ediz Hook in Port Angeles harbor.,LOW,612,196,Strait of Juan de Fuca,Northern Inland,0
+Rocks E of Pysht R.,Pyst River to  Twin Rivers,6.13,Port Townsend,48 11.86,124  5.25,48.2072,-124.0903,Scattered intertidal rocks and reef areas east of the Pysht River.,LOW,613,197,Strait of Juan de Fuca,Northern Inland,0
+Twin River Area,Twin River to Lyre River,6.14,Port Townsend,48  9.76,123 55.06,48.1711,-123.9183,Scattered intertidal rocks and reef areas near Twin Rivers.,LOW,614,198,Strait of Juan de Fuca,Northern Inland,0
+Twin River Area,Twin River to Lyre River,6.14,Port Townsend,48  9.82,123 52.69,48.1728,-123.8858,Scattered intertidal rocks and reef areas near Twin Rivers.,LOW,614,199,Strait of Juan de Fuca,Northern Inland,0
+Seabird Rocks,Seabird Rocks,6.15,Port Townsend,48 44.91,125  9.32,48.7586,-125.1589,Intertidal rocks and reef areas around Seabird Rocks.,LOW,615,200,BC,CANADA,0
+Sombrio Pt Reef,Sombrio Pt/Sombrio Reef,6.16,Port Townsend,48 29.72,124 17.99,48.5033,-124.3108,Intertidal rocks and reef areas around Sombrio Point.,LOW,616,201,BC,CANADA,0
+Sombrio Pt,Sombrio Pt/Sombrio Reef,6.16,Port Townsend,48 29.11,124 17.25,48.4864,-124.2903,Intertidal ledges near Sombrio Point.,LOW,616,202,BC,CANADA,0
+Carmanah Pt. Reef,Rock W of Carmanah Point,6.17,Port Townsend,48 36.96,124 45.62,48.6267,-124.7672,Offshore rock near Carmanah Point.,LOW,617,203,BC,CANADA,0
+Dare Pt. Reef,Dare Pt Reef,6.18,Port Townsend,48 38.64,124 48.11,48.6511,-124.8031,Reef area off Dare Point.,LOW,618,204,BC,CANADA,0
+Sooke Harbor,Sooke Harbor,6.19,Port Townsend,48 21.32,123 43.43,48.3589,-123.7286,Sooke Harbor area.,LOW,619,205,BC,CANADA,0
+Sooke Harbor,Sooke Harbor,6.19,Port Townsend,48 22.26,123 42.90,48.3739,-123.725,Intertidal area off Sooke Harbor.,LOW,619,206,BC,CANADA,0
+Otter Point,Otter Point,6.21,Port Townsend,48 21.48,123 49.43,48.3633,-123.8286,Intertidal rocks and reef areas off Otter Point.,LOW,621,207,BC,CANADA,0
+NW of Church Pt,NW of Church Pt,6.22,Port Townsend,48 18.79,123 35.40,48.3219,-123.5944,Intertidal rocks and reef areas off Church Point.,LOW,622,208,BC,CANADA,0
+Becher Bay,Beecher Bay,6.23,Port Townsend,48 19.68,123 36.55,48.3356,-123.6153,Intertidal rocks and reef areas around small island in Becher Bay.,LOW,623,209,BC,CANADA,0
+Muir Pt,Muir Point,6.24,Port Townsend,48 22.75,123 52.25,48.3875,-123.8736,Intertidal rocks and reef areas off Muir Point.,LOW,624,210,BC,CANADA,0
+E San Simon Pt,E San Simon Point,6.25,Port Townsend,48 26.02,124  5.48,48.4339,-124.0967,Intertidal ledges and rocks east of San Simon Point.,LOW,625,211,BC,CANADA,0
+Owen Pt,Owen Point,6.26,Port Townsend,48 32.68,124 29.99,48.5522,-124.5108,Intertidal ledges and rocks off Owen Point.,LOW,626,212,BC,CANADA,0
+W Tsuquanah Pt,W Tsuquanah Point,6.27,Port Townsend,48 40.40,124 52.91,48.6778,-124.8919,Intertidal rocks and reef areas west of Tsuquanah Point.,LOW,627,213,BC,CANADA,0
+E Pachena Pt,Pachena Point,6.28,Port Townsend,48 43.21,125  4.81,48.7225,-125.0892,Intertidal rocks and reef areas east of Pachena Point.,LOW,628,214,BC,CANADA,0
+E of Cape Beale,CAPE BEALE AREA,6.29,Port Townsend,48 47.03,125 10.51,48.7842,-125.1808,Intertidal rocks and reef areas east of Cape Beale.,LOW,629,215,BC,CANADA,0
+Cullite Cove,Cullite Cove,6.3,Port Townsend,48 34.12,124 37.10,48.57,-124.6194,Intertidal rocks and reef areas off Cullite Cove.,LOW,630,216,BC,CANADA,0
+Walbran Creek,Walbran Creek,6.31,Port Townsend,48 34.81,124 39.91,48.5892,-124.6753,Intertidal rocks and reef areas off Walbran Creek.,LOW,631,217,BC,CANADA,0
+Cerrantes Rocks,Cerrantes Rocks,6.32,Port Townsend,48 31.67,124 27.17,48.5353,-124.4547,Intertidal ledges and reef areas at Cerantes Rocks.,LOW,632,218,BC,CANADA,0
+Folger,Folger,6.33,Victoria,unknown,unknown,,,unknown,,633,532,BC,CANADA,0
+Wouwer,Wouwer,6.34,Victoria,unknown,unknown,,,unknown,,634,533,BC,CANADA,0
+Felice Chain/Mara,Felice Chain/Mara,6.35,Victoria,unknown,unknown,,,unknown,,635,534,BC,CANADA,0
+Forbes Rocks,Forbes Rocks,6.36,Victoria,unknown,unknown,,,unknown,,636,535,BC,CANADA,0
+George Frasier Island,George Frasier Island,6.37,Victoria,unknown,unknown,,,unknown,,637,536,BC,CANADA,0
+W-y-a Pt.,W-y-a Pt.,6.38,Victoria,unknown,unknown,,,unknown,,638,537,BC,CANADA,0
+Rocks off Longbeach,Rocks off Longbeach (Outside Vancouver Island),6.39,Victoria,unknown,unknown,,,unknown,,639,538,BC,CANADA,0
+S.W. Flores Is. Cow Bay,S.W. Flores Is. Cow Bay,6.4,Victoria,49 15.65,126 10.16,49.2681,-126.1711,S.W. of Flores Island,,640,,BC,CANADA,0
+Rafael Point,Rafael Point,6.41,Victoria,unknown,unknown,,,Rafael Point,,641,539,BC,CANADA,0
+Rks. Off Kanim Lake,Rks. Off Kanim Lake,6.42,Victoria,unknown,unknown,,,unknown,,642,541,BC,CANADA,0
+Hesquiat Pt.,Hesquiat Pt.,6.43,Victoria,unknown,unknown,,,unknown,,643,542,BC,CANADA,0
+Rks. Off Estevan Pt.,Rks. Off Estevan Pt.,6.44,Victoria,unknown,unknown,,,unknown,,644,543,BC,CANADA,0
+Adventure Point,Adventure Point,6.45,Victoria,unknown,unknown,,,Adventure Point,,645,,BC,CANADA,0
+Plover,Plover,6.46,Victoria,unknown,unknown,,,unknown,,646,545,BC,CANADA,0
+Escalante Point Nootka Sound,Escalante Point Nootka Sound,6.47,Victoria,unknown,unknown,,,Escalante Point Nootka Sound,,647,,BC,CANADA,0
+Slant Rock,Slant Rock,6.48,Victoria,48 23.47,124 40.85,48.3964,-124.6903,Slant Rock,,648,,Strait of Juan de Fuca,Northern Inland,0
+Neah Bay Marina,Neah Bay Marina,6.49,Victoria,48 22.1,124 36.7,48.3669,-124.6019,NEAH BAY MARINA,ALL,649,,Strait of Juan de Fuca,Northern Inland,0
+Low Point to  Cresent bay,Lyre River to Cresent Bay,6.51,Victoria,48  9.37,123 46 6,48.1603,-123.7683,Intertidal rocks and reefs between Low point and Cresent bay,Low,651,,Strait of Juan de Fuca,Northern Inland,0
+In Tow,In Tow,6.89,Victoria,,,,,animals in tow,,689,,Strait of Juan de Fuca,Northern Inland,0
+Unspecified-H2O,Unspecified-H2O,6.99,Port Townsend,?,?,,,Animals in open water,ALL,699,,,NA,0
+Hauled Out Unknown,Hauled Out Unknown,7,Port Townsend,,,,,unknown haul out location 7.00,,700,,Strait of Juan de Fuca,Northern Inland,0
+Graveyard Spit,Dungeness Bay/Graveyard Spit,7.01,Port Townsend,48  9.65,123  8.86,48.1681,-123.1572,Beach areas around Graveyard Spit in Dungeness Bay. Nursery area.,LOW,701,219,Strait of Juan de Fuca,Northern Inland,0
+Dungeness Bay Area,Dungeness Bay/Graveyard Spit,7.03,Port Townsend,48 10.05,123  8.56,48.1681,-123.1489,Along beach on east side of Dungeness Bay.,LOW,701,221,Strait of Juan de Fuca,Northern Inland,0
+Dungeness Bay Area,Dungeness Bay/Graveyard Spit,7.03,Port Townsend,48  9.65,123  9.34,48.1681,-123.1594,Along north side of main channel in Dungeness Bay.,LOW,701,222,Strait of Juan de Fuca,Northern Inland,0
+Dungeness Spit End,Dungeness Bay/Graveyard Spit,7.02,Port Townsend,48 11.07,123  5.98,48.1853,-123.1106,On beach at tip of Dungeness Spit.,LOW,702,220,Strait of Juan de Fuca,Northern Inland,0
+Grays Marsh (Kulakala Pt),Kulakala Pt/Grays Marsh,7.04,Port Townsend,48  7.14,123  3.59,48.1206,-123.0664,Beach and shoal areas near Gray's Marsh (Kulakala Point).,LOW,704,223,Strait of Juan de Fuca,Northern Inland,0
+"Protection Is, Kanem Spit",Protection Is/Kanem Spit,7.05,Port Townsend,48  7.13,122 56.70,48.1203,-122.9528,On beach and spit areas around Kanem Point. Nursery area.,LOW,705,224,Strait of Juan de Fuca,Northern Inland,0
+"Protection Is, Violet Pt",Protection Island/Violet Pt & North Pt,7.06,Port Townsend,48  7.63,122 54.47,48.1342,-122.9131,On beach area around Violet Point. Nursery area.,LOW,706,225,Strait of Juan de Fuca,Northern Inland,0
+Smith Is. Area,Smith Island Area,7.07,Port Townsend,48 19.08,122 50.20,48.3189,-122.8389,On beaches and rocks on south side of island.,LOW,707,226,Strait of Juan de Fuca,Northern Inland,0
+Smith Is. Area,Smith Island Area,7.07,Port Townsend,48 19.21,122 50.10,48.3225,-122.8361,On scattered rocks along north side of island.,LOW,707,227,Strait of Juan de Fuca,Northern Inland,0
+Minor Is. Area,Minor Is. Area,7.08,Port Townsend,48 19.33,122 49.37,48.3258,-122.8269,On beach along south side of island. Nursery area.,LOW,708,228,Strait of Juan de Fuca,Northern Inland,0
+Minor Is. Area,Minor Is. Area,7.08,Port Townsend,48 19.46,122 48.97,48.3294,-122.8269,On beach along north side of island. Nursery area.,LOW,708,229,Strait of Juan de Fuca,Northern Inland,0
+Kilisut Harbor Spit,Rat Island/ Enterence to Kilisut Harbaor,7.09,Port Townsend,48  5.32,122 43.99,48.0922,-122.7442,Along beach and spit at entrance into Kilisut Harbor.,LOW,709,230,Strait of Juan de Fuca,Northern Inland,0
+E of Marrowstone Is.,Craven Rocks/Eratics/East Side Marowstone Isl,7.1,Port Townsend,48  2.86,122 40.72,48.0572,-122.6867,Scattered intertidal rocks along northeast side of island.,LOW,710,231,Strait of Juan de Fuca,Northern Inland,0
+E of Marrowstone Is.,Craven Rocks/Eratics/East Side Marowstone Isl,7.1,Port Townsend,48  4.69,122 41.11,48.0858,-122.6864,Scattered intertidal rocks along southeast side of island.,LOW,710,232,Strait of Juan de Fuca,Northern Inland,0
+Craven Rock,Craven Rocks/Eratics/East Side Marowstone Isl,7.1,Port Townsend,48  4.72,122 41.21,48.0867,-122.6892,Craven rock,ALL,710,,Strait of Juan de Fuca,Northern Inland,0
+"Sequim Bay, Kiapot Pt",SEQUIM BAY/TRAVIS SPIT,7.12,Port Townsend,48  4.74,123  2.41,48.0872,-123.0447,West end of Kiapot Point at entrance to Sequim Bay.,LOW,712,233,Strait of Juan de Fuca,Northern Inland,0
+Discovery Bay Area,DISCOVERY BAY/CONTRACTORS POINT,7.14,Port Townsend,48  2.87,122 52.28,48.0575,-122.8744,Along beaches and spit areas on west side of Discovery Bay.,LOW,714,234,Strait of Juan de Fuca,Northern Inland,0
+Snake Rock,KLAS/COLVOS/SNAKE ROCKS,7.15,Port Townsend,47 56.90,122 40.68,47.9583,-122.6856,Intertidal shoal and rocks around Snake rock,High high,715,,Strait of Juan de Fuca,Northern Inland,0
+Klas Rocks,KLAS/COLVOS/SNAKE ROCKS,7.15,Port Townsend,47 57.75,122 40.24,47.9708,-122.6733,Intertidal shoals around Klas Rock.,LOW,715,235,Strait of Juan de Fuca,Northern Inland,0
+Colvos Rocks,KLAS/COLVOS/SNAKE ROCKS,7.15,Port Townsend,47 56.96,122 39.96,47.96,-122.6767,Intertidal shoals and rocks around Colvos Rock.,LOW,715,236,Strait of Juan de Fuca,Northern Inland,0
+Rocks off Tala Pt.,ERRATIC S OF TALA PT,7.16,Port Townsend,47 55.61,122 39.21,47.9336,-122.6558,Scattered intertidal rocks off Tala Point.,ALL,716,253,Strait of Juan de Fuca,Northern Inland,0
+Indian Is. Security Fence,NAVY INDIAN IS PORT SECURITY BARRIER,7.17,Port Townsend,48   4.5,122 45.2,48.0001,-122.7506,Navy Indian Island Navy Port Security Barrier,ALL,717,,Strait of Juan de Fuca,Northern Inland,0
+South of Crane point/ west side of Indian island,CRANE PT/WEST SIDE INDIAN IS,7.18,Port Townsend,48   2.5,122 44.5,48.0001,-122.7347,Intertidal rocks just N of Marrow stone Bridge,LOW,718,,Strait of Juan de Fuca,Northern Inland,0
+Pt. Wilson Red Buoy,Pt. Wilson Red Buoy,7.19,Port Townsend,48  9.17,122 45.62,48.1547,-122.7672,,ALL,719,,Strait of Juan de Fuca,Northern Inland,1
+Port Townsend Red Buoy,Port Townsend Red Buoy,7.2,Port Townsend,48  7.66,122 44.66,48.135,-122.7517,,ALL,720,,Strait of Juan de Fuca,Northern Inland,1
+In Tow,In Tow,7.89,Port Townsend,,,,,animals in tow,,789,,Strait of Juan de Fuca,Northern Inland,0
+Unspecified-H2O,Unspecified-H2O,7.99,Port Townsend,?,?,,,Animals in open water,ALL,799,,,NA,0
+Hauled Out Unknown,Hauled Out Unknown,8,Seattle,,,,,unknown haul out location 8.00,,800,,Hood Canal,Hood Canal,0
+Port Gamble Bay,Port Gamble Bay/Log Booms/Net pen,8.02,Seattle,47 50.39,122 34.90,47.8442,-122.5917,North log booms along west side of Port Gamble Bay.,ALL,802,237,Hood Canal,Hood Canal,0
+Port Gamble Bay,Port Gamble Bay/Log Booms/Net pen,8.02,Seattle,47 50.01,122 34.90,47.8336,-122.5917,South log booms along west side of Port Gamble Bay.,ALL,802,238,Hood Canal,Hood Canal,0
+Quilcene Bay,Quilcene Bay/Log Booms/Net PEN,8.03,Seattle,47 48.86,122 51.05,47.8239,-122.8514,Log booms on east side of bay.,HIGH,803,239,Hood Canal,Hood Canal,0
+Quilcene Bay,QUILCENE BAY/LOG BOOMS/NET PEN,8.03,Seattle,47 49.43,122 51.47,47.8286,-122.8631,Along channels during high tides.,HIGH,803,240,Hood Canal,Hood Canal,0
+Quilcene Bay,QUILCENE BAY/LOG BOOMS/NET PEN,8.03,Seattle,47 47.55,122 50.99,47.7986,-122.8608,On net pens and rafts along west side of Bolton Peninsula.,HIGH,803,241,Hood Canal,Hood Canal,0
+Dosewallips R.,DOSEWALLIPS RIVER CHANNELS,8.04,Seattle,47 41.15,122 53.75,47.6875,-122.9042,Along channels north of river mouth during high tides.,HIGH,804,242,Hood Canal,Hood Canal,0
+Dosewallips R.,DOSEWALLIPS RIVER CHANNELS,8.04,Seattle,47 41.38,122 53.65,47.6939,-122.9014,Areas along channels at mouth of river during high tides.,HIGH,804,243,Hood Canal,Hood Canal,0
+Duckabush R.,DUCKABUSH R CHANNELS,8.05,Seattle,47 38.93,122 55.94,47.6592,-122.9428,Areas along channels north of river mouth during high tides.,HIGH,805,244,Hood Canal,Hood Canal,0
+Duckabush R.,DUCKABUSH R CHANNELS,8.05,Seattle,47 39.06,122 55.87,47.6517,-122.9408,Areas south of river mouth during high tides.,HIGH,805,245,Hood Canal,Hood Canal,0
+Hamma-Hamma R.,HAMMA HAMMA R CHANNELS,8.06,Seattle,47 32.71,123  2.18,47.5531,-123.0383,Along channels and beach areas north of river during high tides.,HIGH,806,246,Hood Canal,Hood Canal,0
+Jorsted Creek,Jorsted Creek,8.07,Seattle,47 31.72,123  2.86,47.5367,-123.0572,On log booms off Jorstad Creek.,HIGH,807,247,Hood Canal,Hood Canal,0
+Skokomish R.,SKOKOMISH R CHANNELS,8.08,Seattle,47 20.57,123  7.00,47.3492,-123.1167,Along channels off river mouth during high tides.,HIGH,808,248,Hood Canal,Hood Canal,0
+Skokomish R.,SKOKOMISH R CHANNELS,8.08,Seattle,47 20.48,123  7.36,47.3467,-123.1267,Along channels and beaches west of river mouth during high tides.,HIGH,808,249,Hood Canal,Hood Canal,0
+Skokomish-East,SKOKOMISH R CHANNELS,8.08,Seattle,47 20.58,123  6.67,47.3494,-123.1186,Along channels and beaches east of main river mouth,High high,808,,Hood Canal,Hood Canal,0
+Skokomish-W/Lagoon,SKOKOMISH R CHANNELS,8.08,Seattle,47 20.5,123  8.21,47.3347,-123.1392,Along channels and beaches west in  Lagoon Area,High high,808,,Hood Canal,Hood Canal,0
+Belfair Floats,FLOATS/LYNCH COVE TO TWANOH STATE PARK,8.09,Seattle,47 25.05,122 52.31,47.4181,-122.8753,On rafts and floats along south side.,ALL,809,250,Hood Canal,Hood Canal,0
+Belfair Floats,FLOATS/LYNCH COVE TO TWANOH STATE PARK,8.09,Seattle,47 24.44,122 53.32,47.4122,-122.8922,On rafts and floats along south side.,ALL,809,251,Hood Canal,Hood Canal,0
+Belfair Floats,FLOATS/LYNCH COVE TO TWANOH STATE PARK,8.09,Seattle,47 24.14,122 53.69,47.4039,-122.9025,On rafts and floats along south side.,ALL,809,252,Hood Canal,Hood Canal,0
+Dabob Bay/Long Spit,DABOB BAY/LONG SPIT,8.11,Seattle,47 50.86,122 48.54,47.8572,-122.815,Beach and floats at Long Spit during high tides.,HIGH,811,254,Hood Canal,Hood Canal,0
+Dabob Bay/Broad Spit,DABOB BAY/BROAD SPIT/OYSTER RAFTS,8.12,Seattle,47 49.14,122 49.33,47.8206,-122.8258,On rafts and floats on east side of Bolton Peninsula at Broad Spit.,HIGH,812,255,Hood Canal,Hood Canal,0
+Dabob Bay/Pullali Pt.,DABOB BAY/BROAD SPIT/OYSTER RAFTS,8.13,Seattle,47 44.22,122 51.44,47.7394,-122.8622,Intertidal rocks off Pulali Point in Dabob Bay.,HIGH,813,,Hood Canal,Hood Canal,0
+Fulton Creek,BETWEEN FULTON CR AND MCDANIEL COVE,8.14,Seattle,47 37.02,122 58.34,47.6172,-122.9761,?,High high,814,256,Hood Canal,Hood Canal,0
+Robbinswald Pier,LOGS S OF CAMP ROBBINSWOLD,8.15,Seattle,47 34.68,123 0.35,47.5856,-123.0014,?,High high,815,,Hood Canal,Hood Canal,0
+Danger Rock,Seal / DangerRock ( Hood Canal),8.16,Seattle,47 42.88,122 53.02,47.7244,-122.8839,?,High high,816,,Hood Canal,Hood Canal,0
+Alderbrook Floats,FLOATS/ALDERBROOK TO UNION,8.17,Seattle,47 21.17,123 4.78,47.3547,-123.0689,Floats in bay,High high,817,,Hood Canal,Hood Canal,0
+S. of Mike's Resort Float,Between  Hoodsport and Liilliwaup Bay,8.18,Seattle,47 25.99,123 7.42,47.4442,-123.1172,Floats near Mike's Resort,High high,818,,Hood Canal,Hood Canal,0
+Sisters Rock (Hood Canal Bridge),SISTERS ROCK/HOOD CANAL BRIDGE,8.19,Seattle,47 51.51,122 38.50,47.8642,-122.6472,,,819,,Hood Canal,Hood Canal,0
+Floats/ lynch cove to Sister Point,FLOATS/LYNCH COVE TO SISTERS POINT,8.2,Seattle,47 21.82,,47.3728,-123.0143,,,820,,Hood Canal,Hood Canal,0
+Triton Cove,ROCKS AT TRITON HEAD,8.21,Seattle,47 36.37,122 58.49,47.6103,-122.9803,,,821,,Hood Canal,Hood Canal,0
+Bangor Secrurity Fence/ Area,BANGOR/PORT SECURITY BARRAIRS/SUBS,8.22,Seattle,47 44.36,122 44.26,47.7433,-122.7406,,,822,,Hood Canal,Hood Canal,0
+In Tow,In Tow,8.89,Seattle,,,,,animals in tow,,889,,Hood Canal,Hood Canal,0
+Unspecified-H2O,Unspecified-H2O,8.99,Seattle,?,?,,,Animals in open water,ALL,899,,,NA,0
+Hauled Out Unknown,Hauled Out Unknown,9,Port Townsend,,,,,unknown haul out location 9.00,,900,,Eastern Bays,Northern Inland,0
+Pt Roberts/SE Rocks,Point Roberts/SE Rocks,9.02,Port Townsend,48 58.46,123  1.13,48.9794,-123.0203,Scattered intertidal rocks off southeast corner of Pt. Roberts.,LOW,902,257,Eastern Bays,Northern Inland,0
+West Boundary Bay,BOUNDARY BAY/OFF AIRPORT RUNWAY,9.03,Port Townsend,49  2.63,123  0.31,49.0508,-123.0086,Along channels in northwest Boundary Bay. Nursery area.,LOW,903,258,Eastern Bays,Northern Inland,0
+"Boundary Bay, off Runway",BOUNDARY BAY/OFF AIRPORT RUNWAY,9.04,Port Townsend,49  2.45,122 59.37,49.0458,-122.9936,Main channel south of Boundary Bay airport. Nursery area.,LOW,904,259,Eastern Bays,Northern Inland,0
+E Boundary Bay (Mud Bay),BOUNDARY BAY/MUD BAY/TRESTLE,9.05,Port Townsend,49  2.83,122 55.57,49.0564,-122.9325,Channels northwest from Cresent Beach. Nursery area.,LOW,905,260,Eastern Bays,Northern Inland,0
+E Boundary Bay (Mud Bay),BOUNDARY BAY/MUD BAY/TRESTLE,9.05,Port Townsend,49  4.19,122 53.78,49.0719,-122.905,Channels in Mud Bay. Nursery area.,LOW,905,261,Eastern Bays,Northern Inland,0
+Rocks off Kwomais Pt.,KWOMAIS PT,9.06,Port Townsend,49  1.74,122 52.52,49.0372,-122.8811,Scattered intertidal rocks off Kwomais Point.,LOW,906,262,Eastern Bays,Northern Inland,0
+Drayton Harbor,DRAYTON HARBOR/DAKOTA CRK,9.07,Port Townsend,48 58.30,122 44.00,48.975,-122.7333,Along channels along Dakota Creek.,LOW,907,263,Eastern Bays,Northern Inland,0
+Drayton Harbor,DRAYTON HARBOR/DAKOTA CRK,9.07,Port Townsend,48 58.73,122 45.07,48.9869,-122.7519,On shoals and channels in central Drayton Harbor.,LOW,907,264,Eastern Bays,Northern Inland,0
+Drayton Harbor,SEMIAHMOO MARINA DOCKS,9.08,Port Townsend,48 59.11,122 46.42,48.9864,-122.7783,On floats at the Semiahmoo Marina.,ALL,908,265,Eastern Bays,Northern Inland,0
+Rocks off Birch Pt.,BIRCH PT AREA,9.09,Port Townsend,48 56.92,122 49.24,48.9589,-122.8233,Scattered intertidal rocks off Birch Point.,LOW,909,266,Eastern Bays,Northern Inland,0
+Point Whitehorn,PT WHITEHORN/CHERRY PT,9.1,Port Townsend,48 53.05,122 47.05,48.8847,-122.7847,Scattered intertidal rocks off Pt. Whitehorn.,LOW,910,267,Eastern Bays,Northern Inland,0
+Lummi Bay,LUMMI BAY CHANNELS,9.11,Port Townsend,48 46.99,122 41.02,48.7942,-122.6839,Intertidal areas and shoals in Lummi Bay.,LOW,911,268,Eastern Bays,Northern Inland,0
+Bellingham Bay,BELLINGHAM BAY/OLD MILL/LOG BOOMS,9.12,Port Townsend,48 44.28,122 29.82,48.7411,-122.5061,On log booms in Bellingham Bay.,ALL,912,269,Eastern Bays,Northern Inland,0
+Bellingham Bay,BELLINGHAM BAY/OLD MILL/LOG BOOMS,9.12,Port Townsend,48 44.12,122 29.96,48.7367,-122.51,On log booms in Bellingham Bay.,ALL,912,270,Eastern Bays,Northern Inland,0
+Bellingham Bay,BELLINGHAM BAY/OLD MILL/LOG BOOMS,9.12,Port Townsend,48 43.43,122 30.43,48.7286,-122.5119,On log booms in Bellingham Bay.,ALL,912,271,Eastern Bays,Northern Inland,0
+Spit N of Portage Bay,PORTAGE BAY/BRANT IS/BRANT PT,9.13,Port Townsend,48 43.61,122 37.84,48.7336,-122.64,Beach areas along spit to north of Portage Bay 'Blackie spit'.,LOW,913,272,Eastern Bays,Northern Inland,0
+Nooksack R. Mouth,NOOKSACK R CHANNELS,9.14,Port Townsend,48 46.09,122 35.90,48.7692,-122.6083,On shoals and along channels at mouth of Nooksack River.,LOW,914,273,Eastern Bays,Northern Inland,0
+Chuckanut Bay Area,CHUCKANUT BAY/ISLAND/ROCKS,9.15,Port Townsend,48 40.99,122 30.05,48.6942,-122.5014,Scattered intertidal rocks and reefs in Chuckanut Bay.,LOW,915,274,Eastern Bays,Northern Inland,0
+Rocks off Wildcat Cove,LARABEE ST PK/WILDCAT COVE,9.16,Port Townsend,48 39.22,122 29.73,48.6561,-122.5036,Scattered intertidal rocks and reefs off Larabee State Park.,LOW,916,275,Eastern Bays,Northern Inland,0
+Eliza Rocks,Eliza Rocks,9.17,Port Townsend,48 38.63,122 34.60,48.6508,-122.5833,Intertidal rocks and reef areas off southeast end of Eliza Island.,LOW,917,276,Eastern Bays,Northern Inland,0
+Samish Bay Area,SAMISH BAY/SAMISH R CHANNELS,9.18,Port Townsend,48 33.57,122 28.14,48.5658,-122.4706,Along channels at mouth of Samish River.,LOW,918,277,Eastern Bays,Northern Inland,0
+Samish Bay Area,SAMISH BAY/EDISON SLOUGH CHANNELS,9.19,Port Townsend,48 34.34,122 27.59,48.5761,-122.4664,Along channels north of Edison Slough.,LOW,919,278,Eastern Bays,Northern Inland,0
+Padilla Bay Area,PADILLA BAY/NORTH CHANNELS,9.2,Port Townsend,48 33.41,122 31.22,48.5614,-122.5228,Along channels in north Padilla Bay.,LOW,920,279,Eastern Bays,Northern Inland,0
+Padilla Bay Area,PADILLA BAY/ CHANNELS,9.21,Port Townsend,48 32.34,122 30.76,48.5428,-122.5211,Along channels east of Saddlebag Island. Nursery area.,LOW,921,280,Eastern Bays,Northern Inland,0
+Padilla Bay Area,PADILLA BAY/BENT PILING/INDIAN SLOUGH,9.22,Port Townsend,48 31.21,122 29.72,48.5225,-122.5033,Along channels of Joe Leary Slough.,LOW,922,281,Eastern Bays,Northern Inland,0
+Padilla Bay Area,PADILLA BAY/BENT PILING/INDIAN SLOUGH,9.23,Port Townsend,48 28.84,122 29.20,48.49,-122.4889,Along channels in southeast Padilla Bay.,LOW,923,282,Eastern Bays,Northern Inland,0
+Padilla Bay Area,PADILLA BAY/BENT PILING/INDIAN SLOUGH,9.23,Port Townsend,48 28.56,122 28.99,48.4822,-122.4942,Along channels in southeast Padilla Bay. Nursery area.,LOW,923,283,Eastern Bays,Northern Inland,0
+Padilla Bay Area,PADILLA BAY/BENT PILING/INDIAN SLOUGH,9.23,Port Townsend,48 28.55,122 29.36,48.4819,-122.4933,Along channels in southeast Padilla Bay. Nursery area.,LOW,923,284,Eastern Bays,Northern Inland,0
+Padilla Bay Area,PADILLA BAY/WEST CHANNELS,9.24,Port Townsend,48 28.37,122 30.88,48.4769,-122.5244,Along channels east of Swinomish Slough.,LOW,924,285,Eastern Bays,Northern Inland,0
+Padilla Bay Area,PADILLA BAY/WEST CHANNELS,9.24,Port Townsend,48 28.10,122 30.94,48.4694,-122.5261,Along channels east of Swinomish Slough. Nursery area.,LOW,924,286,Eastern Bays,Northern Inland,0
+Padilla Bay Area,PADILLA BAY/WEST CHANNELS,9.24,Port Townsend,48 29.03,122 30.80,48.4842,-122.5222,Along channels east of Swinomish Slough. Nursery area.,LOW,924,287,Eastern Bays,Northern Inland,0
+Padilla Bay Area,PADILLA BAY/WEST OF SWINOMISH SLOUGH,9.25,Port Townsend,48 29.10,122 32.55,48.4861,-122.5486,Along channels west of Swinomish Slough. Nursery area.,LOW,925,288,Eastern Bays,Northern Inland,0
+Padilla Bay Area,PADILLA BAY/WEST OF SWINOMISH SLOUGH,9.25,Port Townsend,48 29.16,122 32.35,48.4878,-122.5431,Along channels west of Swinomish Slough. Nursery area.,LOW,925,289,Eastern Bays,Northern Inland,0
+Fidalgo Bay,FIDALGO BAY/LOG BOOMS,9.27,Port Townsend,48 29.74,122 35.94,48.5039,-122.6094,On log booms at mill on west side of Fidalgo Bay.,ALL,927,290,Eastern Bays,Northern Inland,0
+Fidalgo Bay,FIDALGO BAY/LOG BOOMS,9.27,Port Townsend,48 29.89,122 35.06,48.5081,-122.585,On log booms anchored in middle of Fidalgo Bay.,ALL,927,291,Eastern Bays,Northern Inland,0
+Similk Bay,SIMILK BAY/LOG BOOMS/KIKET IS,9.28,Seattle,48 26.45,122 33.44,48.4458,-122.5622,On log booms in Similk Bay.,ALL,928,292,Eastern Bays,Northern Inland,0
+Seal Rocks,Seal Rocks (East Bay),9.29,Seattle,48 22.46,122 33.71,48.3794,-122.5697,On intertidal rocks and reef area around Seal Rocks.,LOW,929,293,Eastern Bays,Northern Inland,0
+N Skagit Bay,SKAGIT BAY/NORTH CHANNELS/GOAT IS/IKI IS,9.3,Seattle,48 21.47,122 31.30,48.3631,-122.525,Along channels south of Goat Island in Skagit Bay.,LOW,930,294,Eastern Bays,Northern Inland,0
+S Skagit Bay Area,Skagit Bay/South Channels,9.31,Seattle,48 17.09,122 23.03,48.2858,-122.3842,Along channels off south arm of Skagit River. Nursery area.,LOW,931,295,Eastern Bays,Northern Inland,0
+S Skagit Bay Area,Skagit Bay/South Channels,9.31,Seattle,48 17.83,122 24.53,48.3064,-122.4147,Along channels off south arm of Skagit River. Nursery area.,LOW,931,296,Eastern Bays,Northern Inland,0
+S Skagit Bay Area,Skagit Bay/South Channels,9.31,Seattle,48 17.53,122 24.17,48.2981,-122.4047,Along channels off south arm of Skagit River. Nursery area.,LOW,931,297,Eastern Bays,Northern Inland,0
+S Skagit Bay Area,Skagit Bay/South Channels,9.31,Seattle,48 17.10,122 24.22,48.2861,-122.4061,Along channels off south arm of Skagit River. Nursery area.,LOW,931,298,Eastern Bays,Northern Inland,0
+S Skagit Bay Area,Skagit Bay/South Channels,9.31,Seattle,48 17.86,122 23.16,48.3072,-122.3878,Along channels off south arm of Skagit River. Nursery area.,LOW,931,299,Eastern Bays,Northern Inland,0
+Skagit Bay/N of Pt. Brown,SKAGIT BAY/PT BROWN,9.32,Seattle,48 16.30,122 26.54,48.275,-122.4483,On shoals north of Point Brown.,LOW,932,300,Eastern Bays,Northern Inland,0
+Port Susan/Livingston Bay,PORT SUSAN/SOUTH PASS/ LIVINGSTON BAY,9.33,Seattle,48 13.33,122 25.87,48.2258,-122.4408,Along channels in Livingston Bay.,LOW,933,301,Eastern Bays,Northern Inland,0
+Port Susan/Stillaguamish,STILLAGUAMISH R MOUTH,9.34,Seattle,48 12.59,122 23.75,48.2164,-122.4042,Along channels of South Pass into Skagit Bay.,LOW,934,302,Eastern Bays,Northern Inland,0
+Port Susan/Stillaguamish,STILLAGUAMISH R MOUTH,9.34,Seattle,48 12.03,122 23.32,48.2008,-122.3922,Along channels off mouth of Stillaguamish River.,LOW,934,303,Eastern Bays,Northern Inland,0
+Gedney Island Marina,GEDNEY ISLAND MARINA BREAKWATER,9.35,Seattle,48  1.25,122 19.19,48.0236,-122.3219,On barge and log booms at entrance to Gedney Island marina.,ALL,935,304,Eastern Bays,Northern Inland,0
+Snohomish R. Logbooms,SNOHOMISH R MOUTH/LOG BOOMS/SHIP WRECKS,9.36,Seattle,48  2.61,122 12.34,48.0503,-122.2094,Log booms at mouth of Snohomish River.,ALL,936,305,Eastern Bays,Northern Inland,0
+Jetty Island SL Barge,SNOHOMISH R MOUTH/LOG BOOMS/SHIP WRECKS,9.36,Seattle,48  2.61,122 12.34,48.0503,-122.2094,,,936,,Eastern Bays,Northern Inland,0
+Everett Harbor Area,EVERETT HARBOR AREA/HOME PORT/PSB/LOG BOOMS,9.37,Seattle,47 59.60,122 13.28,48,-122.2244,Log boom areas at the Port of Everett.,ALL,937,306,Eastern Bays,Northern Inland,0
+Everett Navy Security Fence,EVERETT HARBOR AREA/HOME PORT/PSB/LOG BOOMS,9.37,Seattle,47 59.60,122 13.28,48,-122.2244,Everett Navy Homeport Security Fence,,937,,Eastern Bays,Northern Inland,0
+Baby Island,Baby Island,9.38,Seattle,48  5.98,122 31.56,48.1106,-122.5322,Beaches and intertidal areas around Baby Island.,LOW,938,307,Eastern Bays,Northern Inland,0
+N. Penn Cove/Oak Harbor,OAK HARBOR/FORBES PT/Blowers AREA,9.39,Seattle,48 16.07,122 37.37,48.2686,-122.6269,Scattered rocks and intertidal areas near Oak Harbor.,LOW,939,308,Eastern Bays,Northern Inland,0
+Everett Harbor Buoys,Everett Harbor Buoys,9.4,Seattle,47 59.45,122 14.91,47.9958,-122.2586,Everett Harbor Buoy.,ALL,940,309,Eastern Bays,Northern Inland,1
+Everett Harbor Buoys,Everett Harbor Buoys,9.4,Seattle,47 58.84,122 14.70,47.99,-122.2528,Everett Harbor Buoy.,ALL,940,310,Eastern Bays,Northern Inland,1
+Polnell point (Whidbey Island),POLNELL PT AREA/ CRESENT HARBOR,9.42,,48 16.78,122 35.73,48.2883,-122.6036,,,942,,Eastern Bays,Northern Inland,0
+Crescent Harbor (Whidbey Island),POLNELL PT AREA/ CRESENT HARBOR,9.42,,48 16.78,122 35.73,48.2883,-122.6036,,,942,,Eastern Bays,Northern Inland,0
+Penn cove mussel floats,PENN COVE MUSSEL FLOATS,9.43,,48 13.06,122 42.48,48.2183,-122.7133,,,943,,Eastern Bays,Northern Inland,0
+Saddle Bag Island,Saddlebag/Huckleberry/Hat/ Dot Is Area,9.44,,48 32.11,122 33.58,48.5364,-122.5661,Intertidal rock around Saddle Bag Island,,944,,Eastern Bays,Northern Inland,0
+Hat Island,Saddlebag/Huckleberry/Hat/ Dot Is Area,9.44,,48 32.11,122 33.58,48.5364,-122.5661,Intertidal rock around Hat Island,,944,,Eastern Bays,Northern Inland,0
+Hucklebery/ Dot Island,Saddlebag/Huckleberry/Hat/ Dot Is Area,9.44,,48 32.11,122 33.58,48.5364,-122.5661,,,944,,Eastern Bays,Northern Inland,0
+Guemes Island Buoys,GUEMES CHANNEL NAV BUOYS,9.45,,48 31.38,122 38.49,48.5272,-122.6469,,,945,,Eastern Bays,Northern Inland,1
+In Tow,In Tow,9.89,,,,,,animals in tow,,989,,Eastern Bays,Northern Inland,0
+Unspecified-H2O,Unspecified-H2O,9.99,Seattle,?,?,,,Animals in open water,ALL,999,,,NA,0
+Hauled Out Unknown,Hauled Out Unknown,10,Seattle,,,,,unknown haul out location 10.00,,1000,,Puget Sound,Northern Inland,0
+Liberty Bay/Poulsbo Marina,Liberty Bay/Poulsbo Marina/YACHT CLUB,10.01,Seattle,47 43.85,122 38.81,47.7403,-122.6558,On floats and log booms at the Poulsbo marina.,ALL,1001,311,Puget Sound,Southern Puget Sound,0
+Poulbso yacht club/ Marina,Liberty Bay/Poulsbo Marina/YACHT CLUB,10.01,Seattle,47 43.85,122 38.81,47.7403,-122.6558,,,1001,,Puget Sound,Southern Puget Sound,0
+Blakely Rocks,Blakely Rocks,10.02,Seattle,47 35.68,122 28.76,47.6022,-122.4878,On intertidal rocks and reef areas around Blakely Rocks.,LOW,1002,312,Puget Sound,Southern Puget Sound,0
+Cutts Island,CUTTS ISLAND/KOPACHUCK FLOATS,10.03,Seattle,47 19.34,122 41.11,47.3261,-122.6864,On spit on north end of island.,LOW,1003,313,Puget Sound,Southern Puget Sound,0
+Horsehead Bay Floats,HORSEHEAD BAY FLOATS,10.04,Seattle,47 17.45,122 41.08,47.2958,-122.6856,On floats and rafts in Horsehead Bay.,ALL,1004,314,Puget Sound,Southern Puget Sound,0
+Wykoff Shoals,WYKOFF SHOALS,10.05,Seattle,47 14.29,122 42.61,47.2414,-122.7169,On intertidal areas around Wykoff Shoals.,LOW,1005,315,Puget Sound,Southern Puget Sound,0
+Gertrude Island,GERTRUDE IS/STILL HARBOR,10.06,Seattle,47 12.95,122 39.61,47.2264,-122.6669,Along beaches and intertidal areas around island. Nursery area.,LOW,1006,316,Puget Sound,Southern Puget Sound,0
+Eagle Island Area,EAGLE ISLAND/EAGLE SHOALS,10.07,Seattle,47 11.35,122 41.67,47.1931,-122.7019,On beach and shoals around Eagle Island.,LOW,1007,317,Puget Sound,Southern Puget Sound,0
+Eagle Island Area,EAGLE ISLAND/EAGLE SHOALS,10.07,Seattle,47 11.54,122 42.04,47.1983,-122.7011,On green Buoy west of Eagle Island.,ALL,1007,318,Puget Sound,Southern Puget Sound,0
+Nisqually Delta Area,NISQUALLY RIVER CHANNELS/DERRILICT BARGE,10.08,Seattle,47  6.02,122 41.96,47.1006,-122.71,Along channels at mouth of river during high tides.,LOW,1008,319,Puget Sound,Southern Puget Sound,0
+Nisqually Delta Buoy,NISQUALLY RIVER CHANNELS/DERRILICT BARGE,10.08,Seattle,47  6.84,122 41.78,47.1233,-122.705,On green Buoy off Nisqually Delta.,ALL,1008,320,Puget Sound,Southern Puget Sound,0
+Nisqually/ Duport barge Wreck,NISQUALLY RIVER CHANNELS/DERRILICT BARGE/ channel marker,10.08,Seattle,47  6.84,122 41.78,47.1233,-122.705,,,1008,,Puget Sound,Southern Puget Sound,0
+Woodard Bay Logbooms,WOODARD BAY NORTH & SOUTH,10.09,Seattle,47  8.32,122 50.29,47.1422,-122.8414,On log booms in Woodard Bay (at old Weyerhauser site).,ALL,1009,321,Puget Sound,Southern Puget Sound,0
+Mcmicken Island,MCMICKEN IS,10.1,Seattle,47 14.78,122 51.83,47.255,-122.8731,Beach and intertidal areas around island.,LOW,1010,322,Puget Sound,Southern Puget Sound,0
+Totten Inlet Area,TOTTEN INLET FLOATS,10.11,Seattle,47  7.99,123  1.12,47.1442,-123.02,On rafts and floats on west side of inlet.,ALL,1011,323,Puget Sound,Southern Puget Sound,0
+Totten Inlet Area,TOTTEN INLET FLOATS,10.11,Seattle,47  8.87,122 58.38,47.1575,-122.9772,On rafts and log booms on east side of inlet.,ALL,1011,324,Puget Sound,Southern Puget Sound,0
+Totten Inlet Area,TOTTEN INLET FLOATS,10.11,Seattle,47  8.99,122 58.03,47.1608,-122.9675,On log booms on east side of inlet.,ALL,1011,325,Puget Sound,Southern Puget Sound,0
+Totten Inlet Area,TOTTEN INLET FLOATS,10.11,Seattle,47  8.05,123  0.17,47.1347,-123.0047,On rafts and net pens off Gallager Cove.,ALL,1011,326,Puget Sound,Southern Puget Sound,0
+Budd Inlet Area,BUDD INLET LOG BOOMS/PRIEST PT SHOAL,10.12,Seattle,47  4.30,122 55.07,47.075,-122.9186,On log booms on west side of Budd Inlet.,ALL,1012,327,Puget Sound,Southern Puget Sound,0
+Budd Inlet Area,BUDD INLET LOG BOOMS/PRIEST PT SHOAL,10.12,Seattle,47  3.99,122 54.28,47.0775,-122.9078,On shoal area west of Priest Point State Park.,ALL,1012,328,Puget Sound,Southern Puget Sound,0
+Eld Inlet Area,ELD INLET FLOATS,10.13,Seattle,47  4.16,123  0.58,47.0711,-123.0161,On rafts and floats in Mud Bay.,ALL,1013,329,Puget Sound,Southern Puget Sound,0
+Eld Inlet Area,ELD INLET FLOATS,10.13,Seattle,47  5.84,122 58.94,47.1067,-122.9928,On rafts and floats on west side of Eld Inlet.,ALL,1013,330,Puget Sound,Southern Puget Sound,0
+Eld Inlet Area,ELD INLET FLOATS,10.13,Seattle,47  5.57,122 57.74,47.0992,-122.9706,On rafts and floats on east side of Eld Inlet.,ALL,1013,331,Puget Sound,Southern Puget Sound,0
+Eld Inlet Area,ELD INLET FLOATS,10.13,Seattle,47  5.80,122 57.45,47.1056,-122.9625,On rafts and float on east side of Eld Inlet.,ALL,1013,332,Puget Sound,Southern Puget Sound,0
+Hammersly Inlet/Shelton,SHELTON MILL/LOG BOOMS/CHAPMAN BAY,10.14,Seattle,47 12.65,123  4.99,47.2181,-123.0942,On log booms off mill at Shelton.,ALL,1014,333,Puget Sound,Southern Puget Sound,0
+Hammersly Inlet/Shelton,SHELTON MILL/LOG BOOMS/CHAPMAN BAY,10.14,Seattle,47 13.66,123  2.71,47.235,-123.0531,On log booms in Chapman Bay.,ALL,1014,334,Puget Sound,Southern Puget Sound,0
+Rosedale Beach Floats,RAFT IS/ROSEDALE FLOATS,10.15,Seattle,47 20.17,122 39.63,47.3381,-122.6675,On rafts and floats off Rosedale.,ALL,1015,335,Puget Sound,Southern Puget Sound,0
+Edmonds Wreck/Scuba Flt,EDMONDS WRECK/SCUBA FLOAT,10.16,Seattle,47 48.89,122 22.96,47.8247,-122.3933,On rafts and floats north of ferry dock.,ALL,1016,336,Puget Sound,Northern Inland,0
+Bremerton/Dyes Inlet,DYES INLET FLOATS,10.17,Seattle,47 35.45,122 40.90,47.5958,-122.6917,On rafts and floats in Dyes Inlet.,ALL,1017,337,Puget Sound,Southern Puget Sound,0
+Commencement Bay,COMMENCEMENT BAY/TYEE MARINA/LOG BOOMS,10.18,Seattle,47 17.51,122 24.76,47.2975,-122.4211,On Buoys and floats in northeast Commencement Bay.,ALL,1018,338,Puget Sound,Southern Puget Sound,0
+Commencement Bay,COMMENCEMENT BAY/TYEE MARINA/LOG BOOMS,10.18,Seattle,47 17.36,122 24.59,47.2933,-122.4164,On log booms in northeast Commencement Bay.,ALL,1018,339,Puget Sound,Southern Puget Sound,0
+Tyee Marina Boom Sticks,COMMENCEMENT BAY/TYEE MARINA/LOG BOOMS,10.18,Seattle,47 17.36,122 24.59,47.2933,-122.4164,,,1018,,Puget Sound,Southern Puget Sound,0
+Shilshole Bay Area,SHILSHOLE BAY BUOYS,10.19,Seattle,47 41.11,122 24.38,47.6864,-122.4106,On floats and Buoys of Shilshole Bay jetty.,ALL,1019,340,Puget Sound,Southern Puget Sound,1
+Shilshole Bay Area,SHILSHOLE BAY BUOYS,10.19,Seattle,47 40.69,122 24.67,47.6858,-122.4186,On south tip of Shilshole Bay jetty.,ALL,1019,341,Puget Sound,Southern Puget Sound,1
+NW Mcneil Is Buoy,Buoy gone--,10.2,Seattle,47 14.27,122 41.06,47.2408,-122.685,On white mooring Buoy off northwest side of McNeil Island.,ALL,1020,342,Puget Sound,Southern Puget Sound,1
+NE Mcneil/Hyde Pt Buoy,Buoy gone--,10.21,Seattle,47 13.11,122 38.51,47.2197,-122.6475,On white mooring Buoy off Hyde Point on northeast side of McNeil Island.,ALL,1021,343,Puget Sound,Southern Puget Sound,1
+Toliva Shoals Buoy,Toliva Shoals Buoy,10.22,Seattle,47 12.15,122 36.25,47.2042,-122.6069,On Toliva Shoals Buoy.,ALL,1022,344,Puget Sound,Southern Puget Sound,1
+Yellow 'TC' Buoy,Yellow 'TC' Buoy,10.23,Seattle,47 19.42,122 27.35,47.3283,-122.4597,On yellow 'TC' Buoy off southeast Maury Island.,ALL,1023,345,Puget Sound,Southern Puget Sound,1
+Yellow 'TB' Buoy,Yellow 'TB' Buoy,10.24,Seattle,47 23.11,122 21.11,47.3864,-122.3531,On yellow 'TB' Buoy off Pt. Robinson.,ALL,1024,346,Puget Sound,Southern Puget Sound,1
+Yellow 'TA' Buoy,Yellow 'TA' Buoy,10.25,Seattle,47 26.87,122 24.11,47.4575,-122.4031,On yellow 'TA' Buoy off Three Tree Point.,ALL,1025,347,Puget Sound,Southern Puget Sound,1
+Yellow 'T' Buoy,Yellow 'T' Buoy,10.26,Seattle,47 34.54,122 26.96,47.5817,-122.46,On yellow 'T' Buoy off Alki Point.,ALL,1026,348,Puget Sound,Southern Puget Sound,1
+West Pt Buoy,West Pt Buoy,10.27,Seattle,47 39.60,122 26.21,47.6667,-122.4392,On green Buoy just off West Point.,ALL,1027,349,Puget Sound,Southern Puget Sound,1
+Yellow 'SG' Buoy,Yellow 'SG' Buoy,10.28,Seattle,47 39.71,122 27.80,47.6697,-122.4722,On yellow 'SG' Buoy between West Point and Skiff Point.,ALL,1028,350,Puget Sound,Southern Puget Sound,1
+Meadow Pt Buoy,Meadow Pt Buoy,10.29,Seattle,47 41.80,122 24.46,47.7056,-122.4128,On green Meadow Point Buoy.,ALL,1029,351,Puget Sound,Southern Puget Sound,1
+Yellow 'SF' Buoy,Yellow 'SF' Buoy,10.3,Seattle,47 53.83,122 29.05,47.9064,-122.4847,On yellow 'SF' Buoy east of Jefferson Head.,ALL,1030,352,Puget Sound,Northern Inland,1
+Possession Pt Buoy,Possession Pt Buoy,10.31,Seattle,47 53.84,122 23.05,47.9067,-122.3847,On green Buoy off Possession Point.,ALL,1031,353,Puget Sound,Northern Inland,1
+Scatchet Head Buoy,Scatchet Head Buoy,10.32,Seattle,47 54.56,122 26.14,47.9156,-122.4372,On red Scatchet Head Buoy.,ALL,1032,354,Puget Sound,Northern Inland,1
+Yellow 'SE' Buoy,Yellow 'SE' Buoy,10.33,Seattle,47 55.48,122 29.59,47.93,-122.4997,On yellow 'SE' Buoy off Point No Point.,ALL,1033,355,Puget Sound,Northern Inland,1
+Double Bluff Buoy,Double Bluff Buoy,10.34,Seattle,47 57.98,122 33.12,47.9772,-122.5533,On green Buoy off Double Bluff.,ALL,1034,356,Puget Sound,Northern Inland,1
+Yellow 'SD' Buoy,Yellow 'SD' Buoy,10.35,Seattle,47 57.97,122 34.73,47.9769,-122.5869,On yellow 'SD' Buoy just north of Foulweather Bluff.,ALL,1035,357,Puget Sound,Northern Inland,1
+Foulweather Bluff Buoy,Foulweather Bluff Buoy,10.36,Seattle,47 56.80,122 36.12,47.9556,-122.6033,On red Buoy off Foulweather Bluff.,ALL,1036,358,Puget Sound,Northern Inland,1
+Yellow 'SC' Buoy,Yellow 'SC' Buoy,10.37,Seattle,48  1.87,122 38.14,48.0408,-122.6372,On yellow 'SC' Buoy west of Bush Point.,ALL,1037,359,Puget Sound,Northern Inland,1
+Restoration Pt Buoy,Restoration Pt Buoy,10.38,Seattle,47 35.02,122 28.54,47.5839,-122.4817,On red Buoy off Restoration Point.,ALL,1038,360,Puget Sound,Southern Puget Sound,1
+Rich Passage Buoy,Rich Passage Buoy,10.39,Seattle,47 34.07,122 31.28,47.5686,-122.5244,On red '4' Buoy off Orchard Point.,ALL,1039,361,Puget Sound,Southern Puget Sound,1
+Rich Passage Buoy,Rich Passage Buoy,10.39,Seattle,47 34.56,122 32.06,47.5822,-122.535,On red Buoy in Rich Passage.,ALL,1039,362,Puget Sound,Southern Puget Sound,1
+Orchard Rocks Red Buoy,CLAM BAY/RICH PASSAGE BUOYS,10.39,Seattle,47 34.07,122 31.28,47.5686,-122.5244,,,1039,,Puget Sound,Southern Puget Sound,1
+Clam Bay/Manchester fish pens,CLAM BAY/RICH PASSAGE BUOYS,10.39,Seattle,47 34.07,122 31.28,47.5686,-122.5244,,,1039,,Puget Sound,Southern Puget Sound,1
+Steamboat Island,Carlyon boomsticks/ Steamboat Island,10.4,Seattle,47 10.926,122 56.22,47.1922,-122.9394,,High high,1040,,Puget Sound,Southern Puget Sound,0
+Stretch Island Float,Stretch Island to Allyn Floats/ North bay,10.41,Seattle,47 21,122 49.26,47.35,-122.8239,float,High high,1041,,Puget Sound,Southern Puget Sound,0
+Grapeview and float docks around Allyn,Stretch Island to Allyn Floats/ North bay,10.41,Seattle,47 21,122 49.26,47.35,-122.8239,,,1041,,Puget Sound,Southern Puget Sound,0
+Point Defiance tip,Pt Defiance,10.43,Seattle,47 19,122 32.85,47.3167,-122.5569,,,1043,,Puget Sound,Southern Puget Sound,0
+Ruston Breakwater,Ruston Breakwater,10.44,Seattle,47 18.35,122 30.48,47.3097,-122.5133,,,1044,,Puget Sound,Southern Puget Sound,0
+Bremerton Ship yard PSB,Bremerton Naval Shipyard/Port Securtiy Barrior,10.45,Seattle,47 33.38,122 37.87,47.5606,-122.6408,,,1045,,Puget Sound,Southern Puget Sound,0
+Elliot Bay Mooring Buoy (off of Saltys),Elliot Bay Mooring Buoys/Off Salty's,10.46,Seattle,47 35.25,122 22.05,47.5903,-122.3681,,,1046,,Puget Sound,Southern Puget Sound,1
+Duwamish River Mouth Buoy,Elliot Bay Mooring Buoys/Off Salty's,10.46,Seattle,47 35.25,122 22.05,47.5903,-122.3681,,,1046,,Puget Sound,Southern Puget Sound,1
+Suldan marina boom sticks (Port Orchard),Suldan's Marina/Sinclair Inlet,10.47,Seattle,47 31.93,122 40.36,47.5425,-122.6767,,,1047,,Puget Sound,Southern Puget Sound,0
+Solopoint/ S side Ketron Mooring Buoy,Solopoint/ S side Ketron Mooring Buoy,10.48,Seattle,47 8.63,122 38.43,47.1342,-122.6453,Buoy on the south side Ketron Island/ Solo point,,1048,,Puget Sound,Southern Puget Sound,1
+Orchard Rocks,Orchard Rocks,10.49,Seattle,47 34.41,122 31.53,47.5781,-122.5314,,,1049,,Puget Sound,Southern Puget Sound,0
+Burley Lagoon Oyster floats,Burley Lagoon Oyster floats,10.5,Seattle,47 23.01,122 38.23,47.3836,-122.6397,,,1050,,Puget Sound,Southern Puget Sound,0
+Hyde Point to Gertrude,Hyde Pt to Gertrude Island,10.51,Seattle,47 12.41,122 38.59,47.2114,-122.6497,,,1051,,Puget Sound,Southern Puget Sound,0
+Fragaria Rock,"Fragaria Rock, Ollala",10.52,Seattle,47 27.65,122 31.88,47.4681,-122.5411,,,1052,,Puget Sound,Southern Puget Sound,0
+In Tow,In Tow,10.89,Seattle,,,,,animals in tow,,1089,,Puget Sound,Northern Inland,0
+Unspecified-H2O,Unspecified-H2O,10.99,Seattle,?,?,,,Animals in open water,ALL,1099,,,NA,0
+Hauled Out Unknown,Hauled Out Unknown,11,,,,,,unknown haul out location 11.00,,1100,,San Juan Islands,Northern Inland,0
+Matia Island Area,Matia Island Area,11.01,Port Townsend,48 44.96,122 50.03,48.76,-122.8342,On intertidal ledges and reef areas alon north side of island.,LOW,1101,363,San Juan Islands,Northern Inland,0
+Matia Island Area,Matia Island Area,11.01,Port Townsend,48 44.64,122 49.55,48.7511,-122.8319,On intertidal rocks and reef areas off east end of island.,LOW,1101,364,San Juan Islands,Northern Inland,0
+Puffin Island Area,Puffin Island Area,11.02,Port Townsend,48 44.71,122 49.30,48.7531,-122.825,On intertidal rocks and reef area on west end of Puffin Island.,LOW,1102,365,San Juan Islands,Northern Inland,0
+Puffin Island Area,Puffin Island Area,11.02,Port Townsend,48 44.74,122 49.22,48.7539,-122.8228,On intertidal ledges on north side of Puffin Island. Nursery area.,LOW,1102,366,San Juan Islands,Northern Inland,0
+Reef East of Puffin Is,Reef E of Puffin Is/(19),11.03,Port Townsend,48 44.64,122 48.95,48.7511,-122.8264,On reef area just east of Puffin Island. Nursery area.,LOW,1103,367,San Juan Islands,Northern Inland,0
+Lummi Is./Pt. Migley,Lummi Island/Point Migley,11.04,Port Townsend,48 44.90,122 42.96,48.7583,-122.7267,On rocks and reef area off Point Migley.,LOW,1104,368,San Juan Islands,Northern Inland,0
+Barnes Island,Barnes Island,11.05,Port Townsend,48 42.23,122 46.43,48.7064,-122.7786,On intertidal rocks and reef areas on north end of island.,LOW,1105,369,San Juan Islands,Northern Inland,0
+Clark Island,Clark Island,11.06,Port Townsend,48 42.50,122 45.88,48.7139,-122.7744,On intertidal rocks and reef areas on north end of isand.,LOW,1106,370,San Juan Islands,Northern Inland,0
+The Sisters Area,Sisters/Little Sister,11.07,Port Townsend,48 41.51,122 45.53,48.6975,-122.7647,On intertidal rocks and reef areas off southeast end of Barnes Island.,LOW,1107,371,San Juan Islands,Northern Inland,0
+The Sisters Area,Sisters/Little Sister,11.07,Port Townsend,48 41.61,122 45.38,48.7003,-122.7606,On intertidal area around The Sisters Rock (USFWS ID 47).,LOW,1107,372,San Juan Islands,Northern Inland,0
+Little Sister,Sisters/Little Sister,11.08,Port Townsend,48 41.40,122 45.49,48.6944,-122.7636,On intertidal area around Little Sister Rock (USFWS ID 48).,LOW,1107,373,San Juan Islands,Northern Inland,0
+Middle Peapod Rock,Middle Peapod Rock,11.09,Port Townsend,48 38.41,122 45.04,48.6447,-122.7511,On intertidal rocks and reef areas around Middle Peapod Rock (USFWS ID 63).,LOW,1109,374,San Juan Islands,Northern Inland,0
+North Peapod Rock,N Peapod Rocks,11.1,Port Townsend,48 38.53,122 44.71,48.6481,-122.7531,On intertidal rocks and reef areas around North Peapod Rock (USFWS ID 64).,LOW,1110,375,San Juan Islands,Northern Inland,0
+South Peapod Rock,S Peapod Rocks,11.11,Port Townsend,48 38.04,122 45.45,48.6344,-122.7625,On intertidal rocks and reef areas around South Peapod Rock (USFWS ID 62).,LOW,1111,376,San Juan Islands,Northern Inland,0
+Boulder Reef Area,Boulder Reef Area,11.12,Port Townsend,48 38.11,122 41.35,48.6364,-122.6931,On intertidal rocks and reef area at Boulder Reef,LOW,1112,377,San Juan Islands,Northern Inland,0
+Buckeye Shoal,Buckeye Shoal,11.13,Port Townsend,48 37.44,122 43.72,48.6289,-122.7367,On intertidal reef area at Buckeye Shoal.,LOW,1113,378,San Juan Islands,Northern Inland,0
+Cypress Reef,Cypress Reef,11.14,Port Townsend,48 36.98,122 43.14,48.6272,-122.7206,On intertidal rocks and shoals at Cypress Reef.,LOW,1114,379,San Juan Islands,Northern Inland,0
+Cone Island,Cone Island Area,11.15,Port Townsend,48 35.54,122 40.69,48.5983,-122.6858,On intertidal areas around Cone Islands.,LOW,1115,380,San Juan Islands,Northern Inland,0
+"Sinclair Island, SE",Sinclair Is/Rocks on SE Side,11.16,Port Townsend,48 36.77,122 39.41,48.6214,-122.6614,On intertidal rocks and reef areas on southeast end of island.,LOW,1116,381,San Juan Islands,Northern Inland,0
+Viti Island,Viti Island,11.17,Port Townsend,48 37.96,122 37.26,48.6433,-122.6239,On intertidal rocks and reef areas around Viti Island (USFWS ID 66).,LOW,1117,382,San Juan Islands,Northern Inland,0
+Black Rock,Black Rock,11.18,Port Townsend,48 32.78,122 45.85,48.555,-122.7736,On intertidal rocks and reef areas around Black Rock,LOW,1118,383,San Juan Islands,Northern Inland,0
+Pointer Island,Pointer Island,11.19,Port Townsend,48 32.30,122 46.85,48.5417,-122.7903,On intertidal rocks and reef areas around Pointer Island (USFWS ID 57).,LOW,1119,384,San Juan Islands,Northern Inland,0
+Lawson Rock,Lawson Rock,11.2,Port Townsend,48 31.87,122 47.24,48.5408,-122.79,On intertidal rocks and reef areas around Lawson Rock (USFWS ID 56).,LOW,1120,385,San Juan Islands,Northern Inland,0
+Belle Rock,Belle Rock,11.21,Port Townsend,48 29.59,122 45.09,48.4997,-122.7525,On intertidal areas around Belle Rock.,LOW,1121,386,San Juan Islands,Northern Inland,0
+Bird Rocks,Bird Rocks,11.22,Port Townsend,48 29.10,122 45.65,48.4861,-122.7681,On intertidal rocks and reef areas around south Bird Rocks (USFWS ID 80).,LOW,1122,387,San Juan Islands,Northern Inland,0
+Bird Rocks,Bird Rocks,11.22,Port Townsend,48 29.16,122 45.61,48.4878,-122.7669,On intertidal rocks and reef areas aroung middle Bird Rocks (USFWS ID 80).,LOW,1122,388,San Juan Islands,Northern Inland,0
+Bird Rocks,Bird Rocks,11.22,Port Townsend,48 29.23,122 45.56,48.4897,-122.7656,On intertidal rocks and reef areas around north Bird Rocks (USFWS ID 80).,LOW,1122,389,San Juan Islands,Northern Inland,0
+Burrows Is./West Side,Burrows Island/West Side Reefs,11.25,Port Townsend,48 29.03,122 42.72,48.4842,-122.72,On intertidal ledges and reef area off the northwest side of island.,LOW,1125,390,San Juan Islands,Northern Inland,0
+Allan Is./NW End,Allan Island/NW Reef,11.26,Port Townsend,48 28.06,122 42.70,48.4683,-122.7194,On intertidal rocks and reef area off the northwest side of island.,LOW,1126,391,San Juan Islands,Northern Inland,0
+Williamson Rocks,Williamson Rocks,11.27,Port Townsend,48 26.99,122 42.28,48.4608,-122.7078,On intertidal ledges and reef areas around Williamson Rocks (USFWS ID 81). Nursery area.,LOW,1127,392,San Juan Islands,Northern Inland,0
+Castle Rock Area,Castle Rk/Blind Island,11.28,Port Townsend,48 25.30,122 49.23,48.425,-122.8231,On scattered intertidal rocks and reef areas around Castle Rock area.,LOW,1128,393,San Juan Islands,Northern Inland,0
+Colville Island,Colville Island,11.29,Port Townsend,48 24.87,122 49.24,48.4242,-122.8233,On intertidal ledges and rocks on south side of Colville Island USFWS ID 82).,LOW,1129,394,San Juan Islands,Northern Inland,0
+Aleck Bay Area,Aleck Bay Area,11.3,Port Townsend,48 25.18,122 51.31,48.4217,-122.8586,Intertidal rocks and reef areas off Aleck Bay.,LOW,1130,395,San Juan Islands,Northern Inland,0
+Aleck Bay Area,Aleck Bay Area,11.3,Port Townsend,48 25.11,122 50.81,48.4197,-122.8558,Intertidal ledges and reef areas around unnamed rock (USFWS ID 10) at entrance to Aleck Bay.,LOW,1130,396,San Juan Islands,Northern Inland,0
+Aleck Bay Area,Aleck Bay Area,11.3,Port Townsend,48 25.34,122 50.90,48.4261,-122.8583,Intertidal ledges and reef areas around unnamed rock (USFWS ID 11) at entrance to Aleck Bay.,LOW,1130,397,San Juan Islands,Northern Inland,0
+Iceberg Pt.,Iceberg Point Area,11.31,Port Townsend,48 25.21,122 53.42,48.4225,-122.895,Intertidal ledges and reef areas just east of Iceberg Point.,LOW,1131,398,San Juan Islands,Northern Inland,0
+Iceberg Pt.,Iceberg Point Area,11.31,Port Townsend,48 25.12,122 53.08,48.42,-122.8856,Intertidal ledges and reef area east of Iceberg Point (USFWS ID 14).,LOW,1131,399,San Juan Islands,Northern Inland,0
+Iceberg Pt.,S Lopez/Flint Beach,11.32,Port Townsend,48 25.18,122 52.00,48.4217,-122.8667,Intertidal rocks and reef areas around unnamed rocks in bay east of Iceberg Point.,LOW,1132,400,San Juan Islands,Northern Inland,0
+Iceberg Island,Iceberg Island,11.33,Port Townsend,48 25.66,122 53.30,48.435,-122.8917,Intertidal rocks and reef areas around Iceberg Island.,LOW,1133,401,San Juan Islands,Northern Inland,0
+Kellett Ledge,Kellett Ledge,11.34,Port Townsend,48 27.03,122 47.52,48.4508,-122.7978,On intertidal reef areas around Kellett Ledge.,LOW,1134,402,San Juan Islands,Northern Inland,0
+Spindle Rock/N Blakely Is.,Spindle Rock/N Blakely Is.,11.35,Port Townsend,48 35.30,122 47.96,48.5917,-122.81,Intertidal areas around Spindle Rock.,LOW,1135,403,San Juan Islands,Northern Inland,0
+Lummi Rocks,Lummi Rocks,11.36,Port Townsend,48 40.24,122 39.94,48.6733,-122.6761,Intertidal rocks and reef areas around Lummi Rocks.,LOW,1136,404,San Juan Islands,Northern Inland,0
+Vendovi Island/E. Side,Vendovi Island/E. Side,11.37,Port Townsend,48 37.02,122 36.66,48.6172,-122.6183,Intertidal rocks and reef areas off northwest side of island.,LOW,1137,405,San Juan Islands,Northern Inland,0
+E. Side of Obstruction Is.,E. Side of Obstruction Is.,11.38,Port Townsend,48 35.78,122 48.27,48.605,-122.8075,,Low low,1138,,San Juan Islands,Northern Inland,0
+Reef Point,Reef Point,11.39,Port Townsend,48 31.68,122 58.09,48.5356,-122.9692,,,1139,,San Juan Islands,Northern Inland,0
+Reef and Island North of Deception Pass,BOWMAN BAY/DECEPTION IS AREA,11.4,Port Townsend,48 24.49,122 40.12,48.4136,-122.67,,,1140,,San Juan Islands,Northern Inland,0
+Langley Point Area Reef,Langley Bay/S Burrows Bay,11.41,Port Townsend,48 26.82,122 40.20,48.4561,-122.6722,,,1141,,San Juan Islands,Northern Inland,0
+Jack Island,Jack Island,11.42,Port Townsend,48 34.83,122 36.75,48.5897,-122.6208,,,1142,,San Juan Islands,Northern Inland,0
+Strawberry Island/ W. Side of Cypress,Strawberry Island/ W. Side of Cypress,11.43,,48 33.69,122 44.12,48.5692,-122.7367,Strawberry Island/ W. Side of Cypress,,1143,,San Juan Islands,Northern Inland,0
+James Island,James Island,11.44,,,,48.5039,-122.7825,James Island,,1144,,San Juan Islands,Northern Inland,0
+In Tow,In Tow,11.89,Port Townsend,,,,,animals in tow,,1189,,San Juan Islands,Northern Inland,0
+Unspecified-H2O,Unspecified-H2O,11.99,Port Townsend,?,?,,,Animals in open water,ALL,1199,,,NA,0
+Hauled Out Unknown,Hauled Out Unknown,12,Port Townsend,,,,,unknown haul out location 12.00,,1200,,San Juan Islands,Northern Inland,0
+Hall Island Area,Hall Island Area,12.01,Port Townsend,48 26.12,122 54.65,48.4367,-122.9181,Intertidal rocks and reefs around Hall Island (USFWS ID 15).,LOW,1201,406,San Juan Islands,Northern Inland,0
+Rock NW of Hall Is.,Hall Island Area,12.02,Port Townsend,48 26.16,122 54.81,48.4378,-122.9225,Rock (USFWS ID 16) and intertidal reef area northwest of Hall Island.,LOW,1201,407,San Juan Islands,Northern Inland,0
+Secar Rock,Secar Rock,12.03,Port Townsend,48 26.29,122 54.33,48.4414,-122.9092,"On intertidal areas around Secar Rock (USFWS ID 17), east of Charles Island.                        """,LOW,1203,408,San Juan Islands,Northern Inland,0
+Rocks E of Charles Is.,Rocks E of Charles Island,12.04,Port Townsend,48 26.45,122 54.07,48.4458,-122.9019,Intertidal areas around rock (USFWS ID 18) and reef east of Charles Island.,LOW,1204,409,San Juan Islands,Northern Inland,0
+SE of Long Island,S Side of Long Is,12.05,Port Townsend,48 26.32,122 54.98,48.4422,-122.9272,Intertidal areas around rock (USFWS ID 19) southeast of Long Island.,LOW,1205,410,San Juan Islands,Northern Inland,0
+Reef S of Long Is.,S Side of Long Is,12.06,Port Townsend,48 26.27,122 55.52,48.4408,-122.9311,Intertidal areas around reef south of Long Island.,LOW,1205,411,San Juan Islands,Northern Inland,0
+SW of Long Island,S Side of Long Is,12.07,Port Townsend,48 26.35,122 55.84,48.4431,-122.94,Intertidal areas around rock (USFWS ID 20) southwest of Long Island.,LOW,1205,412,San Juan Islands,Northern Inland,0
+N of Long Island,N Side of Long Is,12.08,Port Townsend,48 26.62,122 55.30,48.4506,-122.925,Intertidal area around reef north of Long Island.,LOW,1208,413,San Juan Islands,Northern Inland,0
+Mummy Rock,Mummy Rock,12.09,Port Townsend,48 26.99,122 55.73,48.4608,-122.9369,Intertidal area around Mummy Rocks (USFWS ID 21).,LOW,1209,414,San Juan Islands,Northern Inland,0
+Whale Rock,Whale Rock,12.1,Port Townsend,48 26.84,122 56.46,48.4567,-122.9461,Intertidal areas on Whale Rock.,LOW,1210,415,San Juan Islands,Northern Inland,0
+Buck Island,Buck Island,12.11,Port Townsend,48 27.14,122 55.21,48.4539,-122.9225,Intertidal areas on Buck Island (USFWS ID 83).,LOW,1211,416,San Juan Islands,Northern Inland,0
+Rocks off Davis Point,Rocks of Davis Point,12.12,Port Townsend,48 27.35,122 55.85,48.4597,-122.9403,Intertidal areas on rocks and reef off Davis Point.,LOW,1212,417,San Juan Islands,Northern Inland,0
+Deadman Island,Deadman Island,12.13,Port Townsend,48 27.54,122 56.51,48.465,-122.9475,Intertidal areas on Deadman Island.,LOW,1213,418,San Juan Islands,Northern Inland,0
+Goose Island,Goose Island,12.14,Port Townsend,48 27.53,122 57.37,48.4647,-122.9603,Intertidal areas around north end of Goose Island.,LOW,1214,419,San Juan Islands,Northern Inland,0
+Shark Reef,Shark Reef,12.15,Port Townsend,48 28.58,122 56.77,48.4828,-122.9547,Intertidal areas on Shark Reef (USFWS ID 23).,LOW,1215,420,San Juan Islands,Northern Inland,0
+Harbor Rock,Harbor Island,12.16,Port Townsend,48 28.21,122 58.16,48.4725,-122.9711,Intertidal areas on Harbor Rock (USFWS ID 24).,LOW,1216,421,San Juan Islands,Northern Inland,0
+North Pacific Rock,North Pacific Rock,12.17,Port Townsend,48 28.29,122 59.75,48.4747,-123.0042,Intertidal areas on North Pacific Rocks (USFWS ID 25).,LOW,1217,422,San Juan Islands,Northern Inland,0
+Halftide Rocks,Halftide Rocks,12.18,Port Townsend,48 28.73,122 59.93,48.4869,-123.0092,Intertidal areas on Halftide Rocks (USFWS ID 26).,LOW,1218,423,San Juan Islands,Northern Inland,0
+Low Point,Low Point,12.19,Port Townsend,48 29.09,123  0.40,48.4858,-123.0111,Intertidal areas off Low Point.,LOW,1219,424,San Juan Islands,Northern Inland,0
+Reef S of Dinner Is.,Reef S of Dinner Island,12.2,Port Townsend,48 30.30,123  0.41,48.5083,-123.0114,Intertidal reefs and rocks just south of Dinner Island (USFWS ID 74).,LOW,1220,425,San Juan Islands,Northern Inland,0
+NW of Dinner Is. (N Bay),Reef NW of Dinner Island,12.21,Port Townsend,48 30.59,123  0.99,48.5164,-123.0275,Intertidal reefs and rocks in North Bay (northwest of Dinner Island).,LOW,1221,426,San Juan Islands,Northern Inland,0
+Pear Point Area,Pear Pt Area,12.22,Port Townsend,48 30.89,122 58.82,48.5247,-122.9894,Intertidal reefs off Pear Point.,LOW,1222,427,San Juan Islands,Northern Inland,0
+Pear Point Area,Pear Pt Area,12.22,Port Townsend,48 30.83,122 58.94,48.5231,-122.9928,Intertidal reefs off Pear Point.,LOW,1222,428,San Juan Islands,Northern Inland,0
+Pear Point Area,Pear Pt Area,12.22,Port Townsend,48 31.08,122 58.58,48.5189,-122.9828,Intertidal reefs just north of Pear Point.,LOW,1222,429,San Juan Islands,Northern Inland,0
+Danger Rk/NE of Pear Pt,Danger Rocks,12.23,Port Townsend,48 31.26,122 58.16,48.5239,-122.9711,Intertidal areas around Danger Rock.,LOW,1223,430,San Juan Islands,Northern Inland,0
+Reef Point,Reef Point,12.24,Port Townsend,48 31.70,122 58.00,48.5361,-122.9667,Intertidal rock (USFWS ID 51) and reef area off Reef Point.,LOW,1224,431,San Juan Islands,Northern Inland,0
+Rock in Hicks Bay,Rocks in Hicks Bay,12.25,Port Townsend,48 33.10,122 58.07,48.5528,-122.9686,Intertidal areas on rocks in Hicks Bay.,LOW,1225,432,San Juan Islands,Northern Inland,0
+Rocks NE of Pt. George,Rks NE of Pt George/Parks Bay,12.26,Port Townsend,48 33.99,122 59.01,48.5775,-122.9836,Intertidal areas on rocks northeast of Point George.,LOW,1226,433,San Juan Islands,Northern Inland,0
+"Tift Rocks, S of Neck Pt",Tift Rocks/S of Neck Point,12.27,Port Townsend,48 34.71,122 59.84,48.5864,-123.0067,Intertidal areas on Tift Rocks (south of Neck Point).,LOW,1227,434,San Juan Islands,Northern Inland,0
+"E Of Neck Pt, Shaw Island",E of Neck Point/Shaw Island,12.28,Port Townsend,48 35.22,123  0.38,48.5894,-123.0106,Intertidal areas on rocks east of Neck Point.,LOW,1228,435,San Juan Islands,Northern Inland,0
+Bell Is./E of Crane Is.,Bell Island/E of Crane Island,12.29,Port Townsend,48 35.77,122 58.76,48.6047,-122.9878,Intertidal areas on Bell Island.,LOW,1229,436,San Juan Islands,Northern Inland,0
+Reef W of Cliff Is.,Shirt Tail Ree/W of Cliff Island,12.3,Port Townsend,48 35.33,123  1.13,48.5925,-123.0203,Intertidal reef area west of Cliff Island.,LOW,1230,437,San Juan Islands,Northern Inland,0
+Nob Island,Nob Island,12.31,Port Townsend,48 35.47,123  1.04,48.5964,-123.0178,Intertidal areas on Nob Island.,LOW,1231,438,San Juan Islands,Northern Inland,0
+Bird Rk./W of Crane Is.,Bird Rock/W of Crane Island,12.32,Port Townsend,48 35.90,123  0.82,48.6083,-123.0228,Intertidal areas on Bird Rock (USFWS ID 68).,LOW,1232,439,San Juan Islands,Northern Inland,0
+Reef Island,Reef Island,12.33,Port Townsend,48 36.31,123  0.97,48.6086,-123.0269,Intertidal areas on Reef Island.,LOW,1233,440,San Juan Islands,Northern Inland,0
+Rock W of Yellow Is,Reefs W of Yellow Is,12.34,Port Townsend,48 35.46,123  1.97,48.5961,-123.0436,Intertidal areas on rocks and reef west of Yellow Island (USFWS ID 69).,LOW,1234,441,San Juan Islands,Northern Inland,0
+Rocky Bay,Rocky Bay/O'neil Is,12.35,Port Townsend,48 36.05,123  5.87,48.6014,-123.1075,Intertidal areas on reef in west Rocky Bay.,LOW,1235,442,San Juan Islands,Northern Inland,0
+Rocks SW of O'Neil Is.,Rocky Bay/O'neil Is,12.36,Port Townsend,48 36.20,123  5.53,48.6056,-123.0981,Intertidal areas on O'Neil Island in Rocky Bay.,LOW,1235,443,San Juan Islands,Northern Inland,0
+Blind Island,Blind Island,12.37,Port Townsend,48 35.21,122 56.33,48.5892,-122.9425,Intertidal areas on Blind Island.,LOW,1237,444,San Juan Islands,Northern Inland,0
+Blind Island,Blind Island,12.37,Port Townsend,48 35.12,122 56.13,48.5867,-122.9369,Intertidal areas on rocks and reefs around Blind Island.,LOW,1237,445,San Juan Islands,Northern Inland,0
+S of Grindstone Harbor,SE of Grindstone Harbor,12.38,Port Townsend,48 35.49,122 54.07,48.5969,-122.9019,Intertidal rocks and reef south of Grindstone Harbor.,LOW,1238,446,San Juan Islands,Northern Inland,0
+Shag Rock,Shag Rock,12.39,Port Townsend,48 35.50,122 52.43,48.5972,-122.8786,Intertidal areas on Shag Rock (USFWS ID 53).,LOW,1239,447,San Juan Islands,Northern Inland,0
+East Sound/Twin Rocks,East Sound/Twin Rocks,12.4,Port Townsend,48 36.94,122 51.82,48.6261,-122.8728,Intertidal areas around Twin Rocks in East Sound.,LOW,1240,448,San Juan Islands,Northern Inland,0
+Leo Reef,Leo Reef,12.41,Port Townsend,48 33.19,122 51.25,48.5553,-122.8569,Intertidal areas around Leo Reef.,LOW,1241,449,San Juan Islands,Northern Inland,0
+Flower Island,Flower Island,12.42,Port Townsend,48 32.78,122 51.11,48.555,-122.8531,Intertidal areas around Flower Island (USFWS ID 54).,LOW,1242,450,San Juan Islands,Northern Inland,0
+Willow Island,Willow Island,12.43,Port Townsend,48 32.38,122 49.30,48.5439,-122.825,Intertidal areas around Willow Island (USFWS ID 55).,LOW,1243,451,San Juan Islands,Northern Inland,0
+Hauled Out Unknown,Small Island,12.44,Port Townsend,48 29.74,122 51.71,48.5039,-122.8697,Intertidal areas on Small Island (USFWS ID 1).,LOW,1244,452,San Juan Islands,Northern Inland,0
+Crab Island,Crab Island,12.45,Port Townsend,48 27.71,122 50.60,48.4697,-122.85,Intertidal areas on Crab Island (USFWS ID 5).,LOW,1245,453,San Juan Islands,Northern Inland,0
+Ram Island,Ram Island,12.46,Port Townsend,48 28.51,122 49.93,48.4808,-122.8425,Intertidal areas on Ram Island.,LOW,1246,454,San Juan Islands,Northern Inland,0
+McConnell Island,McConnell Island,12.47,Port Townsend,48 35.65,123  1.30,48.6014,-123.025,Intertidal areas around McConnell Island.,LOW,1247,455,San Juan Islands,Northern Inland,0
+Reef E of Jones Island,Reef E of Jones Island,12.48,Port Townsend,48 36.74,123  2.16,48.6206,-123.0378,Intertidal reef areas on east side of Jones Island.,LOW,1248,456,San Juan Islands,Northern Inland,0
+East Sound/NW of Rosario,E Sound/NW of Rosario,12.49,Port Townsend,48 39.16,122 52.82,48.6544,-122.8894,Intertidal reefs and rocks in East Sound.,LOW,1249,457,San Juan Islands,Northern Inland,0
+East Sound/NW of Rosario,E Sound/NW of Rosario,12.49,Port Townsend,48 39.42,122 54.48,48.6617,-122.9133,Intertidal reef areas on west side of East Sound.,LOW,1249,458,San Juan Islands,Northern Inland,0
+Low Island,Low Island,12.5,Port Townsend,48 35.36,123  1.46,48.5933,-123.0294,Intertidal areas around Low Island.,LOW,1250,459,San Juan Islands,Northern Inland,0
+Turn Rock,Turn Rock,12.51,Port Townsend,48 32.14,122 57.79,48.5372,-122.9719,Intertidal areas on Turn Rock.,LOW,1251,460,San Juan Islands,Northern Inland,0
+E SOUND/S OF DOLPHIN BAY,E SOUND/S OF DOLPHIN BAY,12.52,Port Townsend,48 37.74,122 52.67,48.6372,-122.8853,,,1252,,San Juan Islands,Northern Inland,0
+N SIDE OF CHARLES IS,N SIDE OF CHARLES IS,12.53,Port Townsend,48 26.69,,48.4525,-122.9095,,,1253,,San Juan Islands,Northern Inland,0
+In Tow,In Tow,12.89,Port Townsend,,,,,animals in tow,,1289,,San Juan Islands,Northern Inland,0
+Unspecified-H2O,Unspecified-H2O,12.99,Port Townsend,?,?,,,Animals in open water,ALL,1299,,,NA,0
+Hauled Out Unknown,Hauled Out Unknown,13,Port Townsend,,,,,unknown haul out location 13.00,,1300,,San Juan Islands,Northern Inland,0
+Sucia Island Area,Sucia Is/S Side Reefs,13.01,Port Townsend,48 46.25,122 54.09,48.7736,-122.9025,Intertidal ledges along north side of island.,LOW,1301,461,San Juan Islands,Northern Inland,0
+Sucia Island Area,Sucia Is/S Side Reefs,13.01,Port Townsend,48 45.37,122 55.13,48.7603,-122.9203,Intertidal rocks off southwest side of island.,LOW,1301,462,San Juan Islands,Northern Inland,0
+"Echo Bay, Ewing Island",Echo Bay/S of Ewing Island,13.02,Port Townsend,48 45.77,122 52.58,48.7714,-122.8828,Intertidal areas during pupping season.,LOW,1302,463,San Juan Islands,Northern Inland,0
+"Echo Bay, Finger Islands","Echo Bay, Finger Islands",13.03,Port Townsend,48 45.46,122 53.32,48.7628,-122.8922,Intertidal ledges along north side of island.,LOW,1303,464,San Juan Islands,Northern Inland,0
+"Echo Bay, Finger Islands","Echo Bay, Finger Islands",13.03,Port Townsend,48 45.17,122 52.86,48.7547,-122.8906,Intertidal ledges along south east side of island.,LOW,1303,465,San Juan Islands,Northern Inland,0
+Clements Reef,Clements Reef,13.04,Port Townsend,48 46.55,122 53.21,48.7819,-122.8892,Intertidal areas on reef (USFWS ID 44).,LOW,1304,466,San Juan Islands,Northern Inland,0
+Reef SE of Clements,Reef SE of Clements,13.05,Port Townsend,48 46.19,122 52.64,48.7719,-122.8844,Intertidal areas on reef (USFWS ID 45) south east of Clements Reef.,LOW,1304,467,San Juan Islands,Northern Inland,0
+Parker Reef,Parker Reef,13.06,Port Townsend,48 43.56,122 53.57,48.7322,-122.8992,Intertidal areas on reef (USFWS ID 46).,LOW,1306,468,San Juan Islands,Northern Inland,0
+Patos Island,Patos Island,13.07,Port Townsend,48 47.34,122 58.09,48.7928,-122.9692,Intertidal ledges and reef areas on north side.,LOW,1307,469,San Juan Islands,Northern Inland,0
+Bare Island,Bare Island,13.08,Port Townsend,48 43.79,123  0.79,48.7386,-123.0219,Intertidal ledges around Bare Island (USFWS ID 84).,LOW,1308,470,San Juan Islands,Northern Inland,0
+Reef E of Skipjack Is.,Reef E of Skipjack Is.,13.09,Port Townsend,48 43.83,123  1.22,48.7397,-123.0228,Intertidal reef area between Bare and Skipjack Islands.,LOW,1309,471,San Juan Islands,Northern Inland,0
+Skipjack Island,Skipjack Island,13.11,Port Townsend,48 43.98,123  2.26,48.7439,-123.0406,Intertidal ledges on northwest side of island (USFWS ID 42).,LOW,1311,472,San Juan Islands,Northern Inland,0
+Skipjack Island,Skipjack Island,13.11,Port Townsend,48 44.00,123  2.04,48.7333,-123.0344,Intertidal ledges on northeast side of island (USFWS ID 42).,LOW,1311,473,San Juan Islands,Northern Inland,0
+Reef E of Skipjack,Reef E of Skipjack,13.11,Port Townsend,48 43.99,123  1.70,48.7442,-123.0361,Intertidal ledges and reef area around unnamed rock (USFWS ID 43) east of the Skipjack Island.,LOW,1311,474,San Juan Islands,Northern Inland,0
+White Rock Area,White Rock Area,13.12,Port Townsend,48 40.27,123  4.43,48.6742,-123.0786,Intertidal areas on the north White Rock (USFWS ID 40).,LOW,1312,475,San Juan Islands,Northern Inland,0
+White Rock Area,White Rock Area,13.12,Port Townsend,48 40.18,123  4.31,48.6717,-123.0753,Intertidal areas on the middle White Rock (USFWS ID 40).,LOW,1312,476,San Juan Islands,Northern Inland,0
+White Rock Area,White Rock Area,13.12,Port Townsend,48 40.01,123  4.15,48.6669,-123.0708,Intertidal areas on the south White Rock (USFWS ID 40).,LOW,1312,477,San Juan Islands,Northern Inland,0
+White Rock Area,White Rock Area,13.12,Port Townsend,48 40.09,123  4.21,48.6692,-123.0725,Intertidal areas on the reef off the south end of White Rock.,LOW,1312,478,San Juan Islands,Northern Inland,0
+Flattop Island,Flattop Island,13.13,Port Townsend,48 38.74,123  5.15,48.6539,-123.0875,Intertidal areas on west end of Flattop Island (USFWS ID 39).,LOW,1313,479,San Juan Islands,Northern Inland,0
+Ftlattop Island,Flattop Island,13.13,Port Townsend,48 38.89,123  4.60,48.6581,-123.0833,Intertidal areas on east end of island.,LOW,1313,480,San Juan Islands,Northern Inland,0
+Flattop Island,Flattop Island,13.13,Port Townsend,48 38.71,123  4.88,48.6531,-123.0911,Intertidal ledges and reef on south side of island.,LOW,1313,481,San Juan Islands,Northern Inland,0
+Gull Rock,Gull Rock,13.14,Port Townsend,48 39.07,123  5.31,48.6519,-123.0919,Intertidal areas around rock (USFWS ID 38).,LOW,1314,482,San Juan Islands,Northern Inland,0
+Stuart Is./Reid Harbor,Stuart Is./Reid Harbor,13.15,Port Townsend,48 39.80,123 10.04,48.6722,-123.1678,Intertidal ledges and reefs around entrance into Reid Harbor.,LOW,1315,483,San Juan Islands,Northern Inland,0
+Satellite Is./Prevost Harbor,Satellite Is./Prevost Harbor,13.16,Port Townsend,48 40.68,123 11.00,48.6856,-123.1833,Intertidal ledges and reef areas around Satellite Island in Prevost Harbor.,LOW,1316,484,San Juan Islands,Northern Inland,0
+Ripple Island,Ripple Island,13.17,Port Townsend,48 39.38,123  7.79,48.6606,-123.1386,Intertidal areas around island (USFWS ID 35).,LOW,1317,485,San Juan Islands,Northern Inland,0
+Gull Reef,Gull Reef,13.18,Port Townsend,48 39.29,123  8.72,48.6581,-123.1533,Intertidal rocks and reef areas around Gull Reef (USFWS ID 34).,LOW,1318,486,San Juan Islands,Northern Inland,0
+Shag Reef,Shag Reef,13.19,Port Townsend,48 39.26,123  7.92,48.6572,-123.1422,Intertidal areas around Shag Reef (USFWS ID 36).,LOW,1319,487,San Juan Islands,Northern Inland,0
+Little Cactus Island,Little Cactus,13.2,Port Townsend,48 39.02,123  8.05,48.6506,-123.1347,Intertidal ledges and rocks around Little Cactus Island (USFSW ID 37).,LOW,1320,488,San Juan Islands,Northern Inland,0
+Cactus Island Area,Cactus Is/S Side Reefs,13.21,Port Townsend,48 38.89,123  7.67,48.6581,-123.1353,Intertidal ledges and reef areas on south side of Cactus Island.,LOW,1321,489,San Juan Islands,Northern Inland,0
+Cactus Island Area,Cactus Is/S Side Reefs,13.21,Port Townsend,48 38.90,123  7.51,48.6583,-123.1308,Intertidal ledges and reef areas on east end of Cactus Island.,LOW,1321,490,San Juan Islands,Northern Inland,0
+Rocks SE of Cactus,Reef E of Cactus Is,13.22,Port Townsend,48 38.89,123  7.43,48.6581,-123.1286,Intertidal rocks and reef areas off southeast end of Cactus Island.,LOW,1322,491,San Juan Islands,Northern Inland,0
+Rf Betw Gull Rf & Cactus,Reef Between Gull & Little Cactus Is,13.23,Port Townsend,48 39.22,123  8.50,48.6561,-123.1472,Intertidal rocks and reef areas between Gull Reef and Little Cactus Island.,LOW,1323,492,San Juan Islands,Northern Inland,0
+Sentinel Island,Sentinel Island,13.24,Port Townsend,48 38.41,123  9.07,48.6447,-123.1519,Intertidal ledges around Sentinel Island.,LOW,1324,493,San Juan Islands,Northern Inland,0
+Sentinel Rock,Sentinel Rock,13.25,Port Townsend,48 38.41,123  9.35,48.6447,-123.1597,Intertidal rocks and reef areas around Sentinel Rock (USFWS ID 32).,LOW,1325,494,San Juan Islands,Northern Inland,0
+"Posey Is, Reef N of Pearl",Posey Island/Reef N of Pearl,13.26,Port Townsend,48 37.12,123  9.97,48.62,-123.1769,Intertidal rocks and reef areas on north side of Pearl Island.,LOW,1326,495,San Juan Islands,Northern Inland,0
+Barren Island,Barren Island,13.27,Port Townsend,48 37.39,123  9.58,48.6275,-123.1661,Intertidal rocks and reef areas around Barren Island (USFWS ID 30).,LOW,1327,496,San Juan Islands,Northern Inland,0
+Battleship Island,Battleship Is,13.28,Port Townsend,48 37.46,123 11.01,48.6294,-123.1836,Intertidal ledges and reef areas around Battleship Island (USFWS ID 31).,LOW,1328,497,San Juan Islands,Northern Inland,0
+Rocks off Mccracken Pt,McCracken Pt Area,13.29,Port Townsend,48 37.19,123 10.82,48.6219,-123.1894,Intertidal rocks and reef areas southwest of McCracken Point.,LOW,1329,498,San Juan Islands,Northern Inland,0
+So Henry Island Area,S Henry Island,13.3,Port Townsend,48 34.94,123 10.19,48.5928,-123.1719,Intertidal rocks and reef areas around south entrance to Mosquito Pass.,LOW,1330,499,San Juan Islands,Northern Inland,0
+So Henry Island Area,S Henry Island,13.3,Port Townsend,48 35.01,123 10.76,48.5836,-123.1878,Intertidal rocks and reef areas off southeast end of Henry Island.,LOW,1330,500,San Juan Islands,Northern Inland,0
+Mosquito Pass Area,Mosquito Pass Area,13.31,Port Townsend,48 35.86,123 10.15,48.6072,-123.1708,Intertidal rocks and reef areas along Mosquito Pass.,LOW,1331,501,San Juan Islands,Northern Inland,0
+False Bay Area,Pile Pt/Kanaka Bay/False Bay,13.32,Port Townsend,48 28.87,123  4.58,48.4908,-123.0828,Intertidal rocks and reef area on unnamed rock (USFWS ID 27) off False Bay.,LOW,1332,502,San Juan Islands,Northern Inland,0
+Freeman Island,Freeman Island,13.33,Port Townsend,48 41.97,122 57.04,48.7103,-122.9511,Intertidal ledges and reef areas around Freeman Island.,LOW,1333,503,San Juan Islands,Northern Inland,0
+Speiden Island,Speiden Is S Side,13.34,Port Townsend,48 38.48,123  8.56,48.6467,-123.1489,Intertidal ledges on south side of Speiden Island.,LOW,1334,504,San Juan Islands,Northern Inland,0
+Speiden Island,Speiden Is,13.34,Port Townsend,48 38.37,123  8.31,48.6436,-123.1419,Intertidal ledges on south side of Speiden Island.,LOW,1334,505,San Juan Islands,Northern Inland,0
+Speiden Island,Speiden Is,13.34,Port Townsend,48 38.31,123  8.15,48.6419,-123.1375,Intertidal ledges on south side of Speiden Island.,LOW,1334,506,San Juan Islands,Northern Inland,0
+Eagle Point Area,Eagle Pt Area,13.35,Port Townsend,48 27.50,123  2.09,48.4639,-123.0358,Intertidal rocks and reef areas off Eagle Point.,LOW,1335,507,San Juan Islands,Northern Inland,0
+Pt. Doughty,Pt Doughty,13.36,Port Townsend,48 42.74,122 56.98,48.7206,-122.9606,Intertidal ledges and rocks along south side of Point Doughty.,LOW,1336,508,San Juan Islands,Northern Inland,0
+Lime Kiln Pt. Area,Lime Kiln Pt. Area,13.37,Port Townsend,48 29.85,123 07.78,48.5069,-123.1383,,Low low,1337,,San Juan Islands,Northern Inland,0
+LOW IS/SAN JUAN CO PK/SMALL POX BAY,LOW IS/SAN JUAN CO PK/SMALL POX BAY,13.38,Port Townsend,48 32.60,123 9.87,48.55,-123.1519,,,1338,,San Juan Islands,Northern Inland,0
+Green point (Speiden Island),Green point (Speiden Island),13.39,Port Townsend,48 38.01,123 6.37,48.6336,-123.1019,,,1339,,San Juan Islands,Northern Inland,0
+SW side of Henry Island,SW side of Henry Island,13.4,,48 35.48,123 12.15,48.5967,-123.2042,SW side of Henry Island,,1340,,San Juan Islands,Northern Inland,0
+In Tow,In Tow,13.89,Port Townsend,,,,,animals in tow,,1389,,San Juan Islands,Northern Inland,0
+Unspecified-H2O,Unspecified-H2O,13.99,Port Townsend,?,?,,,Animals in open water,ALL,1399,,,NA,0
+Hauled Out Unknown,Hauled Out Unknown,14,Vancouver,,,,,unknown haul out location 14.00,,1400,,BC,CANADA,0
+Boiling Reef,E Pt/Boiling Reef,14.01,Vancouver,48 47.33,123  2.27,48.7925,-123.0408,Intertidal rocks and reef areas around Boiling Reef.,LOW,1401,509,BC,CANADA,0
+Race Rocks,Race Rocks,14.02,Vancouver,48 17.79,123 31.76,48.3053,-123.5378,Intertidal rocks and reef areas around Race Rocks.,LOW,1402,510,BC,CANADA,0
+Chain Islets,Chain Islets,14.03,Vancouver,48 25.24,123 15.83,48.4233,-123.2731,On scattered intertidal rocks and reef areas around Chain Islets.,LOW,1403,511,BC,CANADA,0
+Trial Island,Trial Islands,14.04,Vancouver,48 24.29,123 17.97,48.4081,-123.3103,Intertidal rocks and reef areas around Trail Island.,LOW,1404,512,BC,CANADA,0
+Kelp Reefs,Kelp Reef,14.05,Vancouver,48 33.37,123 14.72,48.5603,-123.2533,Intertidal rocks and reef areas around Kelp Reef.,LOW,1405,513,BC,CANADA,0
+D'Arcy Island,D'Arcy Is,14.06,Vancouver,48 33.25,123 16.62,48.5569,-123.2839,Intertidal rocks and reef areas around D'Arcy Island.,LOW,1406,514,BC,CANADA,0
+Sallas Rocks,Sallas Rocks,14.07,Vancouver,48 35.11,123 17.46,48.5864,-123.2961,Intertidal rocks and reef areas around Sallas Rocks.,LOW,1407,515,BC,CANADA,0
+Little D'Arcy,Little D'Arcy Is,14.08,Vancouver,48 34.24,123 15.55,48.5733,-123.2653,Intertidal rocks and reef areas around Little D'Arcy Island.,LOW,1408,516,BC,CANADA,0
+Cooper Reef,Cooper Reef,14.09,Vancouver,48 40.38,123 16.33,48.6772,-123.2758,Intertidal rocks and reef areas around Cooper Reef.,LOW,1409,517,BC,CANADA,0
+Java Islets,Java Islets,14.1,Vancouver,48 45.57,123  6.21,48.7658,-123.1058,Intertidal rocks and reef areas around the Java Islets.,LOW,1410,518,BC,CANADA,0
+Tumbo Island Area,Tumbo Island,14.11,Vancouver,48 47.98,123  5.59,48.8106,-123.0997,Intertidal rocks and reef areas off west end of Tumbo Island.,LOW,1411,519,BC,CANADA,0
+Tumbo Island Area,Tumbo Island,14.11,Vancouver,48 48.19,123  6.76,48.8053,-123.1211,Intertidal rocks and reef areas off west end of Tumbo Island.,LOW,1411,520,BC,CANADA,0
+Belle Chain Area,Belle Chain,14.12,Vancouver,48 49.57,123 10.54,48.8325,-123.1817,Intertidal rocks and reef areas of the Belle Chain.,LOW,1412,521,BC,CANADA,0
+Belle Chain Area,Belle Chain,14.12,Vancouver,48 49.67,123 11.56,48.8353,-123.1989,Intertidal rocks and reef areas just west of Belle Chain.,LOW,1412,522,BC,CANADA,0
+Belle Chain Area,Belle Chain,14.12,Vancouver,48 50.42,123 12.65,48.845,-123.2181,Intertidal rocks and reef areas on north end of Belle Chain.,LOW,1412,523,BC,CANADA,0
+Gossip Island,Gossip Is,14.13,Vancouver,48 53.52,123 18.74,48.8978,-123.3206,Intertidal ledges and reef areas around Gossip Island.,LOW,1413,524,BC,CANADA,0
+Fraser R./Roberts Bank,Fraser R/Roberts Bank/Steveston,14.14,Vancouver,49  6.64,123 11.97,49.1178,-123.2103,Intertidal channels and shoals along Reifel Island.,LOW,1414,525,BC,CANADA,0
+Fraser R./Roberts Bank,Fraser R/Roberts Bank/Steveston,14.14,Vancouver,49  6.24,123 11.51,49.1067,-123.1975,Intertidal channels and shoals along southeast side of Reifel Island.,LOW,1414,526,BC,CANADA,0
+Fraser R./Roberts Bank,Fraser R/Roberts Bank/Steveston,14.14,Vancouver,49  3.88,123 11.78,49.0744,-123.205,Intertidal channels and shoals on Roberts Bank.,LOW,1414,527,BC,CANADA,0
+Fraser R./Roberts Bank,Fraser R/Roberts Bank/Steveston,14.14,Vancouver,49  4.15,123  9.81,49.0708,-123.1725,Intertidal channels and shoals on Roberts Bank.,LOW,1414,528,BC,CANADA,0
+Tsawwassen Ferry,Tsawwassen Ferry,14.15,Vancouver,49  0.67,123  6.77,49.0186,-123.1214,Intertidal areas around jetty just south of Tswwassen ferry terminal.,LOW,1415,529,BC,CANADA,0
+Se Mayne/Edith Point,Se Mayne/Edith Point,14.16,Vancouver,48 51.41,123 15.17,48.8614,-123.2547,Intertidal ledges and rocks off Edith Point on Mayne Island.,LOW,1416,530,BC,CANADA,0
+Fraser R./Sand Heads Jetty,Se Mayne/Edith Point,14.17,Vancouver,49  6.41,123 18.01,49.1114,-123.3003,On end of jetty near Sand Heads light during spring months.,ALL,1417,531,BC,CANADA,0
+In Tow,,14.89,Vancouver,,,,,animals in tow,,1489,,BC,CANADA,0
+Unspecified-H2O,,14.99,Vancouver,?,?,,,Animals in open water,ALL,1499,,,NA,0
+Large Navigation Buoy,Buoy Gone,1.01,Astoria,46 12.17,124 11.00,46.2047,-124.1833,Offshore navigation Buoy (LNB) removed in late 1980's.,ALL,,1,,Coastal,1
+Oregon Haulouts,,15,,,,,,Unknown Haulout location 15.00,,,,,NA,0
+Tillamook Rock,,15.01,,,,45.93675,-124.01854,Lighthouse,,,,OREGON,Coastal,0
+Tillamook Head,,15.02,,,,45.93559,-123.98852,Mainland,,,,OREGON,Coastal,0
+Ecola Point,,15.03,,,,45.91852,-123.98049,Ecola Point,,,,OREGON,Coastal,0
+Cape Falcon,,15.04,,,,45.7682,-123.98225,North Side Cove,,,,OREGON,Coastal,0
+Cape Falcon,,15.05,,,,45.76786,-123.98413,West Tip,,,,OREGON,Coastal,0
+Nehalem River,,15.06,,,,45.6626,-123.93241,Nehalem River,,,,OREGON,Coastal,0
+Tillamook Bay,,15.07,,,,45.54502,-123.92332,Tillamook Bay,,,,OREGON,Coastal,0
+Three Arch Rocks,,15.08,,,,45.46374,-123.98337,Three Arch Rocks,,,,OREGON,Coastal,0
+Netarts Bay,,15.09,,,,45.43762,-123.95571,Mouth,,,,OREGON,Coastal,0
+Netarts Bay,,15.1,,,,45.42133,-123.94459,Main,,,,OREGON,Coastal,0
+Cape Lookout,,15.11,,,,45.34055,-124.0017,Ledge,,,,OREGON,Coastal,0
+Cape Lookout,,15.12,,,,45.34026,-123.99308,Cove,,,,OREGON,Coastal,0
+Nestucca River,,15.13,,,,45.16335,-123.96707,Nestucca River,,,,OREGON,Coastal,0
+Cascade Head,,15.14,,,,45.07549,-124.00726,Hart Cove,,,,OREGON,Coastal,0
+Cascade Head,,15.15,,,,45.07238,-124.00943,Sea Lion Cove_1,,,,OREGON,Coastal,0
+Cascade Head,,15.16,,,,45.06922,-124.00853,Sea Lion Cove_2,,,,OREGON,Coastal,0
+Cascade Head,,15.17,,,,45.06708,-124.01234,Sea Lion Cove_3,,,,OREGON,Coastal,0
+Salmon River,,15.18,,,,45.04687,-124.00331,Salmon River,,,,OREGON,Coastal,0
+Siletz Bay,,15.19,,,,44.92567,-124.02332,Siletz Bay,,,,OREGON,Coastal,0
+Fogarty Creek,,15.2,,,,44.84116,-124.05483,North-Rocks,,,,OREGON,Coastal,0
+Fogarty Creek,,15.21,,,,44.83816,-124.05618,South-Mainland,,,,OREGON,Coastal,0
+Boiler Bay,,15.22,,,,44.83403,-124.05878,Boiler Bay,,,,OREGON,Coastal,0
+Whale Cove,,15.23,,,,44.78845,-124.06876,Whale Cove,,,,OREGON,Coastal,0
+Cape Foulweather,,15.24,,,,44.75478,-124.06532,Cape Rocks,,,,OREGON,Coastal,0
+Cape Foulweather,,15.25,,,,44.75119,-124.07501,Gull Rock (Cape Foulweather),,,,OREGON,Coastal,0
+Cape Foulweather,,15.26,,,,44.74441,-124.07031,South Rocks,,,,OREGON,Coastal,0
+Yaquina Head,,15.27,,,,44.67393,-124.0784,Yaquina Head,,,,OREGON,Coastal,0
+Yaquina Bay,,15.28,,,,44.63001,-124.05162,Bayfront,,,,OREGON,Coastal,0
+Yaquina Bay,,15.29,,,,44.62212,-124.0191,Sallys Bend,,,,OREGON,Coastal,0
+Yaquina Bay,,15.3,,,,44.61861,-124.05847,Finger Jetty,,,,OREGON,Coastal,0
+Seal Rock,,15.31,,,,44.50219,-124.09433,North Offshore,,,,OREGON,Coastal,0
+Seal Rock,,15.32,,,,44.48976,-124.08573,South Nearshore,,,,OREGON,Coastal,0
+Alsea Bay,,15.33,,,,44.43652,-124.05501,Mac Marina,,,,OREGON,Coastal,0
+Alsea Bay,,15.34,,,,44.43472,-124.03309,North Channel,,,,OREGON,Coastal,0
+Alsea Bay,,15.35,,,,44.43345,-124.06971,East Bridge,,,,OREGON,Coastal,0
+Alsea Bay,,15.36,,,,44.43243,-124.04279,Mac Slough,,,,OREGON,Coastal,0
+Alsea Bay,,15.37,,,,44.43202,-124.07273,West Bridge,,,,OREGON,Coastal,0
+Alsea Bay,,15.38,,,,44.42438,-124.07782,Mouth,,,,OREGON,Coastal,0
+Cape Perpetua,,15.39,,,,44.29231,-124.11318,Cape Perpetua,,,,OREGON,Coastal,0
+Strawberry Hill,,15.4,,,,44.25437,-124.11292,North,,,,OREGON,Coastal,0
+Strawberry Hill,,15.41,,,,44.25008,-124.11429,South,,,,OREGON,Coastal,0
+South 10-Mile,,15.42,,,,44.21418,-124.11578,South 10-Mile,,,,OREGON,Coastal,0
+Sea Lion Caves,,15.43,,,,44.12327,-124.12745,North,,,,OREGON,Coastal,0
+Sea Lion Caves,,15.44,,,,44.12129,-124.12827,South,,,,OREGON,Coastal,0
+Siuslaw River,,15.45,,,,44.00527,-124.12667,East,,,,OREGON,Coastal,0
+Siuslaw River,,15.46,,,,44.00276,-124.12866,West,,,,OREGON,Coastal,0
+Siltcoos Outlet,,15.47,,,,43.87258,-124.15816,Siltcoos Outlet,,,,OREGON,Coastal,0
+Takenitch Outlet,,15.48,,,,43.79904,-124.17183,Takenitch Outlet,,,,OREGON,Coastal,0
+Umpqua River,,15.49,,,,43.7428,-124.15074,Upper Bay,,,,OREGON,Coastal,0
+Umpqua River,,15.5,,,,43.71153,-124.16128,Lower Bay,,,,OREGON,Coastal,0
+Tenmile Outlet,,15.51,,,,43.56832,-124.22959,Tenmile Outlet,,,,OREGON,Coastal,0
+Coos Bay,,15.52,,,,43.39326,-124.20961,Coos Port,,,,OREGON,Coastal,0
+Coos Bay,,15.53,,,,43.38714,-124.29541,Clam Island,,,,OREGON,Coastal,0
+Coos Bay,,15.54,,,,43.3665,-124.30349,Pigeon Point,,,,OREGON,Coastal,0
+Gregory Point,,15.55,,,,43.33827,-124.38073,Squaw Island,,,,OREGON,Coastal,0
+Coos Bay,,15.56,,,,43.32685,-124.32288,South Slough,,,,OREGON,Coastal,0
+Cape Arago,,15.57,,,,43.31371,-124.40822,Simpsons Reef,,,,OREGON,Coastal,0
+Cape Arago,,15.58,,,,43.31327,-124.40132,Shell Island Area,,,,OREGON,Coastal,0
+Cape Arago,,15.59,,,,43.30878,-124.40042,Mainland,,,,OREGON,Coastal,0
+Cape Arago,,15.6,,,,43.30154,-124.39975,South Cove,,,,OREGON,Coastal,0
+Fivemile Point,,15.61,,,,43.2197,-124.40126,Fivemile Point,,,,OREGON,Coastal,0
+Bandon,,15.62,,,,43.1279,-124.40822,Bandon Marsh,,,,OREGON,Coastal,0
+Bandon,,15.63,,,,43.11461,-124.43917,Coquille Point,,,,OREGON,Coastal,0
+Bandon,,15.64,,,,43.10773,-124.44486,Cat And Kittens Rocks,,,,OREGON,Coastal,0
+Blacklock Point,,15.65,,,,42.87578,-124.53636,Blacklock Point,,,,OREGON,Coastal,0
+Castle Rock Or,,15.66,,,,42.85543,-124.54765,Castle Rock Or,,,,OREGON,Coastal,0
+Gull Rock,,15.67,,,,42.85071,-124.55727,Gull Rock,,,,OREGON,Coastal,0
+Cape Blanco,,15.68,,,,42.83698,-124.56725,Cape Blanco,,,,OREGON,Coastal,0
+Blanco Reef,,15.69,,,,42.82385,-124.58355,"Blanco Reef, 'Black Rock'",,,,OREGON,Coastal,0
+Blanco Reef,,15.69,,,,,,"Blanco Reef, 'Pyramid Rock'",,,,OREGON,Coastal,0
+Orford Reef,,15.7,,,,42.79218,-124.60082,Large Brown Rock,,,,OREGON,Coastal,0
+Orford Reef,,15.71,,,,42.79136,-124.60599,Long Brown Rock,,,,OREGON,Coastal,0
+Orford Reef,,15.72,,,,42.79061,-124.59555,Best Rock,,,,OREGON,Coastal,0
+Orford Reef,,15.73,,,,42.78823,-124.60479,Square White Rock,,,,OREGON,Coastal,0
+Orford Reef,,15.74,,,,42.78702,-124.59457,Seal Rock (Orford Reef),,,,OREGON,Coastal,0
+Orford Reef,,15.75,,,,42.78248,-124.60465,Miscellaneous (Orford Reef),,,,OREGON,Coastal,0
+Orford Reef,,15.76,,,,42.77836,-124.59736,Arch Rock,,,,OREGON,Coastal,0
+Orford Reef,,15.77,,,,42.77737,-124.60098,West Conical Rock,,,,OREGON,Coastal,0
+Orford Reef,,15.78,,,,42.77599,-124.60408,Steamboat Rocks,,,,OREGON,Coastal,0
+The Heads,,15.79,,,,42.73968,-124.51551,The Heads,,,,OREGON,Coastal,0
+Humbug Mountain,,15.8,,,,42.6755,-124.45065,Humbug Mountain,,,,OREGON,Coastal,0
+Sisters Rock Area,,15.81,,,,42.58473,-124.39678,Sisters Rock Area,,,,OREGON,Coastal,0
+Hubbard Mound,,15.82,,,,42.48043,-124.42309,Shoreline,,,,OREGON,Coastal,0
+Hubbard Mound,,15.83,,,,42.47813,-124.43842,Reef,,,,OREGON,Coastal,0
+Rogue Reef,,15.84,,,,42.44937,-124.4901,Double Rock,,,,OREGON,Coastal,0
+Rogue Reef,,15.85,,,,42.44841,-124.48365,Needle Rock,,,,OREGON,Coastal,0
+Rogue Reef,,15.86,,,,42.44672,-124.46952,Pyramid Rock-Miscellaneous,,,,OREGON,Coastal,0
+Rogue Reef,,15.87,,,,42.44549,-124.47934,Miscellaneous (Rogue Reef),,,,OREGON,Coastal,0
+Rogue Reef,,15.88,,,,42.44407,-124.46931,Pyramid Rock,,,,OREGON,Coastal,0
+Rogue Reef,,15.89,,,,42.43646,-124.46518,South Seal Rock (Rogue),,,,OREGON,Coastal,0
+Rogue River,,15.9,,,,42.42307,-124.42591,South Jetty Sands,,,,OREGON,Coastal,0
+Rogue River,,15.91,,,,42.42113,-124.42287,Marina,,,,OREGON,Coastal,0
+Hunters Island,,15.92,,,,42.31439,-124.42477,Hunters Island,,,,OREGON,Coastal,0
+Pistol River,,15.93,,,,42.27778,-124.40889,Pistol River,,,,OREGON,Coastal,0
+Crook Point,,15.94,,,,42.2453,-124.4141,Crook Point,,,,OREGON,Coastal,0
+Deer Point,,15.95,,,,42.1949,-124.37386,Deer Point,,,,OREGON,Coastal,0
+Whaleshead Island,,15.96,,,,42.13896,-124.3615,Whaleshead Island,,,,OREGON,Coastal,0
+Brookings-Cape Ferrelo,,15.97,,,,42.0954,-124.34327,Lone Ranch Beach,,,,OREGON,Coastal,0
+Brookings-Cape Ferrelo,,15.98,,,,42.08285,-124.33668,Miscellaneous (Brookings),,,,OREGON,Coastal,0
+Brookings-Cape Ferrelo,,15.99,,,,42.06559,-124.32093,Goat Island,,,,OREGON,Coastal,0
