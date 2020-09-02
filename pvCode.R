@@ -1,4 +1,5 @@
 rm(list=ls())
+library(readr)
 source("functions.R")
 
 #Read in/set up raw dataset
@@ -207,38 +208,52 @@ pv.df$year=factor(pv.df$Year,levels=1975:2019)
 pvtot=with(pv.df[pv.df$use,],tapply(Count.total,list(year,Stock),sum))
 
 
-# create dataframe with all data to get tides from Josh
-pvfortides=subset(pv.df,select=c("seq","Sitecode","Survey.time","Tidestation"))
+# # create dataframe with all data to get tides from Josh
+# pvfortides=subset(pv.df,select=c("seq","Sitecode","Survey.time","Tidestation"))
+# 
+# TideStation=read.csv("LocationTideStation.csv")
+# TideStation=unique(subset(TideStation,select=c("Sitecode","Latitude.DD","Longitude.DD")))
+# siteLat=with(TideStation,tapply(Latitude.DD,Sitecode,mean,na.rm=T))
+# siteLon=with(TideStation,tapply(Longitude.DD,Sitecode,mean,na.rm=T))
+# Location=data.frame(Sitecode=names(siteLat),Latitude=siteLat,Longitude=siteLon)
+# Location$Latitude[is.nan(Location$Latitude)]=NA
+# Location$Longitude[is.nan(Location$Longitude)]=NA
+# Location$Sitecode=as.numeric(as.character(Location$Sitecode))
+# 
+# # add Lat and Lon where available for sitecode
+# pvfortides=merge(pvfortides,Location,by="Sitecode",all.x=TRUE,sort=FALSE)
+# 
+# #Add NOAA tidestation numbers
+# NOAANumbers=data.frame(Tidestation=c("Aberdeen","Astoria","Port Townsend","Seattle"),NOAA=c(9441102,9439040,9444900,9447130))
+# pvfortides=merge(pvfortides,NOAANumbers,by="Tidestation",all.x=TRUE,sort=FALSE)
+# 
+# #order by seq
+# pvfortides=pvfortides[order(pvfortides$seq),]
+# rownames(pvfortides)=NULL
+# 
+# # sort columns in desired order
+# pvfortides=pvfortides[,c("seq","Sitecode","Survey.time","Latitude","Longitude","Tidestation","NOAA")]
+# 
+# # output file for Josh to use
+# write.csv(pvfortides,"pvfortides.csv",row.names=FALSE)
 
-TideStation=read.csv("LocationTideStation.csv")
-TideStation=unique(subset(TideStation,select=c("Sitecode","Latitude.DD","Longitude.DD")))
-siteLat=with(TideStation,tapply(Latitude.DD,Sitecode,mean,na.rm=T))
-siteLon=with(TideStation,tapply(Longitude.DD,Sitecode,mean,na.rm=T))
-Location=data.frame(Sitecode=names(siteLat),Latitude=siteLat,Longitude=siteLon)
-Location$Latitude[is.nan(Location$Latitude)]=NA
-Location$Longitude[is.nan(Location$Longitude)]=NA
-Location$Sitecode=as.numeric(as.character(Location$Sitecode))
+#read in tide values from Josh
+tide_values=as.data.frame(readr::read_csv("Tides from Josh.csv"))
+tide_values$survey_time_UTC = tide_values$survey_time
+tide_values$time_from_high_minutes=survey_time_UTC = as.numeric((tide_values$survey_time_UTC-tide_values$nearest_high_time)/60)
+tide_values$time_from_low_minutes=survey_time_UTC = as.numeric((tide_values$survey_time_UTC-tide_values$nearest_low_time)/60)
 
-# add Lat and Lon where available for sitecode
-pvfortides=merge(pvfortides,Location,by="Sitecode",all.x=TRUE,sort=FALSE)
+pv.df=cbind(pv.df,tide_values[,c("nearest_high_height","nearest_low_height","tide_height","time_from_high_minutes","time_from_low_minutes")])
 
-#Add NOAA tidestation numbers
-NOAANumbers=data.frame(Tidestation=c("Aberdeen","Astoria","Port Townsend","Seattle"),NOAA=c(9441102,9439040,9444900,9447130))
-pvfortides=merge(pvfortides,NOAANumbers,by="Tidestation",all.x=TRUE,sort=FALSE)
-
-#order by seq
-pvfortides=pvfortides[order(pvfortides$seq),]
-rownames(pvfortides)=NULL
-
-# sort columns in desired order
-pvfortides=pvfortides[,c("seq","Sitecode","Survey.time","Latitude","Longitude","Tidestation","NOAA")]
-
-# output file for Josh to use
-write.csv(pvfortides,"pvfortides.csv",row.names=FALSE)
+#remove Tide.ht..ft. and Tidetime which were manually input; Values from Josh and manual tide ht values
+# agreed 97% of the time within +/- 5%. Manual values were incomplete because it didn't include low tide and high tide times
+pv.df$Tide.ht..ft.=NULL
+pv.df$Tidetime=NULL
+# remove seq field no longer needed after tides added
+pv.df$seq=NULL
 
 #table total counts by year and stock
 with(pv.df[pv.df$use,],tapply(Count.total,list(year,Stock),sum))
-
 
 # From here forward only use those with use==TRUE in .seldates
 pv.df.seldates=pv.df[pv.df$use,]
@@ -272,7 +287,7 @@ write.csv(EBBysiteyear,"EBbysiteyear.csv")
 
 
 # Years to use by region
-HCYears=c(1978,1985:1987,1991,1992,1993,1996,1998,1999,2000,2002,2003,2004,2005,2010,2013,2019)
+HCYears=c(1991,1992,1993,1996,1998,1999,2000,2002,2003,2004,2005,2010,2013,2019)
 SPSYears=c(1985,1991,1992,1993,1994,1996,1998,2000,2004,2005,2008,2010,2013,2014,2019)
 EBYears=c(1983,1984,1985,1986,1987,1988,1989,1991,1992,1993,1994,1995,1996,1998,1999,2000,2001,2002,2004,2005,2006,2007,2008,2010,2013,2014,2019)
 SJIYears=c(1983,1984,1985,1986,1987,1988,1989,1990,1991,1992,1993,1994,1995,1996,1998,1999,2000,2001,2002,2004,2005,2006,2010,2013,2014,2019)
@@ -294,74 +309,72 @@ pv.df.selyears=droplevels(pv.df[(pv.df$Region=="Hood Canal" & pv.df$Year%in%HCYe
 
 
 
-#Code below chooses one observation per site within each target window if there are 
-#multiple observations in a year.
-#"Random" is a random choice.
-#"First" is the first observation made that year.
-#"Mean" is the average of all observations made that year.
-#Output slims down the dataset from multiple observations per site in a year to a single 
-#observation per site per year within target survey windows.
-
-pv.random <- obs.one2(pv.df.seldatesyears, "random")
-pv.first <- obs.one2(pv.df.seldatesyears, "first")
-pv.mean <- obs.one2(pv.df.seldatesyears, "avg")
-
-
-
-par(mfrow=c(3,2))
-plot_count(pv.mean,"Hood Canal")
-plot_count(pv.mean,"Strait of Juan de Fuca")
-plot_count(pv.mean,"San Juan Islands")
-plot_count(pv.mean,"Puget Sound")
-plot_count(pv.mean,"Eastern Bays")
-
-
-#############################################################
-##Code below sums total counts, nonpup counts, and pup counts 
-##for each output above.
-##############################################################
-
-#"Random" Obs Counts
-PVrandom.tots <- tapply(pv.random$Count.total, list(pv.random$Year, pv.random$Stock), sum, na.rm=TRUE)
-PVrandom.tots
-PVrandom.pups <- tapply(pv.random$Count.pups, list(pv.random$Year, pv.random$Stock), sum, na.rm=TRUE)
-PVrandom.pups
-PVrandom.nonpups <- tapply(pv.random$Count.nonpup, list(pv.random$Year, pv.random$Stock), sum, na.rm=TRUE)
-PVrandom.nonpups
-
-#"Mean" Obs Counts
-PVmean.tots <- tapply(pv.mean$Count.total, list(pv.mean$Year, pv.mean$Stock), sum, na.rm=TRUE)
-PVmean.tots
-PVmean.pups <- tapply(pv.mean$Count.pups, list(pv.mean$Year, pv.mean$Stock), sum, na.rm=TRUE)
-PVmean.pups
-PVmean.nonpups <- tapply(pv.mean$Count.nonpup, list(pv.mean$Year, pv.mean$Stock), sum, na.rm=TRUE)
-PVmean.nonpups
-
-#"First" Obs Counts
-PVfirst.tots <- tapply(pv.first$Count.total, list(pv.first$Year, pv.first$Stock), sum, na.rm=TRUE)
-PVfirst.tots
-PVfirst.pups <- tapply(pv.first$Count.pups, list(pv.first$Year, pv.first$Stock), sum, na.rm=TRUE)
-PVfirst.pups
-PVfirst.nonpups <- tapply(pv.first$Count.nonpup, list(pv.first$Year, pv.first$Stock), sum, na.rm=TRUE)
-PVfirst.nonpups
-
-######Putting it all together and into a CSV to get a better look.
-PVrandom.tots <- data.frame(PVrandom.tots);PVrandom.tots$Survey <- rownames(PVrandom.tots);PVrandom.tots$SampleType <- "Random";PVrandom.tots$CountType <- "Total"
-PVrandom.pups <- data.frame(PVrandom.pups);PVrandom.pups$Survey <- rownames(PVrandom.pups);PVrandom.pups$SampleType <- "Random";PVrandom.pups$CountType <- "Pups"
-PVrandom.nonpups <- data.frame(PVrandom.nonpups);PVrandom.nonpups$Survey <- rownames(PVrandom.nonpups);PVrandom.nonpups$SampleType <- "Random";PVrandom.nonpups$CountType <- "NonPups"
-
-PVfirst.tots <- data.frame(PVfirst.tots);PVfirst.tots$Survey <- rownames(PVfirst.tots);PVfirst.tots$SampleType <- "First";PVfirst.tots$CountType <- "Total"
-PVfirst.pups <- data.frame(PVfirst.pups);PVfirst.pups$Survey <- rownames(PVfirst.pups);PVfirst.pups$SampleType <- "First";PVfirst.pups$CountType <- "Pups"
-PVfirst.nonpups <- data.frame(PVfirst.nonpups);PVfirst.nonpups$Survey <- rownames(PVfirst.nonpups);PVfirst.nonpups$SampleType <- "First";PVfirst.nonpups$CountType <- "NonPups"
-
-PVmean.tots <- data.frame(PVmean.tots);PVmean.tots$Survey <- rownames(PVmean.tots);PVmean.tots$SampleType <- "Mean";PVmean.tots$CountType <- "Total"
-PVmean.pups <- data.frame(PVmean.pups);PVmean.pups$Survey <- rownames(PVmean.pups);PVmean.pups$SampleType <- "Mean";PVmean.pups$CountType <- "Pups"
-PVmean.nonpups <- data.frame(PVmean.nonpups);PVmean.nonpups$Survey <- rownames(PVmean.nonpups);PVmean.nonpups$SampleType <- "Mean";PVmean.nonpups$CountType <- "NonPups"
-
-
-PV.counts <- rbind(PVrandom.tots, PVrandom.pups, PVrandom.nonpups, PVfirst.tots, PVfirst.pups, PVfirst.nonpups, PVmean.tots, PVmean.pups, PVmean.nonpups)
-write.csv(PV.counts, "PVCountsStock.csv")
-
-load("fitscov.Rdata")
-sqrt(diag(fitsCov$covFits))-fitsCov$fits$std.err[!is.na(fitsCov$fits$std.err)]
-
+# #Code below chooses one observation per site within each target window if there are 
+# #multiple observations in a year.
+# #"Random" is a random choice.
+# #"First" is the first observation made that year.
+# #"Mean" is the average of all observations made that year.
+# #Output slims down the dataset from multiple observations per site in a year to a single 
+# #observation per site per year within target survey windows.
+# 
+# pv.random <- obs.one2(pv.df.seldatesyears, "random")
+# pv.first <- obs.one2(pv.df.seldatesyears, "first")
+# pv.mean <- obs.one2(pv.df.seldatesyears, "avg")
+# 
+# 
+# 
+# par(mfrow=c(3,2))
+# plot_count(pv.mean,"Hood Canal")
+# plot_count(pv.mean,"Strait of Juan de Fuca")
+# plot_count(pv.mean,"San Juan Islands")
+# plot_count(pv.mean,"Puget Sound")
+# plot_count(pv.mean,"Eastern Bays")
+# 
+# 
+# #############################################################
+# ##Code below sums total counts, nonpup counts, and pup counts 
+# ##for each output above.
+# ##############################################################
+# 
+# #"Random" Obs Counts
+# PVrandom.tots <- tapply(pv.random$Count.total, list(pv.random$Year, pv.random$Stock), sum, na.rm=TRUE)
+# PVrandom.tots
+# PVrandom.pups <- tapply(pv.random$Count.pups, list(pv.random$Year, pv.random$Stock), sum, na.rm=TRUE)
+# PVrandom.pups
+# PVrandom.nonpups <- tapply(pv.random$Count.nonpup, list(pv.random$Year, pv.random$Stock), sum, na.rm=TRUE)
+# PVrandom.nonpups
+# 
+# #"Mean" Obs Counts
+# PVmean.tots <- tapply(pv.mean$Count.total, list(pv.mean$Year, pv.mean$Stock), sum, na.rm=TRUE)
+# PVmean.tots
+# PVmean.pups <- tapply(pv.mean$Count.pups, list(pv.mean$Year, pv.mean$Stock), sum, na.rm=TRUE)
+# PVmean.pups
+# PVmean.nonpups <- tapply(pv.mean$Count.nonpup, list(pv.mean$Year, pv.mean$Stock), sum, na.rm=TRUE)
+# PVmean.nonpups
+# 
+# #"First" Obs Counts
+# PVfirst.tots <- tapply(pv.first$Count.total, list(pv.first$Year, pv.first$Stock), sum, na.rm=TRUE)
+# PVfirst.tots
+# PVfirst.pups <- tapply(pv.first$Count.pups, list(pv.first$Year, pv.first$Stock), sum, na.rm=TRUE)
+# PVfirst.pups
+# PVfirst.nonpups <- tapply(pv.first$Count.nonpup, list(pv.first$Year, pv.first$Stock), sum, na.rm=TRUE)
+# PVfirst.nonpups
+# 
+# ######Putting it all together and into a CSV to get a better look.
+# PVrandom.tots <- data.frame(PVrandom.tots);PVrandom.tots$Survey <- rownames(PVrandom.tots);PVrandom.tots$SampleType <- "Random";PVrandom.tots$CountType <- "Total"
+# PVrandom.pups <- data.frame(PVrandom.pups);PVrandom.pups$Survey <- rownames(PVrandom.pups);PVrandom.pups$SampleType <- "Random";PVrandom.pups$CountType <- "Pups"
+# PVrandom.nonpups <- data.frame(PVrandom.nonpups);PVrandom.nonpups$Survey <- rownames(PVrandom.nonpups);PVrandom.nonpups$SampleType <- "Random";PVrandom.nonpups$CountType <- "NonPups"
+# 
+# PVfirst.tots <- data.frame(PVfirst.tots);PVfirst.tots$Survey <- rownames(PVfirst.tots);PVfirst.tots$SampleType <- "First";PVfirst.tots$CountType <- "Total"
+# PVfirst.pups <- data.frame(PVfirst.pups);PVfirst.pups$Survey <- rownames(PVfirst.pups);PVfirst.pups$SampleType <- "First";PVfirst.pups$CountType <- "Pups"
+# PVfirst.nonpups <- data.frame(PVfirst.nonpups);PVfirst.nonpups$Survey <- rownames(PVfirst.nonpups);PVfirst.nonpups$SampleType <- "First";PVfirst.nonpups$CountType <- "NonPups"
+# 
+# PVmean.tots <- data.frame(PVmean.tots);PVmean.tots$Survey <- rownames(PVmean.tots);PVmean.tots$SampleType <- "Mean";PVmean.tots$CountType <- "Total"
+# PVmean.pups <- data.frame(PVmean.pups);PVmean.pups$Survey <- rownames(PVmean.pups);PVmean.pups$SampleType <- "Mean";PVmean.pups$CountType <- "Pups"
+# PVmean.nonpups <- data.frame(PVmean.nonpups);PVmean.nonpups$Survey <- rownames(PVmean.nonpups);PVmean.nonpups$SampleType <- "Mean";PVmean.nonpups$CountType <- "NonPups"
+# 
+# 
+# PV.counts <- rbind(PVrandom.tots, PVrandom.pups, PVrandom.nonpups, PVfirst.tots, PVfirst.pups, PVfirst.nonpups, PVmean.tots, PVmean.pups, PVmean.nonpups)
+# write.csv(PV.counts, "PVCountsStock.csv")
+# 
+# 
