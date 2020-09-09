@@ -10,10 +10,10 @@ HCdata$tidetype=factor(HCdata$tidetype)
 HCdata$MFAug15 <- (HCdata$Julian- 226)/31
 HCdata$hour = factor(hour(HCdata$Survey.time),levels=0:23)
 # temporary value until I get tides but will be used for sites other than Hi tide sites
-HCdata$MinFHi=0
-HCdata$MinFHi[HCdata$tidetype!="High"]=65
+#HCdata$MinFHi=0
+HCdata$time_from_high_minutes[HCdata$tidetype!="High"]=65
 # Create categories defined in London et al
-HCdata$MinFHi.Cat=cut(HCdata$MinFHi,seq(-448-16,482+16,32),labels=seq(-448,482,32))
+HCdata$MinFHi.Cat=cut(HCdata$time_from_high_minutes,seq(-448-16,482+16,32),labels=seq(-448,482,32))
 
 # Load results from London et al to create survey specific correction factors
 load("all.fit.1.rda")
@@ -38,24 +38,36 @@ vc_abundance=HCdata$Count.total%*%t(HCdata$Count.total)*vc_cf+diag(HCdata$Abunda
 
 # Annual abundance estimates
 HCdata=HCdata[order(HCdata$Year,HCdata$Sitecode),]
+# wts are the number of counts at a site in a year
 wts=unlist(sapply(split(HCdata,list(HCdata$Year,formatC(HCdata$Sitecode,digits=3,flag="#"))),function(x) rep(1/nrow(x),nrow(x))))
 HCdata$wts=wts[order(names(wts))]
-
+# X is a matrix of weights to construct the annual estimates
 X=sapply(sort(unique(HCdata$Year)),function(x){
   Weights=HCdata$wts
   Weights[!HCdata$Year==x]=0
   return(Weights)
 })
-
-AnnualEstimates=HCdata$AbundanceEstimate%*%X
+# Compute AnnualEstimates and their variance-covariance matrix; they co-vary because they are using the same London et al model
+AnnualEstimates=as.vector(HCdata$AbundanceEstimate%*%X)
+names(AnnualEstimates)=sort(unique(HCdata$year))
 var_AnnualEstimates=t(X)%*%vc_abundance%*%X
 
-c=exp(1.96*sqrt(log(1+diag(var_AnnualEstimates)/AnnualEstimates^2)))
+# for 95% confidence interval based on log normal distribution
+SE=sqrt(diag(var_AnnualEstimates))
+CV=SE/AnnualEstimates
+c=exp(1.96*sqrt(log(1+CV^2)))
+UCL=AnnualEstimates*c
+LCL=AnnualEstimates/c
+
+# plot abundance estimates and 95% confidence intervals
 
 plot(sort(unique(HCdata$Year)),AnnualEstimates,xlab="Year",ylab="Abundance Estimate",type="b",ylim=c(0,6000))
 lines(sort(unique(HCdata$Year)),AnnualEstimates/c,lty=2)
 lines(sort(unique(HCdata$Year)),AnnualEstimates*c,lty=2)
 
-library(glmmTMB)
-mod= glmmTMB(Count.total~Year+MFAug15+(1|Sitecode),zi=~1,family=poisson,data=HCdata)
-summary(mod)
+# Nmin calculation uses z=0.842
+Nmin=AnnualEstimates/exp(.842*sqrt(log(1+CV^2)))
+
+# Output table of results
+HCResults=data.frame(Year=sort(unique(HCdata$Year)),Abundance=round(AnnualEstimates),Stderror=round(SE,1),CV=round(CV,3),LCL=round(LCL),UCL=round(UCL),Nmin=round(Nmin))
+write.csv(HCResults,file="HCResults.csv",row.names=FALSE)
