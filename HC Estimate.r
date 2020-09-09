@@ -47,6 +47,8 @@ X=sapply(sort(unique(HCdata$Year)),function(x){
   Weights[!HCdata$Year==x]=0
   return(Weights)
 })
+# Compute annual count using means when site is replicated
+AnnualCount=as.vector(HCdata$Count.total%*%X)
 # Compute AnnualEstimates and their variance-covariance matrix; they co-vary because they are using the same London et al model
 AnnualEstimates=as.vector(HCdata$AbundanceEstimate%*%X)
 names(AnnualEstimates)=sort(unique(HCdata$year))
@@ -66,5 +68,5 @@ dev.off()
 # Nmin calculation uses z=0.842
 Nmin=AnnualEstimates/exp(.842*sqrt(log(1+CV^2)))
 # Output table of results
-HCResults=data.frame(Year=sort(unique(HCdata$Year)),Abundance=round(AnnualEstimates),Stderror=round(SE,1),CV=round(CV,3),LCL=round(LCL),UCL=round(UCL),Nmin=round(Nmin))
+HCResults=data.frame(Year=sort(unique(HCdata$Year)),Count=round(AnnualCount),Abundance=round(AnnualEstimates),Stderror=round(SE,1),CV=round(CV,3),LCL=round(LCL),UCL=round(UCL),Nmin=round(Nmin))
 write.csv(HCResults,file="HCResults.csv",row.names=FALSE)
