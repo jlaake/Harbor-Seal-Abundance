@@ -64,7 +64,7 @@ dev.off()
 write.csv(OCresults,file="OCResults.csv",row.names=FALSE)
 
 
-# Total Coastal
+# Total Coastal-only uses years in which all coastal regions were surveyed
 Cdata=droplevels(pv.df.seldatesyears[pv.df.seldatesyears$Stock=="Coastal"&pv.df.seldatesyears$Year%in%CEYears&pv.df.seldatesyears$Year%in%OCYears,])
 Cresults=estimate_abundance(Cdata)
 # plot abundance estimates and 95% confidence intervals

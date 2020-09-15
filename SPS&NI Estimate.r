@@ -2,6 +2,14 @@
 cf=1.53
 p=1/cf
 cv_cf=0.065
+
+# 
+# Plowing ahead. I have set stock for 10.0 to be SPS and remove 10.89 because these are in tow and not clearly from any known stock
+#
+mod_pvdf=pv.df.seldatesyears
+mod_pvdf$Stock[mod_pvdf$Sitecode==10]="Southern Puget Sound"
+mod_pvdf=mod_pvdf[!mod_pvdf$Sitecode==10.89,]
+
 # create function to compute abundance estimates and v-c matrix
 estimate_abundance=function(data)
 {
@@ -41,8 +49,8 @@ estimate_abundance=function(data)
   return(df)
 }
 
-#Northern Inland
-NIdata=droplevels(pv.df.seldatesyears[pv.df.seldatesyears$Stock=="Northern Inland"&pv.df.seldatesyears$Year%in%EBYears&pv.df.seldatesyears$Year%in%SJFYears&pv.df.seldatesyears$Year%in%SJIYears,])
+#Northern Inland-only uses years in which SJI,SJF and EB were all surveyed
+NIdata=droplevels(mod_pvdf[mod_pvdf$Stock=="Northern Inland"&mod_pvdf$Year%in%EBYears&mod_pvdf$Year%in%SJFYears&mod_pvdf$Year%in%SJIYears,])
 NIresults=estimate_abundance(NIdata)
 # plot abundance estimates and 95% confidence intervals
 pdf(file="Northern Inland Abundance.pdf")
@@ -54,7 +62,7 @@ dev.off()
 write.csv(NIresults,file="NIResults.csv",row.names=FALSE)
 
 #Southern Puget Sound
-SPSdata=droplevels(pv.df.seldatesyears[pv.df.seldatesyears$Stock=="Southern Puget Sound",])
+SPSdata=droplevels(mod_pvdf[mod_pvdf$Stock=="Southern Puget Sound",])
 SPSresults=estimate_abundance(SPSdata)
 # plot abundance estimates and 95% confidence intervals
 pdf(file="Southern Puget Sound Abundance.pdf")
