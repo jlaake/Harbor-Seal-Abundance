@@ -75,3 +75,10 @@ lines(sort(unique(Cdata$Year)),Cresults$UCL,lty=2)
 dev.off()
 # Output table of results
 write.csv(Cresults,file="CResults.csv",row.names=FALSE)
+
+# Here is a check on the estimate_abundance code
+annual_counts=colSums(with(Cdata,tapply(Count.total,list(Sitecode,Year),mean,na.rm=T)),na.rm=T)
+annual_abundance=annual_counts*cf
+# the following is a gross check which will underestimate std error
+# because it uses binomial variance on total rather than individual counts 
+stderror_annual_abundance=sqrt((cv_cf*annual_abundance)^2+annual_counts*p*(1-p))
