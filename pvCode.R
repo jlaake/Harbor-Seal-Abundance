@@ -1,5 +1,9 @@
+## This code removes anything in the workspace and then sets up data for estimation code in
+## HC Estimate.r  SPS&NI Estimate.r and Coastal Estimate.r
+##
 rm(list=ls())
 library(readr)
+# Uses some of the functions in functions.r
 source("functions.R")
 
 #Read in/set up raw dataset
@@ -25,8 +29,6 @@ aerial.pol=aerial.pol[floor(aerial.pol$Sitecode)!=15,]
 #Note: the below POSIX code adds a date to the time stamp, it's going to be whatever date it
 #is when you run the code. Date won't interfere with any code below. Needs to be run for the 
 #code below in order to do things with time.
-#aerial.pol$Survey.time <- as.POSIXct(aerial.pol$Survey.time,format="%I:%M:%S %p", tz="US/Pacific")
-#aerial.pol$Tidetime <- as.POSIXct(aerial.pol$Tidetime,format="%I:%M:%S %p", tz="US/Pacific")
 aerial.pol$Tidetime <- as.POSIXct(paste(aerial.pol$Day,aerial.pol$Tidetime),format="%Y-%m-%d %I:%M:%S %p", tz="US/Pacific")
 aerial.pol$Survey.time <- as.POSIXct(paste(aerial.pol$Day,aerial.pol$Survey.time),format="%Y-%m-%d %I:%M:%S %p", tz="US/Pacific")
 
@@ -55,7 +57,6 @@ aerial.pol$Tidestation[is.na(aerial.pol$Tidestation)&floor(aerial.pol$Sitecode)=
 
 
 # Bring in old data
-
 old.data <- read.csv("Old Data Import.csv")
 # if the first 10 fields are the same, consider this a duplicate record
 old.data=old.data[!duplicated(old.data[,1:10]),]
@@ -207,7 +208,7 @@ pv.df$use[pv.df$Stock=="Coastal" & pv.df$Julian %in% coastal.dates]=TRUE
 pv.df$year=factor(pv.df$Year,levels=1975:2019)
 pvtot=with(pv.df[pv.df$use,],tapply(Count.total,list(year,Stock),sum))
 
-
+### This has been commented out and could be deleted. It was only used to construct file to send to Josh
 # # create dataframe with all data to get tides from Josh
 # pvfortides=subset(pv.df,select=c("seq","Sitecode","Survey.time","Tidestation"))
 # 
@@ -242,7 +243,7 @@ tide_values=as.data.frame(readr::read_csv("Tides from Josh.csv"))
 tide_values$survey_time_UTC = tide_values$survey_time
 tide_values$time_from_high_minutes=survey_time_UTC = as.numeric((tide_values$survey_time_UTC-tide_values$nearest_high_time)/60)
 tide_values$time_from_low_minutes=survey_time_UTC = as.numeric((tide_values$survey_time_UTC-tide_values$nearest_low_time)/60)
-
+#add tide values to pv.df
 pv.df=cbind(pv.df,tide_values[,c("nearest_high_height","nearest_low_height","tide_height","time_from_high_minutes","time_from_low_minutes")])
 
 #remove Tide.ht..ft. and Tidetime which were manually input; Values from Josh and manual tide ht values
@@ -257,7 +258,6 @@ with(pv.df[pv.df$use,],tapply(Count.total,list(year,Stock),sum))
 
 # From here forward only use those with use==TRUE in .seldates
 pv.df.seldates=pv.df[pv.df$use,]
-
 
 #total counts by year and region for inland waters
 pvyeartable=with(pv.df.seldates,tapply(Count.total,list(year,Region),sum))[,1:5]
@@ -292,23 +292,27 @@ SPSYears=c(1985,1991,1992,1993,1994,1996,1998,2000,2004,2005,2008,2010,2013,2014
 EBYears=c(1983,1984,1985,1986,1987,1988,1989,1991,1992,1993,1994,1995,1996,1998,1999,2000,2001,2002,2004,2005,2006,2007,2008,2010,2013,2014,2019)
 SJIYears=c(1983,1984,1985,1986,1987,1988,1989,1990,1991,1992,1993,1994,1995,1996,1998,1999,2000,2001,2002,2004,2005,2006,2010,2013,2014,2019)
 SJFYears=c(1983,1984,1985,1986,1987,1988,1989,1990,1991,1992,1993,1994,1995,1996,1998,1999,2000,2004,2013,2014,2019)
-
-#NIyears=unique(c(EBYears,SJIYears,SJFYears))[unique(c(EBYears,SJIYears,SJFYears))%in%EBYears & unique(c(EBYears,SJIYears,SJFYears))%in%SJFYears &unique(c(EBYears,SJIYears,SJFYears))%in%SJIYears]
-#NI=pv.df.seldates[pv.df.seldates$Stock=="Northern Inland" & pv.df.seldates$Year%in%NIyears,]
-#pv.mean <- obs.one2(NI, "avg")
+CEYears=c(1975:1978,1980:1989,1991:1997,1999:2001,2004:2005,2007,2014)
+OCYears=c(1980:1981,1983,1986:1987,1989,1991:1997,1999:2001,2004:2005,2007,2014)
 
 # restrict to dates and years used
 pv.df.seldatesyears=droplevels(pv.df.seldates[(pv.df.seldates$Region=="Hood Canal" & pv.df.seldates$Year%in%HCYears) |  (pv.df.seldates$Region=="San Juan Islands" & pv.df.seldates$Year%in%SJIYears) | 
               (pv.df.seldates$Region=="Strait of Juan de Fuca" & pv.df.seldates$Year%in%SJFYears) | (pv.df.seldates$Region=="Eastern Bays" & pv.df.seldates$Year%in%EBYears) |
-              (pv.df.seldates$Region=="Puget Sound" & pv.df.seldates$Year%in%SPSYears),])
+              (pv.df.seldates$Region=="Puget Sound" & pv.df.seldates$Year%in%SPSYears)|
+              (pv.df.seldates$Region%in%c("Columbia River", "Grays Harbor","Willapa Bay")& pv.df.seldates$Year%in%CEYears)|
+              (pv.df.seldates$Region%in%c("Olympic Coast N","Olympic Coast S")& pv.df.seldates$Year%in%OCYears)
+                ,])
 
 # restrict to years used but not dates
 pv.df.selyears=droplevels(pv.df[(pv.df$Region=="Hood Canal" & pv.df$Year%in%HCYears) |  (pv.df$Region=="San Juan Islands" & pv.df$Year%in%SJIYears) | 
                                                 (pv.df$Region=="Strait of Juan de Fuca" & pv.df$Year%in%SJFYears) | (pv.df$Region=="Eastern Bays" & pv.df$Year%in%EBYears) |
-                                                (pv.df$Region=="Puget Sound" & pv.df$Year%in%SPSYears),])
+                                                (pv.df$Region=="Puget Sound" & pv.df$Year%in%SPSYears)|
+                                                (pv.df$Region%in%c("Columbia River", "Grays Harbor","Willapa Bay")& pv.df$Year%in%CEYears)|
+                                                (pv.df$Region%in%c("Olympic Coast N","Olympic Coast S")& pv.df$Year%in%OCYears)
+                                                 ,])
 
 
-
+### This is code from Sarah's original code. Left here but not used.
 # #Code below chooses one observation per site within each target window if there are 
 # #multiple observations in a year.
 # #"Random" is a random choice.
