@@ -93,6 +93,7 @@ start=1975
 end=max(all_counts$Year)
 par_N=coef(glmod0)
 
+pdf("Northern Inland GL.pdf")
 layout(matrix(c(1,2,3,4,4,4), 2, 3, byrow = TRUE))
 with(all_counts[all_counts$Region=="Strait of Juan de Fuca",],
 {
@@ -117,8 +118,10 @@ with(NIresults,
    plot(Year,Count,xlim=c(start,end),ylim=c(min(c(Count,predSJF+predSJI+predEB)),max(c(Count,predSJF+predSJI+predEB))),main="Northern Inland Stock")
    lines(start:end,predSJF+predSJI+predEB)
 })
+dev.off()
 
 
+pdf("Coastal Stock GL.pdf")
 layout(matrix(c(1,2,3,3), 2, 2, byrow = TRUE))
 with(all_counts[all_counts$Region=="Coastal Estuaries",],
 {
@@ -137,7 +140,9 @@ with(Cresults,
   plot(Year,Count,xlim=c(start,end),ylim=c(min(c(Count,predOC+predCE)),max(c(Count,predOC+predCE))),main="Coastal Stock")
   lines(start:end,predOC+predCE)
 })
+dev.off()
 
+pdf("Southern Puget Sound Stock GL.pdf")
 layout(1)
 with(SPSresults,
 {
@@ -146,3 +151,4 @@ with(SPSresults,
    plot(Year,Count,xlim=c(start,end),ylim=c(min(c(Count,predSPS)),max(c(Count,predSPS))),main="Southern Puget Sound")
    lines(start:end,predSPS)
 })
+dev.off()
