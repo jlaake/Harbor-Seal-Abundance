@@ -12,9 +12,9 @@ estimate_abundance=function(data)
   # Variance-covariance matrix of abundance estimates; assumes binomial for count on diagonal - no covariance on counts
   vc_abundance=data$Count.total%*%t(data$Count.total)*vc_cf+diag(data$AbundanceEstimate*p*(1-p))
   # Annual abundance estimates
-  data=data[order(data$Year,data$Sitecode),]
+  data=data[order(paste(data$Year,100*data$Sitecode,".")),]
   # wts are the reciprocal of the number of counts at a site in a year to use the mean at the site
-  wts=unlist(sapply(split(data,list(data$Year,formatC(data$Sitecode,digits=3,flag="#"))),function(x) rep(1/nrow(x),nrow(x))))
+  wts=unlist(sapply(split(data,list(data$Year,100*data$Sitecode)),function(x) rep(1/nrow(x),nrow(x))))
   data$wts=wts[order(names(wts))]
   # X is a matrix of weights to construct the annual estimates
   X=sapply(sort(unique(data$Year)),function(x){

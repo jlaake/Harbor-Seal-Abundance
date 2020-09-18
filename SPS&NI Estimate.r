@@ -20,9 +20,9 @@ estimate_abundance=function(data)
   # Variance-covariance matrix of abundance estimates; assumes binomial for count on diagonal - no covariance on counts
   vc_abundance=data$Count.total%*%t(data$Count.total)*vc_cf+diag(data$AbundanceEstimate*p*(1-p))
   # Annual abundance estimates
-  data=data[order(data$Year,data$Sitecode),]
+  data=data[order(paste(data$Year,100*data$Sitecode,".")),]
   # wts are the reciprocal of the number of counts at a site in a year to use the mean at the site
-  wts=unlist(sapply(split(data,list(data$Year,formatC(data$Sitecode,digits=3,flag="#"))),function(x) rep(1/nrow(x),nrow(x))))
+  wts=unlist(sapply(split(data,list(data$Year,100*data$Sitecode)),function(x) rep(1/nrow(x),nrow(x))))
   data$wts=wts[order(names(wts))]
   # X is a matrix of weights to construct the annual estimates
   X=sapply(sort(unique(data$Year)),function(x){
@@ -66,10 +66,46 @@ SPSdata=droplevels(mod_pvdf[mod_pvdf$Stock=="Southern Puget Sound",])
 SPSresults=estimate_abundance(SPSdata)
 # plot abundance estimates and 95% confidence intervals
 pdf(file="Southern Puget Sound Abundance.pdf")
-plot(sort(unique(SPSdata$Year)),SPSresults$Abundance,xlab="Year",ylab="Abundance Estimate",type="b",ylim=c(0,1000),main="Southern Puget Sound")
+plot(sort(unique(SPSdata$Year)),SPSresults$Abundance,xlab="Year",ylab="Abundance Estimate",type="b",ylim=c(0,3000),main="Southern Puget Sound")
 lines(sort(unique(SPSdata$Year)),SPSresults$LCL,lty=2)
 lines(sort(unique(SPSdata$Year)),SPSresults$UCL,lty=2)
 dev.off()
 # Output table of results
 write.csv(SPSresults,file="SPSResults.csv",row.names=FALSE)
 
+#Eastern Bays
+EBdata=droplevels(mod_pvdf[mod_pvdf$Region=="Eastern Bays",])
+EBresults=estimate_abundance(EBdata)
+# plot abundance estimates and 95% confidence intervals
+pdf(file="Eastern Bays.pdf")
+plot(sort(unique(EBdata$Year)),EBresults$Abundance,xlab="Year",ylab="Abundance Estimate",type="b",ylim=c(0,5000),main="Eastern Bays")
+lines(sort(unique(EBdata$Year)),EBresults$LCL,lty=2)
+lines(sort(unique(EBdata$Year)),EBresults$UCL,lty=2)
+dev.off()
+# Output table of results
+write.csv(EBresults,file="EBResults.csv",row.names=FALSE)
+
+#San Juan Islands
+SJIdata=droplevels(mod_pvdf[mod_pvdf$Region=="San Juan Islands",])
+SJIresults=estimate_abundance(SJIdata)
+# plot abundance estimates and 95% confidence intervals
+pdf(file="San Juan Islands.pdf")
+plot(sort(unique(SJIdata$Year)),SJIresults$Abundance,xlab="Year",ylab="Abundance Estimate",type="b",ylim=c(0,12000),main="San Juan Islands")
+lines(sort(unique(SJIdata$Year)),SJIresults$LCL,lty=2)
+lines(sort(unique(SJIdata$Year)),SJIresults$UCL,lty=2)
+dev.off()
+# Output table of results
+write.csv(SJIresults,file="SJIResults.csv",row.names=FALSE)
+
+
+#Strait of Juan de Fuca
+SJFdata=droplevels(mod_pvdf[mod_pvdf$Region=="Strait of Juan de Fuca",])
+SJFresults=estimate_abundance(SJFdata)
+# plot abundance estimates and 95% confidence intervals
+pdf(file="Strait of Juan de Fuca.pdf")
+plot(sort(unique(SJFdata$Year)),SJFresults$Abundance,xlab="Year",ylab="Abundance Estimate",type="b",ylim=c(0,6000),main="Strait of Juan de Fuca")
+lines(sort(unique(SJFdata$Year)),SJFresults$LCL,lty=2)
+lines(sort(unique(SJFdata$Year)),SJFresults$UCL,lty=2)
+dev.off()
+# Output table of results
+write.csv(SJFresults,file="SJFResults.csv",row.names=FALSE)

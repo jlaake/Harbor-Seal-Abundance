@@ -68,5 +68,5 @@ dev.off()
 # Nmin calculation uses z=0.842
 Nmin=AnnualEstimates/exp(.842*sqrt(log(1+CV^2)))
 # Output table of results
-HCResults=data.frame(Year=sort(unique(HCdata$Year)),Count=round(AnnualCount),Abundance=round(AnnualEstimates),Stderror=round(SE,1),CV=round(CV,3),LCL=round(LCL),UCL=round(UCL),Nmin=round(Nmin))
-write.csv(HCResults,file="HCResults.csv",row.names=FALSE)
+HCresults=data.frame(Year=sort(unique(HCdata$Year)),Count=round(AnnualCount),Abundance=round(AnnualEstimates),Stderror=round(SE,1),CV=round(CV,3),LCL=round(LCL),UCL=round(UCL),Nmin=round(Nmin))
+write.csv(HCresults,file="HCResults.csv",row.names=FALSE)
