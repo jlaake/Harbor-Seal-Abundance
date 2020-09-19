@@ -1,3 +1,4 @@
+
 ## Functions to fit genrealized logistic otherwise known as Pella-Tomlinson function
 ## originally written by Jeff Breiwick and modified by J. Laake for this specific analysis
 project.PT <-function (z,Rm,n0,K,times)
@@ -93,23 +94,44 @@ start=1975
 end=max(all_counts$Year)
 par_N=coef(glmod0)
 
+#relative MNPL/K = (1+z)^-1(1/z) so MNPL=K*(1+z)^-1(1/z)
+relMNPL=(par_N[1]+1)^(-1/par_N[1])
+MNPL=c(NorthernInland=sum(par_N[9:11]),Coastal=sum(par_N[12:13]),SPugetSound=sum(par_N[14]))*relMNPL
+
+library(mvtnorm)
+rv=rmvnorm(15000,par_N,vcov(glmod0))
+rv=rv[rv[,1]>1,]
+
+bs_predictions=apply(rv,1,function(par_N) regional_predictions(par_N))
+
+# regional predictions from model
+regional_predictions=function(par_N)
+{
+  predSJF=project.PT(par_N[1],par_N[2],par_N[3],par_N[9],1:(end-start+1))
+  predSJI=project.PT(par_N[1],par_N[2],par_N[4],par_N[10],1:(end-start+1))
+  predEB=project.PT(par_N[1],par_N[2],par_N[5],par_N[11],1:(end-start+1))
+  predCE=project.PT(par_N[1],par_N[2],par_N[6],par_N[12],1:(end-start+1))
+  predOC=project.PT(par_N[1],par_N[2],par_N[7],par_N[13],1:(end-start+1))
+  predSPS=project.PT(par_N[1],par_N[2],par_N[8],par_N[14],1:(end-start+1))
+  return(c(predSJF=predSJF,predSJI=predSJI,predEB=predEB,predCE=predCE,predOC=predOC,predSPS=predSPS))  
+}
+
+
+
 pdf("Northern Inland GL.pdf")
 layout(matrix(c(1,2,3,4,4,4), 2, 3, byrow = TRUE))
 with(all_counts[all_counts$Region=="Strait of Juan de Fuca",],
 {
-  predSJF<<-project.PT(par_N[1],par_N[2],par_N[3],par_N[9],1:(end-start+1))
   plot(Year,Count,xlim=c(start,end),ylim=c(min(c(Count,predSJF)),max(c(Count,predSJF))),main="Strait of Juan de Fuca")
   lines(start:end,predSJF)
 })
 with(all_counts[all_counts$Region=="San Juan Islands",],
 {
-   predSJI<<-project.PT(par_N[1],par_N[2],par_N[4],par_N[10],1:(end-start+1))
    plot(Year,Count,xlim=c(start,end),ylim=c(min(c(Count,predSJI)),max(c(Count,predSJI))),main="San Juan Islands")
    lines(start:end,predSJI)
 })
 with(all_counts[all_counts$Region=="Eastern Bays",],
 {
-   predEB<<-project.PT(par_N[1],par_N[2],par_N[5],par_N[11],1:(end-start+1))
    plot(Year,Count,xlim=c(start,end),ylim=c(min(c(Count,predEB)),max(c(Count,predEB))),main="Eastern Bays")
    lines(start:end,predEB)
 })
@@ -125,13 +147,11 @@ pdf("Coastal Stock GL.pdf")
 layout(matrix(c(1,2,3,3), 2, 2, byrow = TRUE))
 with(all_counts[all_counts$Region=="Coastal Estuaries",],
 {
-   predCE<<-project.PT(par_N[1],par_N[2],par_N[6],par_N[12],1:(end-start+1))
    plot(Year,Count,xlim=c(start,end),ylim=c(min(c(Count,predCE)),max(c(Count,predCE))),main="Coastal Estuaries")
    lines(start:end,predCE)
 })
 with(all_counts[all_counts$Region=="Outer Coast",],
 {
-   predOC<<-project.PT(par_N[1],par_N[2],par_N[7],par_N[13],1:(end-start+1))
    plot(Year,Count,xlim=c(start,end),ylim=c(min(c(Count,predOC)),max(c(Count,predOC))),main="Outer Coast")
    lines(start:end,predOC)
 })
@@ -146,8 +166,6 @@ pdf("Southern Puget Sound Stock GL.pdf")
 layout(1)
 with(SPSresults,
 {
-   predSPS<<-project.PT(par_N[1],par_N[2],par_N[8],par_N[14],1:(end-start+1))
-  
    plot(Year,Count,xlim=c(start,end),ylim=c(min(c(Count,predSPS)),max(c(Count,predSPS))),main="Southern Puget Sound")
    lines(start:end,predSPS)
 })
