@@ -1,6 +1,6 @@
 library(lubridate)
 # Hood Canal data analysis
-HCdata=droplevels(pv.df.seldatesyears[pv.df.seldatesyears$Stock=="Hood Canal"&pv.df.seldatesyears$Year>=1991,])
+HCdata=droplevels(pv.df.seldatesyears[pv.df.seldatesyears$Stock=="Hood Canal",])
 # add hi,lo,other factor variable for sites 
 HCdata$tidetype=rep("Other",nrow(HCdata))
 HCdata$tidetype[HCdata$Sitecode%in%c(8.04,8.05,8.06,8.08,8.13,8.14,8.15)]="High"

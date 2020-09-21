@@ -1,4 +1,5 @@
-## This code removes anything in the workspace and then sets up data for estimation code in
+## This code removes anything in the workspace and then sets up data and saves in pvdf.csv.
+## it is read in by data_selection.r to set date and year range for estimation code in
 ## HC Estimate.r  SPS&NI Estimate.r and Coastal Estimate.r
 ##
 rm(list=ls())
@@ -31,7 +32,6 @@ aerial.pol=aerial.pol[floor(aerial.pol$Sitecode)!=15,]
 #code below in order to do things with time.
 aerial.pol$Tidetime <- as.POSIXct(paste(aerial.pol$Day,aerial.pol$Tidetime),format="%Y-%m-%d %I:%M:%S %p", tz="US/Pacific")
 aerial.pol$Survey.time <- as.POSIXct(paste(aerial.pol$Day,aerial.pol$Survey.time),format="%Y-%m-%d %I:%M:%S %p", tz="US/Pacific")
-
 
 # get TideStation values
 TideStation=read.csv("LocationTideStation.csv")
@@ -192,18 +192,6 @@ pv.df=pv.df[order(pv.df$Survey.time),]
 # add seq number and select fields to send file to Josh for tide values
 pv.df$seq=1:nrow(pv.df)
 
-#assign use = TRUE if in date range and FALSE otherwise
-nonhood.dates <- 198:245
-hood.dates <- 234:314
-coastal.dates <- 121:181
-nonhood <- c("Northern Inland", "Southern Puget Sound")
-
-#Piece out target stocks by target dates
-pv.df$use=FALSE
-pv.df$use[pv.df$Stock %in% nonhood & pv.df$Julian %in% nonhood.dates]=TRUE
-pv.df$use[pv.df$Stock=="Hood Canal" & pv.df$Julian %in% hood.dates]=TRUE
-pv.df$use[pv.df$Stock=="Coastal" & pv.df$Julian %in% coastal.dates]=TRUE
-
 #create year factor variable with all years from 1975-2019
 pv.df$year=factor(pv.df$Year,levels=1975:2019)
 pvtot=with(pv.df[pv.df$use,],tapply(Count.total,list(year,Stock),sum))
@@ -285,32 +273,8 @@ write.csv(SJFBysiteyear,"SJFbysiteyear.csv")
 EBBysiteyear=with(pv.df.seldates[pv.df.seldates$Region=="Eastern Bays",],tapply(Count.total,list(year,Sitecode),sum))
 write.csv(EBBysiteyear,"EBbysiteyear.csv")
 
-
-# Years to use by region
-HCYears=c(1991,1992,1993,1996,1998,1999,2000,2002,2003,2004,2005,2010,2013,2019)
-SPSYears=c(1985,1991,1992,1993,1994,1996,1998,2000,2004,2005,2008,2010,2013,2014,2019)
-EBYears=c(1983,1984,1985,1986,1987,1988,1989,1991,1992,1993,1994,1995,1996,1998,1999,2000,2001,2002,2004,2005,2006,2007,2008,2010,2013,2014,2019)
-SJIYears=c(1983,1984,1985,1986,1987,1988,1989,1990,1991,1992,1993,1994,1995,1996,1998,1999,2000,2001,2002,2004,2005,2006,2010,2013,2014,2019)
-SJFYears=c(1983,1984,1985,1986,1987,1988,1989,1990,1991,1992,1993,1994,1995,1996,1998,1999,2000,2004,2013,2014,2019)
-CEYears=c(1975:1978,1980:1989,1991:1997,1999:2001,2004:2005,2007,2014)
-OCYears=c(1980:1981,1983,1986:1987,1989,1991:1997,1999:2001,2004:2005,2007,2014)
-
-# restrict to dates and years used
-pv.df.seldatesyears=droplevels(pv.df.seldates[(pv.df.seldates$Region=="Hood Canal" & pv.df.seldates$Year%in%HCYears) |  (pv.df.seldates$Region=="San Juan Islands" & pv.df.seldates$Year%in%SJIYears) | 
-              (pv.df.seldates$Region=="Strait of Juan de Fuca" & pv.df.seldates$Year%in%SJFYears) | (pv.df.seldates$Region=="Eastern Bays" & pv.df.seldates$Year%in%EBYears) |
-              (pv.df.seldates$Region=="Puget Sound" & pv.df.seldates$Year%in%SPSYears)|
-              (pv.df.seldates$Region%in%c("Columbia River", "Grays Harbor","Willapa Bay")& pv.df.seldates$Year%in%CEYears)|
-              (pv.df.seldates$Region%in%c("Olympic Coast N","Olympic Coast S")& pv.df.seldates$Year%in%OCYears)
-                ,])
-
-# restrict to years used but not dates
-pv.df.selyears=droplevels(pv.df[(pv.df$Region=="Hood Canal" & pv.df$Year%in%HCYears) |  (pv.df$Region=="San Juan Islands" & pv.df$Year%in%SJIYears) | 
-                                                (pv.df$Region=="Strait of Juan de Fuca" & pv.df$Year%in%SJFYears) | (pv.df$Region=="Eastern Bays" & pv.df$Year%in%EBYears) |
-                                                (pv.df$Region=="Puget Sound" & pv.df$Year%in%SPSYears)|
-                                                (pv.df$Region%in%c("Columbia River", "Grays Harbor","Willapa Bay")& pv.df$Year%in%CEYears)|
-                                                (pv.df$Region%in%c("Olympic Coast N","Olympic Coast S")& pv.df$Year%in%OCYears)
-                                                 ,])
-
+# write out as csv
+write.csv(pv.df,file="pvdf.csv",row.names=FALSE)
 
 ### This is code from Sarah's original code. Left here but not used.
 # #Code below chooses one observation per site within each target window if there are 
