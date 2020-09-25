@@ -51,6 +51,7 @@ lines(sort(unique(CEdata$Year)),CEresults$UCL,lty=2)
 dev.off()
 # Output table of results
 write.csv(CEresults,file="CEResults.csv",row.names=FALSE)
+
 #Outer Coast
 OCdata=droplevels(pv.df.seldatesyears[pv.df.seldatesyears$Region%in%c("Olympic Coast N","Olympic Coast S"),])
 OCresults=estimate_abundance(OCdata)
