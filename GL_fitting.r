@@ -3,7 +3,7 @@ cf=1.53
 cvcf=0.065
 
 ## Functions to fit genrealized logistic otherwise known as Pella-Tomlinson function
-## originally written by Jeff Breiwick and modified by J. Laake for this specific analysis
+
 project.PT <-function (z,Rm,n0,K,times)
 {
   n=vector(mode="numeric",length=max(times))
@@ -13,32 +13,34 @@ project.PT <-function (z,Rm,n0,K,times)
   return(n)
 }
 
-nls.PT.mod.pe <-function (z,Rm,n0,K,y.obs,time.index,region,rmindex)
+PT.mod.pe <-function (par,y.obs,time.index,region,rmindex)
 {
   counts_byregion=split(y.obs,region)
   times_byregion=split(time.index,region)
   residuals=NULL
   rmi=sapply(split(rmindex,region),unique)
+  z=par[1]
+  Rm=par[2:(1+max(rmindex))]
+  n0=par[(2+max(rmindex)):(max(rmindex)+1+length(counts_byregion))]
+  K=par[(max(rmindex)+2+length(counts_byregion)):length(par)]
+  neglnl=0
   for(i in 1:length(counts_byregion))
   {
     y.obs=counts_byregion[[i]]
     times=times_byregion[[i]]
     n=project.PT(z,Rm[rmi[i]],n0[i],K[i],times)
     resid=(n[times]-y.obs)/n[times]
-    residuals=c(residuals,resid)
+    neglnl=neglnl+length(resid)/2*log(sum(resid^2))
   }
   if(debug)
   {
-    cat("-lnl =",sum(residuals^2),"\n")
-    cat("z =",z,"\n")
-    cat("Rm =",Rm,"\n")
-    cat("n0 =",n0,"\n")
-    cat("K =",K,"\n")
+    cat("-lnl =",neglnl,"\n")
+    cat("coef =",par,"\n")
   }
-  return(residuals)
+  return(neglnl)
 }
 
-fit_gl=function(x,start=1975,z=c(1,20,1),Rm=0.10,Rm_byregion=FALSE,Rm_bystock=FALSE,MaxIter=20000,warnOnly=FALSE)
+fit_gl=function(x,start=1975,z=c(1,20,2),Rm=0.10,Rm_byregion=FALSE,Rm_bystock=FALSE,control=list(eval.max=2000,iter.max=1000))
 {
   #use first and last count as starting values for n0 and K
   n0=sapply(split(x$Count,x$Region),function(x) x[1])
@@ -58,13 +60,10 @@ fit_gl=function(x,start=1975,z=c(1,20,1),Rm=0.10,Rm_byregion=FALSE,Rm_bystock=FA
   # z starting value
   z=z[3]
   #fit model
-  dfm = data.frame(y.obs=x$Count,time.index=x$Year-start+1,region=x$Region,rmindex=x$Rmindex)
-  glmod=nls(~nls.PT.mod.pe(z,Rm,n0,K,y.obs,time.index,region,rmindex), data=dfm,start=list(z=z,Rm=Rm,n0=n0,K=K),algorithm="port",
-        upper=upper,lower=lower,  nls.control(maxit=MaxIter,warnOnly=warnOnly))
-
+  glmod=nlminb(start=c(z,Rm,n0,K),PT.mod.pe,upper=upper,lower=lower,control=control,
+               y.obs=x$Count,time.index=x$Year-start+1,region=x$Region,rmindex=x$Rmindex)
   return(glmod)
 }
-
 
 #read in results files for 7 regions and NI and C
 SJFresults=read.csv("SJFResults.csv")
@@ -101,24 +100,32 @@ glmod0=fit_gl(all_counts)
 glmod1=fit_gl(all_counts,Rm_bystock=TRUE)
 glmod2=fit_gl(all_counts,Rm_byregion=TRUE)
 
-aic0=AIC(glmod0)
-aic1=AIC(glmod1)
-aic2=AIC(glmod2)
+
+aicc=function(model,x)
+  return(2*model$objective+(2*length(model$par)^2+2*length(model$par))/(nrow(x)-length(model$par)-1))
+
+aic0=aicc(glmod0,all_counts)
+aic0
+aic1=aicc(glmod1,all_counts) # best model
+aic1
+aic2=aicc(glmod2,all_counts)
+aic2
+
 
 start=1975
 end=max(all_counts$Year)
-par_N=coef(glmod0)
+par_N=glmod1$par
 
 #relative MNPL/K = (1+z)^-1(1/z) so MNPL=K*(1+z)^-1(1/z)
 relMNPL=(par_N[1]+1)^(-1/par_N[1])
-MNPL=c(NorthernInland=sum(par_N[9:11]),Coastal=sum(par_N[12:13]),SPugetSound=sum(par_N[14]))*relMNPL
+MNPL=c(NorthernInland=sum(par_N[11:13]),Coastal=sum(par_N[14:15]),SPugetSound=sum(par_N[16]))*relMNPL
 
-predSJF=project.PT(par_N[1],par_N[2],par_N[3],par_N[9],1:(end-start+1))
-predSJI=project.PT(par_N[1],par_N[2],par_N[4],par_N[10],1:(end-start+1))
-predEB=project.PT(par_N[1],par_N[2],par_N[5],par_N[11],1:(end-start+1))
-predCE=project.PT(par_N[1],par_N[2],par_N[6],par_N[12],1:(end-start+1))
-predOC=project.PT(par_N[1],par_N[2],par_N[7],par_N[13],1:(end-start+1))
-predSPS=project.PT(par_N[1],par_N[2],par_N[8],par_N[14],1:(end-start+1))
+predSJF=project.PT(par_N[1],par_N[2],par_N[5],par_N[11],1:(end-start+1))
+predSJI=project.PT(par_N[1],par_N[2],par_N[6],par_N[12],1:(end-start+1))
+predEB=project.PT(par_N[1],par_N[2],par_N[7],par_N[13],1:(end-start+1))
+predCE=project.PT(par_N[1],par_N[3],par_N[8],par_N[14],1:(end-start+1))
+predOC=project.PT(par_N[1],par_N[3],par_N[9],par_N[15],1:(end-start+1))
+predSPS=project.PT(par_N[1],par_N[4],par_N[10],par_N[16],1:(end-start+1))
 
 #regional coefficient of variation
 cSJF=sqrt(mean(((predSJF[SJFresults[,1]-start+1]-SJFresults[,2])/predSJF[SJFresults[,1]-start+1])^2))
@@ -128,6 +135,8 @@ cCE=sqrt(mean(((predCE[CEresults[,1]-start+1]-CEresults[,2])/predCE[CEresults[,1
 cOC=sqrt(mean(((predOC[OCresults[,1]-start+1]-OCresults[,2])/predOC[OCresults[,1]-start+1])^2))
 cSPS=sqrt(mean(((predSPS[SPSresults[,1]-start+1]-SPSresults[,2])/predSPS[SPSresults[,1]-start+1])^2))
 
+
+#works wih glmod1 indices of par_N have to be changed for a different model and bystock or byregion changed
 parametric_bootstrap_model=function()
 {
   # construct new dataframe by resampling residuals within region and 
@@ -163,28 +172,27 @@ parametric_bootstrap_model=function()
   df$Region=all_counts$Region
   df$Stock=all_counts$Stock
   # fit model to bootstrapped data
-  glmod_bs=fit_gl(df,warnOnly=FALSE,MaxIter=100000)
+  glmod_bs=fit_gl(df,Rm_bystock=TRUE)
   # get coefficients
-  par_N=coef(glmod_bs)
+  par_N=glmod_bs$par
   #relative MNPL/K = (1+z)^-1(1/z) so MNPL=K*(1+z)^-1(1/z)
   # get sample from normal distribution for cf
   rvcf=rnorm(1,cf,cf*cvcf)
   #relative MNPL/K = (1+z)^-1(1/z) so MNPL=K*(1+z)^-1(1/z)
-  predNI=rvcf*(project.PT(par_N[1],par_N[2],par_N[3],par_N[9],1:(end-start+1)) +
-                 project.PT(par_N[1],par_N[2],par_N[4],par_N[10],1:(end-start+1)) +
-                 project.PT(par_N[1],par_N[2],par_N[5],par_N[11],1:(end-start+1)))
-  predC=rvcf*(project.PT(par_N[1],par_N[2],par_N[6],par_N[12],1:(end-start+1)) +
-                project.PT(par_N[1],par_N[2],par_N[7],par_N[13],1:(end-start+1)))
-  predSPS=rvcf*project.PT(par_N[1],par_N[2],par_N[8],par_N[14],1:(end-start+1))
+  predNI=rvcf*(project.PT(par_N[1],par_N[2],par_N[5],par_N[11],1:(end-start+1)) +
+                 project.PT(par_N[1],par_N[2],par_N[6],par_N[12],1:(end-start+1)) +
+                 project.PT(par_N[1],par_N[2],par_N[7],par_N[13],1:(end-start+1)))
+  predC=rvcf*(project.PT(par_N[1],par_N[3],par_N[8],par_N[14],1:(end-start+1)) +
+                project.PT(par_N[1],par_N[3],par_N[9],par_N[15],1:(end-start+1)))
+  predSPS=rvcf*project.PT(par_N[1],par_N[4],par_N[10],par_N[16],1:(end-start+1))
   relMNPL=(par_N[1]+1)^(-1/par_N[1])
-  MNPL=c(NorthernInland=sum(par_N[9:11]),Coastal=sum(par_N[12:13]),SPugetSound=sum(par_N[14]))*relMNPL*rvcf
+  MNPL=c(NorthernInland=sum(par_N[11:13]),Coastal=sum(par_N[14:15]),SPugetSound=sum(par_N[16]))*relMNPL*rvcf
   currentN_MNPL=c(NIresults[nrow(NIresults),"Count"]*rvcf,Cresults[nrow(Cresults),"Count"]*rvcf,SPSresults[nrow(SPSresults),"Count"]*rvcf)/MNPL
-  return(list(par_N=par_N,predNI=predNI,predC=predC,predSPS=predSPS,MNPL,currentN_MNPL))
+  return(list(par_N=par_N,predNI=predNI,predC=predC,predSPS=predSPS,MNPL,currentN_MNPL,glmod_bs$convergence))
 }
 
 debug=FALSE
-#resid=residuals(glmod0)
-nreps=100
+nreps=1000
 bs_results=vector("list",length=nreps)
 tryerror=0
 i=0
@@ -196,10 +204,14 @@ while(i<nreps)
     tryerror=tryerror+1
   else
   {
+    cat("convergence =",xx[[7]],"\n")
     i=i+1
     bs_results[[i]]=xx
   }
 }
+
+tryerror
+save(bs_results,file="gl_bootstraps.rda")
 
 bspar_N=with(bs_results,sapply(bs_results,function(x)x[[1]]))
 llpar_N=apply(bspar_N,1,function(x) sort(x)[nreps*0.025])
