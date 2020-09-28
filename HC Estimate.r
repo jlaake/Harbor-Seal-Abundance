@@ -1,4 +1,6 @@
+rm(list=ls())
 library(lubridate)
+source("data_selection.r")
 # Hood Canal data analysis
 HCdata=droplevels(pv.df.seldatesyears[pv.df.seldatesyears$Stock=="Hood Canal",])
 # add hi,lo,other factor variable for sites 
@@ -60,10 +62,15 @@ c=exp(1.96*sqrt(log(1+CV^2)))
 UCL=AnnualEstimates*c
 LCL=AnnualEstimates/c
 # plot abundance estimates and 95% confidence intervals
-pdf(file="HC Abundance.pdf")
-plot(sort(unique(HCdata$Year)),AnnualEstimates,xlab="Year",ylab="Abundance Estimate",type="b",ylim=c(0,6000))
-lines(sort(unique(HCdata$Year)),AnnualEstimates/c,lty=2)
-lines(sort(unique(HCdata$Year)),AnnualEstimates*c,lty=2)
+pdf(file="Hood_Canal_Stock_Abundance.pdf")
+Years=sort(unique(HCdata$Year))
+plot(Years,AnnualEstimates,xlab="Year",ylab="Abundance Estimate",type="b",ylim=c(0,6000))
+for(i in 1:length(Years))
+{
+  x=c(Years[i],Years[i])
+  y=c(LCL[i],UCL[i])
+  lines(x,y)
+}
 dev.off()
 # Nmin calculation uses z=0.842
 Nmin=AnnualEstimates/exp(.842*sqrt(log(1+CV^2)))

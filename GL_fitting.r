@@ -111,6 +111,7 @@ aic1
 aic2=aicc(glmod2,all_counts)
 aic2
 
+save(aic0,aic1,aic2,glmod0,glmod1,glmod2,file="gl_models.rda")
 
 start=1975
 end=max(all_counts$Year)
@@ -238,7 +239,7 @@ llMNPLratio=apply(bsMNPLratio,1,function(x) sort(x)[nreps*0.025])
 ulMNPLratio=apply(bsMNPLratio,1,function(x) sort(x)[nreps*0.975])
 
 
-pdf("Northern Inland GL.pdf")
+pdf("Northern_Inland_GL.pdf")
 layout(matrix(c(1,2,3,4,4,4), 2, 3, byrow = TRUE))
 with(all_counts[all_counts$Region=="Strait of Juan de Fuca",],
 {
@@ -275,7 +276,7 @@ for(i in 1:nrow(NIresults))
 dev.off()
 
 
-pdf("Coastal Stock GL.pdf")
+pdf("Coastal_Stock_GL.pdf")
 layout(matrix(c(1,2,3,3), 2, 2, byrow = TRUE))
 with(all_counts[all_counts$Region=="Coastal Estuaries",],
 {
@@ -306,7 +307,7 @@ for(i in 1:nrow(Cresults))
 }
 dev.off()
 
-pdf("Southern Puget Sound Stock GL.pdf")
+pdf("Southern_Puget_Sound_Stock_GL.pdf")
 layout(1)
 with(SPSresults,
 {
@@ -326,3 +327,22 @@ for(i in 1:nrow(SPSresults))
 }
 dev.off()
 
+pdf("Hood_Canal_Stock_Abundance.pdf")
+layout(1)
+with(SPSresults,
+     {
+       plot(Year,Abundance,xlim=c(start,end),ylim=c(min(c(Abundance,predSPS*cf,llSPS)),max(c(Abundance,predSPS*cf,ulSPS))),main="Southern Puget Sound")
+       lines(start:end,predSPS*cf)
+       lines(start:end,llSPS,lty=2)
+       lines(start:end,ulSPS,lty=2)
+       abline(cf*MNPL[3],0)
+       abline(llMNPL[3],0,lty=3)
+       abline(ulMNPL[3],0,lty=3)
+     })
+for(i in 1:nrow(SPSresults))
+{
+  x=c(SPSresults$Year[i],SPSresults$Year[i])
+  y=c(SPSresults$LCL[i],SPSresults$UCL[i])
+  lines(x,y)
+}
+dev.off()

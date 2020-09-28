@@ -23,6 +23,9 @@ SJFYears=c(1983,1984,1985,1986,1987,1988,1989,1990,1991,1992,1993,1994,1995,1996
 CEYears=c(1975:1978,1980:1989,1991:1997,1999:2001,2004:2005,2007,2014)
 OCYears=c(1980:1981,1983,1986:1987,1989,1991:1997,1999:2001,2004:2005,2007,2014)
 
+#restrict to dates
+pv.df.seldates=pv.df[pv.df$use,]
+
 # restrict to dates and years used
 pv.df.seldatesyears=droplevels(pv.df.seldates[(pv.df.seldates$Region=="Hood Canal" & pv.df.seldates$Year%in%HCYears) |  (pv.df.seldates$Region=="San Juan Islands" & pv.df.seldates$Year%in%SJIYears) | 
                                                 (pv.df.seldates$Region=="Strait of Juan de Fuca" & pv.df.seldates$Year%in%SJFYears) | (pv.df.seldates$Region=="Eastern Bays" & pv.df.seldates$Year%in%EBYears) |

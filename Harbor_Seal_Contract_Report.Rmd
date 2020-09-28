@@ -1,0 +1,205 @@
+---
+title: "Harbor Seal Contract Report"
+author: "Jeff Laake"
+date: "9/28/2020"
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
+  word_document: default
+---
+
+
+
+```{r options, results="hide", echo=FALSE}
+suppressMessages(knitr::opts_chunk$set(echo = FALSE, results="hide"))
+library(pander)
+library(xtable)
+
+load(file="gl_bootstraps.rda")
+load(file="gl_models.rda")
+
+nreps=length(bs_results)
+bspar_N=with(bs_results,sapply(bs_results,function(x)x[[1]]))
+llpar_N=apply(bspar_N,1,function(x) sort(x)[nreps*0.025])
+ulpar_N=apply(bspar_N,1,function(x) sort(x)[nreps*0.975])
+
+bsMNPL=with(bs_results,sapply(bs_results,function(x)x[[5]]))
+llMNPL=apply(bsMNPL,1,function(x) sort(x)[nreps*0.025])
+ulMNPL=apply(bsMNPL,1,function(x) sort(x)[nreps*0.975])
+
+bsMNPLratio=with(bs_results,sapply(bs_results,function(x)x[[6]]))
+llMNPLratio=apply(bsMNPLratio,1,function(x) sort(x)[nreps*0.025])
+ulMNPLratio=apply(bsMNPLratio,1,function(x) sort(x)[nreps*0.975])
+
+
+```
+
+
+
+
+Final Report for Purchase Order No. 1305M319PNFFS0315 HARBOR SEAL DATA ANALYSIS
+
+# Abstract
+Aerial survey count data from 1975-2019 were combined with tidal survey data to provide regional and stock estimates of abundance for 1) Hood Canal stock (HC), 2) Southern Puget Sound stock (SPS), 3) Northern Inland stock (NI), and 4) the Washington portion of the WA/OR coastal stock (C). Generalized logistic population growth curves were fitted to all stocks except for Hood Canal which only had data available from 1991 and there was insufficient growth to fit a curve. The population size at the most recent survey (2019 for SPS and NI and 2014 for C) was above MNPL for these stocks and thus conclude that they are within their OSP range.  No such conclusion can be reached for Hood Canal. Abundance estimates with 95% confidence intervals and NMin values were calculated for inclusion in stock assessment reports. PBR values can be calculated from NMin but were not provided here as they require an agreement on the status of the stocks to set the $F_r$ value. All of the R code and data used for the analysis and result files are available at https://drive.google.com/drive/folders/1HQXJ4HBwHsu040EKQoV9RduHWej1et9T?usp=sharing and will remain there at least through 1 January 2021.
+
+
+# Data
+Aerial survey data from 1975-2019 were gathered from two files provided by NMML and WDFW. The file containing data from 1999-2019 were ready for analysis except for the completion of tidal data at time of the surveys for Hood Canal to construct the abundance estimate based on the London et al correction factor. The historical data from 1975-1998 were in need of filtering and data from 1997 were missing and unavailable.
+
+
+
+
+# Methods
+Replicate counts
+
+HC model
+
+Other stocks - Huber et al 1.53
+
+GL fitting
+
+OSP evaluation
+
+Bootstraps
+
+
+
+
+# Results
+
+## Hood Canal Stock
+
+## Southern Puget Sound Stock
+
+## Northern Inland Stock
+
+## Coastal Washington of WA/OR Stock
+
+
+
+```{r, results='asis'}
+cat('\\pagebreak')
+```
+# Tables
+
+Table 1. Counts, abundance estimates with standard error, coefficient of variation (CV) and 95% confidence intervals (LCL, UCL) and Nmin value for Hood Canal stock from aerial survey data for years between 1991-2019.
+```{r,results='asis',echo=FALSE}
+HC=read.csv("HCresults.csv")
+pander(HC)
+```
+
+Table 2. Counts, abundance estimates with standard error, coefficient of variation (CV) and 95% confidence intervals (LCL, UCL) and Nmin value for Southern Puget Sound stock from aerial survey data for years between 1985-2019.
+```{r,results='asis',echo=FALSE}
+SPS=read.csv("SPSresults.csv")
+pander(SPS)
+```
+
+
+```{r, results='asis'}
+cat('\\pagebreak')
+```
+Table 3. Counts, abundance estimates with standard error, coefficient of variation (CV) and 95% confidence intervals (LCL, UCL) and Nmin value for Eastern Bays region of Northern Inland stock from aerial survey data for years between 1983-2019.
+```{r,results='asis',echo=FALSE}
+EB=read.csv("EBresults.csv")
+pander(EB)
+```
+
+```{r, results='asis'}
+cat('\\pagebreak')
+```
+
+Table 4. Counts, abundance estimates with standard error, coefficient of variation (CV) and 95% confidence intervals (LCL, UCL) and Nmin value for San Juan Island region of Northern Inland stock from aerial survey data for years between 1983-2019.
+```{r,results='asis',echo=FALSE}
+SJI=read.csv("SJIresults.csv")
+pander(SJI)
+```
+```{r, results='asis'}
+cat('\\pagebreak')
+```
+
+Table 5. Counts, abundance estimates with standard error, coefficient of variation (CV) and 95% confidence intervals (LCL, UCL) and Nmin value for Strait of Juan de Fuca region of Northern Inland stock from aerial survey data for years between 1983-2019.
+```{r,results='asis',echo=FALSE}
+SJF=read.csv("SJFresults.csv")
+pander(SJF)
+```
+
+Table 6. Counts, abundance estimates with standard error, coefficient of variation (CV) and 95% confidence intervals (LCL, UCL) and Nmin value for Northern Inland stock from aerial survey data for years between 1983-2019.
+```{r,results='asis',echo=FALSE}
+NI=read.csv("NIresults.csv")
+pander(NI)
+```
+
+```{r, results='asis'}
+cat('\\pagebreak')
+```
+Table 7. Counts, abundance estimates with standard error, coefficient of variation (CV) and 95% confidence intervals (LCL, UCL) and Nmin value for Coastal Estuaries region of coastal stock from aerial survey data for years between 1975-2019.
+```{r,results='asis',echo=FALSE}
+CE=read.csv("CEresults.csv")
+pander(CE)
+```
+
+```{r, results='asis'}
+cat('\\pagebreak')
+```
+
+Table 8. Counts, abundance estimates with standard error, coefficient of variation (CV) and 95% confidence intervals (LCL, UCL) and Nmin value for Outer Coast region of coastal stock from aerial survey data for years between 1980-2014.
+```{r,results='asis',echo=FALSE}
+OC=read.csv("OCresults.csv")
+pander(OC)
+```
+
+Table 9. Counts, abundance estimates with standard error, coefficient of variation (CV) and 95% confidence intervals (LCL, UCL) and Nmin value for Washington portion of WA-OR coastal stock from aerial survey data for years between 1980-2014.
+```{r,results='asis',echo=FALSE}
+C=read.csv("Cresults.csv")
+pander(C)
+```
+
+```{r, results='asis'}
+cat('\\pagebreak')
+```
+
+
+Table 10. Parameter estimates and 95% parametric bootstrap confidence intervals (LCL, UCL). Rmax is $R_m$, n0 is $N_0$ in generalized logistic equation.
+```{r, results='asis'}
+par_N=glmod1$par
+gltab=data.frame(Estimate=par_N,LCL=llpar_N,UCL=ulpar_N)
+row.names(gltab)=c("z","Rmax - NI","Rmax - C","Rmax - SPS","n0 -SJF","n0 -SJI","n0 -EB","n0 -CE","n0 -OC","n0 -SPS","K -SJF","K -SJI","K -EB","K -CE","K -OC","K -SPS")
+pander(gltab)
+```
+
+
+
+```{r, results='asis'}
+cat('\\pagebreak')
+```
+# Figures
+
+
+![](Hood_Canal_Stock_Abundance.pdf)
+Figure 1. Hood Canal stock abundance estimates with 95% parametric bootstrap confidence intervals (vertical lines).
+
+```{r, results='asis'}
+cat('\\pagebreak')
+```
+
+![](Southern_Puget_Sound_Stock_GL.pdf)
+
+Figure 2. Southern Puget Sound stock abundance estimates with 95% parametric bootstrap confidence intervals (vertical lines) with fitted generalized logistic population growth curve (solid curved line) with 95% parametric bootstrap confidence intervals (dashed curved lines) and MNPL estimate (solid horizontal line) and 95% parametric bootstrap confidence intervals (dashed horizontal lines).
+
+![](Northern_Inland_GL.pdf)
+
+Figure 3. Regional counts and fitted generalized logistic population growth curve for EB, SJI and SJF regions in upper panels. Lower panel shows Northern Inland stock abundance estimates with 95% parametric bootstrap confidence intervals (vertical lines) and combined regional fitted generalized logistic population growth curve (solid curved line) with 95% parametric bootstrap confidence intervals (dashed curved lines) and MNPL estimate (solid horizontal line) and 95% parametric bootstrap confidence intervals (dashed horizontal lines).
+
+```{r, results='asis'}
+cat('\\pagebreak')
+```
+
+![](Coastal_Stock_GL.pdf)
+
+Figure 4. Regional counts and fitted generalized logistic population growth curve for CE and OC regions in upper panels. Lower panel shows Washington coastal stock abundance estimates with 95% parametric bootstrap confidence intervals (vertical lines) and combined regional fitted generalized logistic population growth curve (solid curved line) with 95% parametric bootstrap confidence intervals (dashed curved lines) and MNPL estimate (solid horizontal line) and 95% parametric bootstrap confidence intervals (dashed horizontal lines).
+
+
+
+
+
