@@ -1,7 +1,10 @@
 #clean workspace
 rm(list=ls())
 #Selection of years and dates for surveys
-pv.df=read.csv(file="pvdf.csv")
+
+# Read in pvdf.csv
+pv.df=read.csv(file="pvdf.csv",colClasses=c("numeric","Date","POSIXct","character",rep("integer",5),rep("factor",3),"numeric","numeric","factor",
+rep("numeric",5)))
 
 #assign use = TRUE if in date range and FALSE otherwise
 nonhood.dates <- 198:245

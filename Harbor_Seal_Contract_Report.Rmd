@@ -47,23 +47,30 @@ Aerial survey count data from 1975-2019 were combined with tidal survey data to 
 # Data
 Aerial survey data from 1975-2019 were gathered from two files provided by NMML and WDFW. The file containing data from 1999-2019 were ready for analysis except for the completion of tidal data at time of the surveys for Hood Canal to construct the abundance estimate based on the London et al correction factor. The historical data from 1975-1998 were in need of filtering and data from 1997 were missing and unavailable.
 
+The R source code files pvCode.r and functions.r create a single data file for harbor seals named pvdf.csv (dataframe pv.df) from the input files OldDataImport.csv (data prior to 1999) and PolygonAerialData.csv (data from 1999-2019). For the historical data there appeared to be duplicate records in the file, so any duplicate records defined by duplicate data for the first 10 fields were removed.  In addition there were errors in the Sitecode values for 6 records, and these are documented in the code with the new replaced values (lines 69-75 in pvCode.r). When the aerial surveys are conducted an estimate is made of the number of seals present.  If for some reason the photograph could not be counted, the estimated count was assigned to the count (lines 91-94 of pvCode.r). Region and Stock fields were not available in the historical data, so they were assigned using the Sitecode, Region and Stock values from the newer data and any missing values were assigned based on parsing the Sitecode (eg 9.x is Eastern Bays) (see lines 97-137 in pvCode.r). That assignment had already been done in the newer data.
 
+For both data sets, counts of seals in the water were removed and any counts in Oregon were removed. The closest tide station was assigned using the file "LocationTideStation.csv" which contained Sitecode and closest tide station.  Any missing values were assigned based on the Sitecode region. The site location, survey time and closest tide station was sent to Josh London with NMML who retrieved tidal data to assign to each count.  The data included nearest_high_height and nearest_low_height (tide height in feet at nearest high and low), tide height at that time and time in minutes from nearest high and from nearest low tide. The data in sequence order (seq) are in Tidesfrom Josh.csv and were appended as columns to the data. Counts at the same location within 50 minutes were combined (see combine.surveytime in functions.r).
+
+The fields in pv.df other than the tidal data were as follows: 1) Sitecode (numeric), 2) Day - date of survey in year month day (read in as character), 3) Survey.time  - survey date and time in POSIXct format, 4) Species - all PV, 5) Count.total - count of all seals, 6) Count.pups - count of pups, 7) Count.nonpups - count of non-pups, 8) Estimated.total - estimated total count at time of survey (not used), 9) Estimated.pups - estimated total pups at time of survey, 10) Region - ten region names within the 4 stocks, 11) Stock - Either Hood Canal, Coastal, Northern Inland or Southern Puget Sound, 12) Tidestation - name of closest tide station, 13) Year - numeric year value, 14) Julian - julian day for survey, 15) year - year as factor variable, 16-20 tidal values. 
+
+For the analysis specific years and range of survey dates were selected. This selection was done in the script data_selection.r which reads in the pvdf.csv file and creates the dataframe pv.df.seldatesyears which is used throughout the analysis code.  The range of julian days used was 198-245 for Northern Inland and Southern Puget Sound stocks, 234-314 for Hood Canal and 121-181 for coastal Washington regions.  Only years with at least one complete survey of each region was used. The selected years by region are contained in the code from lines 21-27 of data_selection.r.   To repeat the analysis it is only necessary to run the script data_selection.r which reads in the pvdf.csv file and then run the analysis scripts described below.
 
 
 # Methods
+
+Abundance estimation 
+
 Replicate counts
 
-HC model
-
+## Haulout correction
+HC
 Other stocks - Huber et al 1.53
 
-GL fitting
+## Population Growth and Status
 
-OSP evaluation
-
+Model Fitting
 Bootstraps
-
-
+OSP evaluation
 
 
 # Results
@@ -74,8 +81,16 @@ Bootstraps
 
 ## Northern Inland Stock
 
-## Coastal Washington of WA/OR Stock
+## Coastal Washington Portion of WA/OR Stock
 
+
+Literature Cited
+
+Huber et al
+
+Jeffries et al
+
+London et al
 
 
 ```{r, results='asis'}

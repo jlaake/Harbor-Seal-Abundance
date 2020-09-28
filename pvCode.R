@@ -27,9 +27,7 @@ aerial.pol=aerial.pol[!is.na(aerial.pol$Stock),]
 #remove records with sitecode==15.xx which are in Oregon
 aerial.pol=aerial.pol[floor(aerial.pol$Sitecode)!=15,]
 
-#Note: the below POSIX code adds a date to the time stamp, it's going to be whatever date it
-#is when you run the code. Date won't interfere with any code below. Needs to be run for the 
-#code below in order to do things with time.
+# add date and time as POSIXct value
 aerial.pol$Tidetime <- as.POSIXct(paste(aerial.pol$Day,aerial.pol$Tidetime),format="%Y-%m-%d %I:%M:%S %p", tz="US/Pacific")
 aerial.pol$Survey.time <- as.POSIXct(paste(aerial.pol$Day,aerial.pol$Survey.time),format="%Y-%m-%d %I:%M:%S %p", tz="US/Pacific")
 
@@ -241,108 +239,7 @@ pv.df$Tidetime=NULL
 # remove seq field no longer needed after tides added
 pv.df$seq=NULL
 
-#table total counts by year and stock
-with(pv.df[pv.df$use,],tapply(Count.total,list(year,Stock),sum))
-
-# From here forward only use those with use==TRUE in .seldates
-pv.df.seldates=pv.df[pv.df$use,]
-
-#total counts by year and region for inland waters
-pvyeartable=with(pv.df.seldates,tapply(Count.total,list(year,Region),sum))[,1:5]
-pvyeartable[is.na(pvyeartable)]=0
-
-#read in Steve's yes/no table
-yesno=read.csv("SteveYesNoTable.csv")
-yesno=apply(yesno[,2:6],2,function(x) as.numeric(x=="yes"))
-
-pvyeartable
-pvyeartable*yesno
-
-HCBysiteyear=with(pv.df.seldates[pv.df.seldates$Stock=="Hood Canal",],tapply(Count.total,list(year,Sitecode),sum))
-write.csv(HCBysiteyear,"HCbysiteyear.csv")
-
-SPSBysiteyear=with(pv.df.seldates[pv.df.seldates$Stock=="Southern Puget Sound",],tapply(Count.total,list(year,Sitecode),sum))
-write.csv(SPSBysiteyear,"SPSbysiteyear.csv")
-
-SJIBysiteyear=with(pv.df.seldates[pv.df.seldates$Region=="San Juan Islands",],tapply(Count.total,list(year,Sitecode),sum))
-write.csv(SJIBysiteyear,"SJIbysiteyear.csv")
-
-SJFBysiteyear=with(pv.df.seldates[pv.df.seldates$Region=="Strait of Juan de Fuca",],tapply(Count.total,list(year,Sitecode),sum))
-write.csv(SJFBysiteyear,"SJFbysiteyear.csv")
-
-EBBysiteyear=with(pv.df.seldates[pv.df.seldates$Region=="Eastern Bays",],tapply(Count.total,list(year,Sitecode),sum))
-write.csv(EBBysiteyear,"EBbysiteyear.csv")
-
-# write out as csv
+# write out data as csv
 write.csv(pv.df,file="pvdf.csv",row.names=FALSE)
 
-### This is code from Sarah's original code. Left here but not used.
-# #Code below chooses one observation per site within each target window if there are 
-# #multiple observations in a year.
-# #"Random" is a random choice.
-# #"First" is the first observation made that year.
-# #"Mean" is the average of all observations made that year.
-# #Output slims down the dataset from multiple observations per site in a year to a single 
-# #observation per site per year within target survey windows.
-# 
-# pv.random <- obs.one2(pv.df.seldatesyears, "random")
-# pv.first <- obs.one2(pv.df.seldatesyears, "first")
-# pv.mean <- obs.one2(pv.df.seldatesyears, "avg")
-# 
-# 
-# 
-# par(mfrow=c(3,2))
-# plot_count(pv.mean,"Hood Canal")
-# plot_count(pv.mean,"Strait of Juan de Fuca")
-# plot_count(pv.mean,"San Juan Islands")
-# plot_count(pv.mean,"Puget Sound")
-# plot_count(pv.mean,"Eastern Bays")
-# 
-# 
-# #############################################################
-# ##Code below sums total counts, nonpup counts, and pup counts 
-# ##for each output above.
-# ##############################################################
-# 
-# #"Random" Obs Counts
-# PVrandom.tots <- tapply(pv.random$Count.total, list(pv.random$Year, pv.random$Stock), sum, na.rm=TRUE)
-# PVrandom.tots
-# PVrandom.pups <- tapply(pv.random$Count.pups, list(pv.random$Year, pv.random$Stock), sum, na.rm=TRUE)
-# PVrandom.pups
-# PVrandom.nonpups <- tapply(pv.random$Count.nonpup, list(pv.random$Year, pv.random$Stock), sum, na.rm=TRUE)
-# PVrandom.nonpups
-# 
-# #"Mean" Obs Counts
-# PVmean.tots <- tapply(pv.mean$Count.total, list(pv.mean$Year, pv.mean$Stock), sum, na.rm=TRUE)
-# PVmean.tots
-# PVmean.pups <- tapply(pv.mean$Count.pups, list(pv.mean$Year, pv.mean$Stock), sum, na.rm=TRUE)
-# PVmean.pups
-# PVmean.nonpups <- tapply(pv.mean$Count.nonpup, list(pv.mean$Year, pv.mean$Stock), sum, na.rm=TRUE)
-# PVmean.nonpups
-# 
-# #"First" Obs Counts
-# PVfirst.tots <- tapply(pv.first$Count.total, list(pv.first$Year, pv.first$Stock), sum, na.rm=TRUE)
-# PVfirst.tots
-# PVfirst.pups <- tapply(pv.first$Count.pups, list(pv.first$Year, pv.first$Stock), sum, na.rm=TRUE)
-# PVfirst.pups
-# PVfirst.nonpups <- tapply(pv.first$Count.nonpup, list(pv.first$Year, pv.first$Stock), sum, na.rm=TRUE)
-# PVfirst.nonpups
-# 
-# ######Putting it all together and into a CSV to get a better look.
-# PVrandom.tots <- data.frame(PVrandom.tots);PVrandom.tots$Survey <- rownames(PVrandom.tots);PVrandom.tots$SampleType <- "Random";PVrandom.tots$CountType <- "Total"
-# PVrandom.pups <- data.frame(PVrandom.pups);PVrandom.pups$Survey <- rownames(PVrandom.pups);PVrandom.pups$SampleType <- "Random";PVrandom.pups$CountType <- "Pups"
-# PVrandom.nonpups <- data.frame(PVrandom.nonpups);PVrandom.nonpups$Survey <- rownames(PVrandom.nonpups);PVrandom.nonpups$SampleType <- "Random";PVrandom.nonpups$CountType <- "NonPups"
-# 
-# PVfirst.tots <- data.frame(PVfirst.tots);PVfirst.tots$Survey <- rownames(PVfirst.tots);PVfirst.tots$SampleType <- "First";PVfirst.tots$CountType <- "Total"
-# PVfirst.pups <- data.frame(PVfirst.pups);PVfirst.pups$Survey <- rownames(PVfirst.pups);PVfirst.pups$SampleType <- "First";PVfirst.pups$CountType <- "Pups"
-# PVfirst.nonpups <- data.frame(PVfirst.nonpups);PVfirst.nonpups$Survey <- rownames(PVfirst.nonpups);PVfirst.nonpups$SampleType <- "First";PVfirst.nonpups$CountType <- "NonPups"
-# 
-# PVmean.tots <- data.frame(PVmean.tots);PVmean.tots$Survey <- rownames(PVmean.tots);PVmean.tots$SampleType <- "Mean";PVmean.tots$CountType <- "Total"
-# PVmean.pups <- data.frame(PVmean.pups);PVmean.pups$Survey <- rownames(PVmean.pups);PVmean.pups$SampleType <- "Mean";PVmean.pups$CountType <- "Pups"
-# PVmean.nonpups <- data.frame(PVmean.nonpups);PVmean.nonpups$Survey <- rownames(PVmean.nonpups);PVmean.nonpups$SampleType <- "Mean";PVmean.nonpups$CountType <- "NonPups"
-# 
-# 
-# PV.counts <- rbind(PVrandom.tots, PVrandom.pups, PVrandom.nonpups, PVfirst.tots, PVfirst.pups, PVfirst.nonpups, PVmean.tots, PVmean.pups, PVmean.nonpups)
-# write.csv(PV.counts, "PVCountsStock.csv")
-# 
-# 
+# see data_selection.r for read.csv code
