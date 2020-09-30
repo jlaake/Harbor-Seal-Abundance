@@ -1,7 +1,7 @@
 ---
 title: "Harbor Seal Contract Report"
 author: "Jeff Laake"
-date: "9/28/2020"
+date: "9/30/2020"
 output:
   pdf_document: default
   html_document:
@@ -32,6 +32,15 @@ bsMNPLratio=with(bs_results,sapply(bs_results,function(x)x[[6]]))
 llMNPLratio=apply(bsMNPLratio,1,function(x) sort(x)[nreps*0.025])
 ulMNPLratio=apply(bsMNPLratio,1,function(x) sort(x)[nreps*0.975])
 
+HC=read.csv("HCresults.csv")
+C=read.csv("Cresults.csv")
+OC=read.csv("OCresults.csv")
+CE=read.csv("CEresults.csv")
+NI=read.csv("NIresults.csv")
+SJF=read.csv("SJFresults.csv")
+SJI=read.csv("SJIresults.csv")
+EB=read.csv("EBresults.csv")
+SPS=read.csv("SPSresults.csv")
 
 ```
 
@@ -88,22 +97,27 @@ where $R_{max}$ is the maximum growth rate, $K$ is the carrying capacity or asym
 
 Growth curve models were fitted to each region because in some years not all regions were counted in a year. This allowed use of all of the available data and the growth curve predictions for the entire stock was computed by summing predictions at each time across the regions within the stock.  A separate initial size $n_0$ and carrying capacity $K$ for each region were included as parameters as there was no reason to expect they would be the same. Whereas, $z$ was assumed to be constant across regions and stocks because it is so poorly estimated with even a large amount of data. However, we did fit 3 models in which $R_{max} was 1) constant (model0), 2) varied by stock (model1), and 3) varied by region (model2). We used the small sample size corrected AICc to choose the best model.
 
-As in Jeffries et al. (2003) we used 1000 parametric bootstraps to compute 95% confidence intervals for the parameters, 95% intervals for the growth curve predictions and for an evaluation of population size at the last survey/MNPL. Values greater than 1 imply the population is within its OSP range. 
-
-
+As in Jeffries et al. (2003) we used 1000 parametric bootstraps to compute 95% confidence intervals for the parameters, 95% intervals for the growth curve predictions and for an evaluation of population size at the last survey/MNPL. Values greater than 1 imply the population is within its OSP range. Using the fitted regional models and estimated  coefficients of variation, we generated a new set of counts for the surveyed years from the predicted values of the fitted curves and a set of proportional residuals using a normal distribution with mean 0 and each regional coefficient of variation.  The bootstrap count value at each survey time  $t$  was computed as $C_t=P_t(1+r_t)$ where $P_t$ was the predicted value from the growth curve and $r_t$ was the random normal residual. Using the new set of counts, the model was fitted to the data and the parameters and statistics were saved (see gl_bootstraps file) for the 1000 replications. To describe the fitted curves in terms of abundance, for each bootstrap replicate we drew a residual from normal with mean of 1.53 and standard error 1.53*0.065 from Huber et al.(2001) and multiplied the fitted curves base on the random draw for the correction factor.
 
 
 # Results
-## Growth Curve Model
-
 ## Hood Canal Stock
+The counts and abundance estimates (Table 1, Figure 1) for the Hood Canal stock show variation but no growth from 1991-2019. Without counts in the 1970s and 1980s it was unreasonable to attempt to was drawn about the status of this stock.  Jeffries et al. (2003) used a value from 1978 which was a ground count and Hood Canal was part of the inland stock at that time.  We decided it would be better to use aerial counts consistently. An aerial survey was conducted in the 1970s and 1980s but the required data were not available for this analysis.   The current Nmin value in 2019 for the stock was estimated to be ```r floor(HC$Nmin[nrow(HC)])```.
 
 ## Southern Puget Sound Stock
+The counts and abundance estimates (Table 2) for the Southern Puget Sound stock demonstrate strong growth with a nearly six-fold increase in abundance from 1985 to 2019.  The current Nmin value in 2019 for the stock was estimated to be ```r floor(SPS$Nmin[nrow(SPS)])```.
 
 ## Northern Inland Stock
+Surveys were conducted intermittently from 1983 to 2019 for Eastern Bays (Table 3), San Juan Islands (Table 4) and Strait of Juan de Fuca (Table 5). The abundance for each region increased two to three fold during the 36 year span. The current Nmin value in 2019 for the stock was estimated to be ```r formatC(floor(NI$Nmin[nrow(NI)]),6)``` (Table 6).
 
 ## Coastal Washington Portion of WA/OR Stock
+Surveys were conducted intermittently from 1983 to 2019 for the Outer Coast region of Washington (Table 7) and from 1975 to 2014 for the Coastal Estuaries (Table 7). The abundance for each region increased three to nine fold. The current Nmin value in 2014 for the Washington portion of the WA/OR coastal stock was estimated to be ```r formatC(floor(C$Nmin[nrow(C)]),6)```(Table 9).
 
+## Growth Curve Model
+Growth curves were fitted to the 6 regions within the Southern Puget Sound stock, Northern Inland stock and Washington portion of the WA/OR coastal stock (Figures 2-4). The AICc values for the fitted models with Rmax constant, varying by stock and varying by region were ```r formatC(aic0,digits=4)```, ```r formatC(aic1,digits=4)```, and ```r formatC(aic2,digits=4)```.  The support for any one model was not overwhelming but we chose the stock variation model which had the minimum AICc. The analysis could be expanded to use model averaging but we don't expect this would change any of the conclusions about the stock status. The estimate of $z$ (Table 10) was at the lower bound of 1 which means that $MNPL=K/2$ although there was substantial variation in the estimate of $z$ and all of the estimates including Rmax and $K$. Values of Rmax were all larger than the default PBR value of 0.12 for pinnipeds but it is important to recognize that the confidence intervals did include 0.12 and $z$ and Rmax are negatively correlated in the model and these values are high because $z$ is at its lower bound. Thus, we recommend using the default 0.12 value in PBR calculations for these stocks.
+
+## Stock OSP status
+The current abundance/MNPL ratio was calculated for 2019 for the Southern Puget Sound and Northern Inland stocks and for 2014 for the Washington portion of the WA/OR coastal stock.  The 95% bootstrap confidence intervals for the ratio was ```r paste(formatC(llMNPLratio[1],digits=2),formatC(ulMNPLratio[1],digits=2),sep="-")```,```r   paste(formatC(llMNPLratio[2],digits=2),formatC(ulMNPLratio[2],digits=2),sep="-")``` , and ```r paste(formatC(llMNPLratio[3],digits=2),formatC(ulMNPLratio[3],digits=2),sep="-")```  respectively. Thus we conclude that each is within its OSP range.
 
 # Literature Cited
 
@@ -121,13 +135,11 @@ cat('\\pagebreak')
 
 Table 1. Counts, abundance estimates with standard error, coefficient of variation (CV) and 95% confidence intervals (LCL, UCL) and Nmin value for Hood Canal stock from aerial survey data for years between 1991-2019.
 ```{r,results='asis',echo=FALSE}
-HC=read.csv("HCresults.csv")
 pander(HC)
 ```
 
 Table 2. Counts, abundance estimates with standard error, coefficient of variation (CV) and 95% confidence intervals (LCL, UCL) and Nmin value for Southern Puget Sound stock from aerial survey data for years between 1985-2019.
 ```{r,results='asis',echo=FALSE}
-SPS=read.csv("SPSresults.csv")
 pander(SPS)
 ```
 
@@ -137,7 +149,6 @@ cat('\\pagebreak')
 ```
 Table 3. Counts, abundance estimates with standard error, coefficient of variation (CV) and 95% confidence intervals (LCL, UCL) and Nmin value for Eastern Bays region of Northern Inland stock from aerial survey data for years between 1983-2019.
 ```{r,results='asis',echo=FALSE}
-EB=read.csv("EBresults.csv")
 pander(EB)
 ```
 
@@ -147,7 +158,6 @@ cat('\\pagebreak')
 
 Table 4. Counts, abundance estimates with standard error, coefficient of variation (CV) and 95% confidence intervals (LCL, UCL) and Nmin value for San Juan Island region of Northern Inland stock from aerial survey data for years between 1983-2019.
 ```{r,results='asis',echo=FALSE}
-SJI=read.csv("SJIresults.csv")
 pander(SJI)
 ```
 ```{r, results='asis'}
@@ -156,13 +166,11 @@ cat('\\pagebreak')
 
 Table 5. Counts, abundance estimates with standard error, coefficient of variation (CV) and 95% confidence intervals (LCL, UCL) and Nmin value for Strait of Juan de Fuca region of Northern Inland stock from aerial survey data for years between 1983-2019.
 ```{r,results='asis',echo=FALSE}
-SJF=read.csv("SJFresults.csv")
 pander(SJF)
 ```
 
 Table 6. Counts, abundance estimates with standard error, coefficient of variation (CV) and 95% confidence intervals (LCL, UCL) and Nmin value for Northern Inland stock from aerial survey data for years between 1983-2019.
 ```{r,results='asis',echo=FALSE}
-NI=read.csv("NIresults.csv")
 pander(NI)
 ```
 
@@ -171,7 +179,6 @@ cat('\\pagebreak')
 ```
 Table 7. Counts, abundance estimates with standard error, coefficient of variation (CV) and 95% confidence intervals (LCL, UCL) and Nmin value for Coastal Estuaries region of coastal stock from aerial survey data for years between 1975-2019.
 ```{r,results='asis',echo=FALSE}
-CE=read.csv("CEresults.csv")
 pander(CE)
 ```
 
@@ -181,13 +188,11 @@ cat('\\pagebreak')
 
 Table 8. Counts, abundance estimates with standard error, coefficient of variation (CV) and 95% confidence intervals (LCL, UCL) and Nmin value for Outer Coast region of coastal stock from aerial survey data for years between 1980-2014.
 ```{r,results='asis',echo=FALSE}
-OC=read.csv("OCresults.csv")
 pander(OC)
 ```
 
 Table 9. Counts, abundance estimates with standard error, coefficient of variation (CV) and 95% confidence intervals (LCL, UCL) and Nmin value for Washington portion of WA-OR coastal stock from aerial survey data for years between 1980-2014.
 ```{r,results='asis',echo=FALSE}
-C=read.csv("Cresults.csv")
 pander(C)
 ```
 
