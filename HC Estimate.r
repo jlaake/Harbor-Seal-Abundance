@@ -33,17 +33,17 @@ vc_p=(dm[,!is.na(fe$std.err)]*p*(1-p))%*%all.fit.1$covb%*%t(dm[,!is.na(fe$std.er
 #multiplicative correction factor for counts
 cf=1/p
 #variance-covariance matrix of correction factors
-vc_cf=vc_p*cf^4
+vc_cf=cf^2%*%t(cf^2)*vc_p
 # Abundance estimate and 
 HCdata$AbundanceEstimate=cf*HCdata$Count.total
 # Variance-covariance matrix of abundance estimates; assumes binomial for count on diagonal - no covariance on counts
-vc_abundance=HCdata$Count.total%*%t(HCdata$Count.total)*vc_cf+diag(HCdata$AbundanceEstimate*p*(1-p))
+vc_abundance=HCdata$Count.total%*%t(HCdata$Count.total)*vc_cf+diag(HCdata$AbundanceEstimate*(1-p)/p)
 # Annual abundance estimates
 HCdata=HCdata[order(HCdata$Year,HCdata$Sitecode),]
 # wts are the reciprocal of the number of counts at a site in a year to use the mean at the site
 wts=unlist(sapply(split(HCdata,list(HCdata$Year,formatC(HCdata$Sitecode,digits=3,flag="#"))),function(x) rep(1/nrow(x),nrow(x))))
 HCdata$wts=wts[order(names(wts))]
-# X is a matrix of weights to construct the annual estimates
+# X is a matrix of weights to construct the annual estimates (note this is called W in report)
 X=sapply(sort(unique(HCdata$Year)),function(x){
   Weights=HCdata$wts
   Weights[!HCdata$Year==x]=0

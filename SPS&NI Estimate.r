@@ -1,3 +1,4 @@
+source("data_selection.r")
 # Use cf from Huber et al. 1.53 cv=0.065
 cf=1.53
 p=1/cf
@@ -18,13 +19,13 @@ estimate_abundance=function(data)
   # Abundance estimate 
   data$AbundanceEstimate=cf*data$Count.total
   # Variance-covariance matrix of abundance estimates; assumes binomial for count on diagonal - no covariance on counts
-  vc_abundance=data$Count.total%*%t(data$Count.total)*vc_cf+diag(data$AbundanceEstimate*p*(1-p))
+  vc_abundance=diag(data$AbundanceEstimate*(1-p)/p)+data$Count.total%*%t(data$Count.total)*vc_cf
   # Annual abundance estimates
   data=data[order(paste(data$Year,100*data$Sitecode,".")),]
   # wts are the reciprocal of the number of counts at a site in a year to use the mean at the site
   wts=unlist(sapply(split(data,list(data$Year,100*data$Sitecode)),function(x) rep(1/nrow(x),nrow(x))))
   data$wts=wts[order(names(wts))]
-  # X is a matrix of weights to construct the annual estimates
+  # X is a matrix of weights to construct the annual estimates(note this is called W in report)
   X=sapply(sort(unique(data$Year)),function(x){
     Weights=data$wts
     Weights[!data$Year==x]=0

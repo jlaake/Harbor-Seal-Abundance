@@ -58,22 +58,43 @@ For the analysis specific years and range of survey dates were selected. This se
 
 # Methods
 
-Abundance estimation 
+## Abundance estimation 
+Aerial surveys counted the number of seals ($n$) on land but only some unknown proportion ($p$) were hauled-out on land.  With an estimate of $p$, true abundance $N$ can be estimated as $\hat{N}=n/\hat{p}$ or $\hat{N}=n\hat{f}$ where $\hat{f}=1/\hat{p}$ is often called the correction factor. Both the count ($n$) and $\hat{f}$ are variable. We assumed a binomial distribution for $n$ in the following variance estimator for $\hat{N}$
+$$v\hat{a}r(\hat{N})=v\hat{a}r(n)/\hat{p}^2 + n^2v\hat{a}r(\hat{p})/\hat{p}^4=\hat{N}(1-\hat{p})/\hat{p}+\hat{N}^2v\hat{a}r(\hat{p})/\hat{p}^2=\hat{N}(1-\hat{p})/\hat{p}+n^2v\hat{a}r(\hat{f})$$
 
-Replicate counts
+If the same $\hat{p}$ is used for an estimate at each location and counts are independent then the covariance between estimates $\hat{N}_i$ and $\hat{N}_j$ can be estimated as
+$$c\hat{o}v(\hat{N}_i,\hat{N}_j)={n}_i{n}_jv\hat{a}r(\hat{f})$$
 
-## Haulout correction
-HC
-Other stocks - Huber et al 1.53
+The variance-covariance matrix ($\boldsymbol{\Sigma_N}$) in line 21 of SPS&NI Estimate.r and Coastal Estimate.r uses the above 2 formulas and $\hat{f}=1.53$ and $cv(\hat{f})=0.065$ from Huber et al. (2001).
+
+A separate haulout probability model was available from London et al. (2012). The model uses the following variables: 1) hour of day as categorical variable, 2) year as categorical variable for the 3 years study was conducted, 3) number of minutes from closest high tide in 30 categories of 32 minute intervals from -448 to +482, 4) days from August 15 when survey was conducted expressed as a desimal month by dividing by 31 (MFAug15), and 5) the interaction of hour of day with MFAug15. The model is linear on the logit scale and $p$ is computed from the inverse logit $p_i=1/[1+exp(-\beta_i)]$ where $\beta_i$ represents the linear logit value for the $i^{th}$ observation which is a linear combination of the estimated coefficients in the model and the specific covariate values for the observation. We used the models for survey years outside of the study years so we used the average coefficient for the 3 years of the study in computing $\beta_i$. Let $\mathbf{B}$ be the vector of model coefficients and $\mathbf{X}$ be the design matrix for covariates with a row for each observation and a column for each coefficient in the model. The vector $\mathbf{p}$ of haulout probabilities is then expressed as $\mathbf{p}=1/[1+exp(-\mathbf{XB})])$ and the variance-covariance matrix for $p$ is 
+$$\boldsymbol{\Sigma_p}=[\mathbf{Xp(1-p)}] \boldsymbol{\Sigma_B} [\mathbf{Xp(1-p)}]' $$
+where $\boldsymbol{\Sigma_B}$ is the variance-covariance matrix of the model coefficients. Likewise, the variance-covariance matrix in terms of the vector of correction factors $\mathbf{f}$ is the outer-product ($\odot$) of the $\mathbf{f^2}$ vectors (elementwise squared values) multiplied elementwise with 
+$$\boldsymbol{\Sigma_f}=[\mathbf{f^2}\odot \mathbf{f^2}]\circ\boldsymbol{\Sigma_p}$$
+which is the cross-product of the $f^2$ vector multiplied element-wise with $\Sigma_p$. The variance-covariance matrix of $\hat{N}$ is 
+$$\boldsymbol{\Sigma_N}=[\mathbf{n}\odot \mathbf{n}]\circ\boldsymbol{\Sigma_f} + \mathbf{I}\boldsymbol{\hat{N}}(\mathbf{1}-\mathbf{\hat{p}})/\mathbf{\hat{p}}$$
+where $\mathbf{I}$ is a diagonal matrix such that the binomal variance term is only applied to the variance terms.
+
+The fitted model with the coefficients and the variance-covariance matrix was provided by Jay VerHoef in the object all.fit.1.rda. The coefficients are all.fit.1$fixed.effects$estimate and the variance-covariance matrix is all.fit.1$covb.
+
+An estimate of abundance was created for each survey of a site to create a vector $\mathbf{\hat{N}}$ of abundance estimates and a variance-covariance matrix  $\boldsymbol{\Sigma_N}$ for those estimates. Most sites were only surveyed once during a year but some were surveyed multiple times. The mean abundance for the site was used for each site. This was done by creating a matrix $\mathbf{W}$ with a row for each estimate and a column for each survey year. Element $w_{ij}$ of the matrix was 1 if the estimate was for a site that was surveyed only once and it was $1/k$ if the site was surveyed $k$ times in the year. Some sites were not used by seals each year so some weights are 0 if there was no survey of the site in that year. Using the matrix $\mathbf{W}$ simplified replicates (weighting to get mean) and to create a set of annual estimates (sum over the sites in the year) and the variance-covariance matrix of the annual estimates. The annual abundance covariances were not used in this analysis but they are available if needed. The vector of annual abundance estimates $\mathbf{\hat{N}_Y}=\mathbf{\hat{N}}\mathbf{W}$ and the variance-covariance matrix is $\boldsymbol{\Sigma_{N_Y}}=\mathbf{W}'\boldsymbol{\Sigma_N} \mathbf{W}$.
+
+Confidence intervals were constructed based on the log-normal distribution for each annual estimate. The 95% intervals were constructed with $\hat{N}/c,\hat{N}c$ where $c=exp[1.96\sqrt{ln(1+cv(\hat{N})^2)}]$ where $cv(\hat{N})^2=v\hat{a}r(\hat{N})/\hat{N}^2$. Likewise NMin is calculated as $\hat{N}/c$ where $c=exp[0.864\sqrt{ln(1+cv(\hat{N})^2)}]$.
 
 ## Population Growth and Status
+To evaluate population growth and status within the context of the Marine Mammal Protection Act, we fitted a generalized logistic growth equation to the annual count data by region for each stock following the methods described by Jeffries et al.(2003). For a sequence of counts through time $n_t$ the generalized logistic growth curve equation can be specified as 
+$$n_t=n_{t-1}\left[1+R_{max}\left(1-\left({\frac{n_{t-1}}{K}}\right)^z \right)\right]$$
+where $R_{max}$ is the maximum growth rate, $K$ is the carrying capacity or asymptotic size, and $z$ is the exponent that adjusts the position of the inflection point of the growth curve. At $z=1$, the inflection point referred to as maximum net productivity level (MNPL) is $K/2$. Optimum sustainable population size is defined as the range of sizes from MNPL to $K$. There are 4 parameters for the equation: 1) $n_0$ which is the initial population size at the starting time, 2) $R_{max}$ the maximum rate of growth achieved at small population sizes, 3) $K$ catrying capacity, and 4) $z$. The maximum likelihood estimation (MLE) method described by Jeffries et al. (2003) assuming proportional errors in the count was used. The MLEs were obtained using the R minimization function nlminb for equation (9) from Jeffries et al.(2003) the summation over the regions used in the analysis. The exponent $z$ is typically very poorly estimated so it was bounded between 1 and 20. Both very small and large values of $z$ create unreasonable growth curve behavior.  The other parameters were bounded as well but the bounds were sufficiently large that they were never imposed on the estimates but can improve optimization behavior.
 
-Model Fitting
-Bootstraps
-OSP evaluation
+Growth curve models were fitted to each region because in some years not all regions were counted in a year. This allowed use of all of the available data and the growth curve predictions for the entire stock was computed by summing predictions at each time across the regions within the stock.  A separate initial size $n_0$ and carrying capacity $K$ for each region were included as parameters as there was no reason to expect they would be the same. Whereas, $z$ was assumed to be constant across regions and stocks because it is so poorly estimated with even a large amount of data. However, we did fit 3 models in which $R_{max} was 1) constant (model0), 2) varied by stock (model1), and 3) varied by region (model2). We used the small sample size corrected AICc to choose the best model.
+
+As in Jeffries et al. (2003) we used 1000 parametric bootstraps to compute 95% confidence intervals for the parameters, 95% intervals for the growth curve predictions and for an evaluation of population size at the last survey/MNPL. Values greater than 1 imply the population is within its OSP range. 
+
+
 
 
 # Results
+## Growth Curve Model
 
 ## Hood Canal Stock
 
@@ -84,13 +105,13 @@ OSP evaluation
 ## Coastal Washington Portion of WA/OR Stock
 
 
-Literature Cited
+# Literature Cited
 
-Huber et al
+Huber, H.R., S.J. Jeffries, R.F. Brown, R.L. DeLong, and G. VanBlaricom. 2001. Correcting aerial survey of harbor seals (Phoca vitulina richardsi) in Washington and Oregon. Maine Mammal Science 17(2):276-295.
 
-Jeffries et al
+Jeffries, S, H. Huber, J. Calambokidis, and J. Laake.2003. Trends and status of harbor seals in Washington State: 1978-1999. J. Wildl. Manage. 67(1):207-218.
 
-London et al
+London, J.M., J.M. VerHoef, S. J. Jeffries, M.M. Lance, P.L. Boveng. 2012. Haul-out behavior of harbor seals (Phoca vitulina) in Hood Canal, Washington. PLOS ONE 7(6): e38180. doi:10.1371/journal.pone.0038180
 
 
 ```{r, results='asis'}
