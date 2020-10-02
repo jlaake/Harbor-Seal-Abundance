@@ -145,27 +145,22 @@ parametric_bootstrap_model=function()
   newresid=rnorm(nrow(SJFresults),0,cSJF)
   newcounts=(newresid+1)*predSJF[SJFresults[,1]-start+1]
   df=data.frame(Year=SJFresults[,1],Count=(newresid+1)*predSJF[SJFresults[,1]-start+1])
-  index=nrow(df)
   #SJI
   newresid=rnorm(nrow(SJIresults),0,cSJI)
   newcounts=(newresid+1)*predSJI[SJIresults[,1]-start+1]
   df=rbind(df,data.frame(Year=SJIresults[,1],Count=(newresid+1)*predSJI[SJIresults[,1]-start+1]))
-  index=nrow(df)
   #EB
   newresid=rnorm(nrow(EBresults),0,cEB)
   newcounts=(newresid+1)*predEB[EBresults[,1]-start+1]
   df=rbind(df,data.frame(Year=EBresults[,1],Count=(newresid+1)*predEB[EBresults[,1]-start+1]))
-  index=nrow(df)
   #CE
   newresid=rnorm(nrow(CEresults),0,cCE)
   newcounts=(newresid+1)*predCE[CEresults[,1]-start+1]
   df=rbind(df,data.frame(Year=CEresults[,1],Count=(newresid+1)*predCE[CEresults[,1]-start+1]))
-  index=nrow(df)
   #OC
   newresid=rnorm(nrow(OCresults),0,cOC)
   newcounts=(newresid+1)*predOC[OCresults[,1]-start+1]
   df=rbind(df,data.frame(Year=OCresults[,1],Count=(newresid+1)*predOC[OCresults[,1]-start+1]))
-  index=nrow(df)
   #SPS
   newresid=rnorm(nrow(SPSresults),0,cSPS)
   newcounts=(newresid+1)*predSPS[SPSresults[,1]-start+1]
@@ -327,22 +322,3 @@ for(i in 1:nrow(SPSresults))
 }
 dev.off()
 
-pdf("Hood_Canal_Stock_Abundance.pdf")
-layout(1)
-with(SPSresults,
-     {
-       plot(Year,Abundance,xlim=c(start,end),ylim=c(min(c(Abundance,predSPS*cf,llSPS)),max(c(Abundance,predSPS*cf,ulSPS))),main="Southern Puget Sound")
-       lines(start:end,predSPS*cf)
-       lines(start:end,llSPS,lty=2)
-       lines(start:end,ulSPS,lty=2)
-       abline(cf*MNPL[3],0)
-       abline(llMNPL[3],0,lty=3)
-       abline(ulMNPL[3],0,lty=3)
-     })
-for(i in 1:nrow(SPSresults))
-{
-  x=c(SPSresults$Year[i],SPSresults$Year[i])
-  y=c(SPSresults$LCL[i],SPSresults$UCL[i])
-  lines(x,y)
-}
-dev.off()

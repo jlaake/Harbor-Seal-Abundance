@@ -8,7 +8,9 @@ cv_cf=0.065
 # Plowing ahead. I have set stock for 10.0 to be SPS and remove 10.89 because these are in tow and not clearly from any known stock
 #
 mod_pvdf=pv.df.seldatesyears
+# 10 which is unknown location in SPS was put in NI presumably by mistake - this sets to SPS
 mod_pvdf$Stock[mod_pvdf$Sitecode==10]="Southern Puget Sound"
+# remove counts on log booms being transported through the area as not clear where they came from
 mod_pvdf=mod_pvdf[!mod_pvdf$Sitecode==10.89,]
 
 # create function to compute abundance estimates and v-c matrix
