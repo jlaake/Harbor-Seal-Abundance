@@ -10,6 +10,55 @@ project.PT <-function (z,Rm,n0,K,times)
     n[i] = n[i-1]*(1+Rm*(1-(n[i-1]/(K))^z))
   return(n)
 }
+# function to place estimated parameters in most general structure (regional model 2)
+# to allow model weighting
+select_par=function(modelnum,model_list)
+{
+  if(modelnum==0)
+  {
+    par_N=model_list$glmod0$par
+    par_N=c(par_N[1],rep(par_N[2],6),par_N[3:length(par_N)])
+  }   
+  else
+    if(modelnum==1)
+    {
+      par_N=model_list$glmod1$par
+      par_N=c(par_N[1],rep(par_N[2],3),rep(par_N[3],2),par_N[4],par_N[5:length(par_N)])
+    } 
+  else
+    par_N=model_list$glmod2$par
+  return(par_N)
+}
+
+MNPLfct=function(model_list)
+{
+  par_N=select_par(0,model_list)
+  #relative MNPL/K = (1+z)^-1(1/z) so MNPL=K*(1+z)^-1(1/z)
+  relMNPL=(par_N[1]+1)^(-1/par_N[1])
+  MNPL=c(NorthernInland=sum(par_N[14:16]),Coastal=sum(par_N[17:18]),SPugetSound=sum(par_N[19]))*relMNPL
+  
+  par_N=select_par(1,model_list)
+  #relative MNPL/K = (1+z)^-1(1/z) so MNPL=K*(1+z)^-1(1/z)
+  relMNPL=(par_N[1]+1)^(-1/par_N[1])
+  MNPL=cbind(MNPL,c(NorthernInland=sum(par_N[14:16]),Coastal=sum(par_N[17:18]),SPugetSound=sum(par_N[19]))*relMNPL)
+  
+  par_N=select_par(2,model_list)
+  #relative MNPL/K = (1+z)^-1(1/z) so MNPL=K*(1+z)^-1(1/z)
+  relMNPL=(par_N[1]+1)^(-1/par_N[1])
+  MNPL=cbind(MNPL,c(NorthernInland=sum(par_N[14:16]),Coastal=sum(par_N[17:18]),SPugetSound=sum(par_N[19]))*relMNPL)
+  return(as.vector(MNPL%*%model_list$model_weights)) 
+}
+
+predictions=function(region,model_list)
+{
+  par_N=select_par(0,model_list)
+  pred=project.PT(par_N[1],par_N[region+1],par_N[region+7],par_N[region+13],1:(end-start+1))
+  par_N=select_par(1,model_list)
+  pred=cbind(pred,project.PT(par_N[1],par_N[region+1],par_N[region+7],par_N[region+13],1:(end-start+1)))
+  par_N=select_par(2,model_list)
+  pred=cbind(pred,project.PT(par_N[1],par_N[region+1],par_N[region+7],par_N[region+13],1:(end-start+1)))
+  return(as.vector(pred%*%model_list$model_weights))
+}
 
 
 #read in results files for 7 regions and NI and C
@@ -37,18 +86,16 @@ load(file="gl_models.rda")
 
 start=1975
 end=max(all_counts$Year)
-par_N=glmod1$par
 
-#relative MNPL/K = (1+z)^-1(1/z) so MNPL=K*(1+z)^-1(1/z)
-relMNPL=(par_N[1]+1)^(-1/par_N[1])
-MNPL=c(NorthernInland=sum(par_N[11:13]),Coastal=sum(par_N[14:15]),SPugetSound=sum(par_N[16]))*relMNPL
+model_list=list(glmod0=glmod0,glmod1=glmod1,glmod2=glmod2,model_weights=model_weights)
 
-predSJF=project.PT(par_N[1],par_N[2],par_N[5],par_N[11],1:(end-start+1))
-predSJI=project.PT(par_N[1],par_N[2],par_N[6],par_N[12],1:(end-start+1))
-predEB=project.PT(par_N[1],par_N[2],par_N[7],par_N[13],1:(end-start+1))
-predCE=project.PT(par_N[1],par_N[3],par_N[8],par_N[14],1:(end-start+1))
-predOC=project.PT(par_N[1],par_N[3],par_N[9],par_N[15],1:(end-start+1))
-predSPS=project.PT(par_N[1],par_N[4],par_N[10],par_N[16],1:(end-start+1))
+
+predSJF=predictions(1,model_list)
+predSJI=predictions(2,model_list)
+predEB=predictions(3,model_list)
+predCE=predictions(4,model_list)
+predOC=predictions(5,model_list)
+predSPS=predictions(6,model_list)
 
 load(file="gl_bootstraps.rda")
 nreps=length(bs_results)
